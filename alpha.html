@@ -9,75 +9,64 @@
 <body>
   <div class="container">
     <h1>🌐 AlphaCall</h1>
-    <p>Click a blockchain to view its latest memecoins and tokens. Updated every 3 hours.</p>
+    <p>Explore daily signals for Ethereum, Solana, and TON.</p>
 
-    <div class="alpha-block" onclick="toggleSection('eth-list')">
-      <img src="https://cryptologos.cc/logos/ethereum-eth-logo.png" alt="ETH" class="chain-icon" />
-      <h2>Ethereum</h2>
+    <div style="text-align: center; margin-top: 20px;">
+      <button onclick="showSignals('eth')">
+        <img src="images/eth.png" class="blockchain-logo" alt="ETH"> Ethereum
+      </button>
+      <button onclick="showSignals('sol')">
+        <img src="images/sol.png" class="blockchain-logo" alt="SOL"> Solana
+      </button>
+      <button onclick="showSignals('ton')">
+        <img src="images/ton.png" class="blockchain-logo" alt="TON"> TON
+      </button>
     </div>
-    <div id="eth-list" class="signal-section"><p>Loading...</p></div>
 
-    <div class="alpha-block" onclick="toggleSection('sol-list')">
-      <img src="https://cryptologos.cc/logos/solana-sol-logo.png" alt="SOL" class="chain-icon" />
-      <h2>Solana</h2>
+    <div id="signals-list" style="margin-top: 30px;">
+      <p>Loading signals...</p>
     </div>
-    <div id="sol-list" class="signal-section"><p>Loading...</p></div>
-
-    <div class="alpha-block" onclick="toggleSection('ton-list')">
-      <img src="https://cryptologos.cc/logos/toncoin-ton-logo.png" alt="TON" class="chain-icon" />
-      <h2>TON</h2>
-    </div>
-    <div id="ton-list" class="signal-section"><p>Loading...</p></div>
 
     <button onclick="goBack()">⬅️ Back to Menu</button>
   </div>
 
   <script>
-    async function loadAlphaData() {
+    let allSignals = [];
+
+    async function loadSignals() {
       const res = await fetch('/api/signals');
       const data = await res.json();
-
-      const render = (arr, id) => {
-        const el = document.getElementById(id);
-        el.innerHTML = "";
-
-        if (!arr || arr.length === 0) {
-          el.innerHTML = "<p>No signals for now.</p>";
-          return;
-        }
-
-        arr.forEach(signal => {
-          const card = document.createElement('div');
-          card.className = 'signal-card';
-          card.innerHTML = `
-            <h3>${signal.name}</h3>
-            <p>${signal.description}</p>
-            <p><strong>Risk:</strong> ${signal.risk}</p>
-          `;
-          el.appendChild(card);
-        });
-      };
-
-      render(data.ethereum || [], "eth-list");
-      render(data.solana || [], "sol-list");
-      render(data.ton || [], "ton-list");
-
-      // Hide all by default
-      document.querySelectorAll('.signal-section').forEach(sec => sec.style.display = "none");
+      allSignals = data;
+      showSignals('eth');
     }
 
-    function toggleSection(id) {
-      const el = document.getElementById(id);
-      const isVisible = el.style.display === "block";
-      document.querySelectorAll('.signal-section').forEach(sec => sec.style.display = "none");
-      if (!isVisible) el.style.display = "block";
+    function showSignals(chain) {
+      const container = document.getElementById('signals-list');
+      container.innerHTML = '';
+
+      const chainSignals = allSignals[chain] || [];
+      if (chainSignals.length === 0) {
+        container.innerHTML = `<p>No ${chain.toUpperCase()} signals found.</p>`;
+        return;
+      }
+
+      chainSignals.forEach(signal => {
+        const card = document.createElement('div');
+        card.className = 'signal-card';
+        card.innerHTML = `
+          <h3>${signal.name}</h3>
+          <p>${signal.description}</p>
+          <a href="${signal.link}" target="_blank">🌐 View Project</a>
+        `;
+        container.appendChild(card);
+      });
     }
 
     function goBack() {
       window.location.href = "/";
     }
 
-    loadAlphaData();
+    loadSignals();
   </script>
 </body>
 </html>
