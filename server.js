@@ -15,24 +15,46 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// 🔹 صفحه سیگنال‌ها
-app.get('/signals.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'signals.html'));
-});
 // 🔹 صفحه AlphaCall
 app.get('/alpha.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'alpha.html'));
-  });  
+  res.sendFile(path.join(__dirname, 'alpha.html'));
+});
 
-// 🔹 API سیگنال‌های زنده از CoinGecko – چندبخشی
+// 🔹 صفحه Airdrops
+app.get('/airdrops.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'airdrops.html'));
+});
+
+// 🔹 API: سیگنال‌های دسته‌بندی‌شده (ETH / SOL / TON)
 app.get('/api/signals', async (req, res) => {
   try {
     const result = await fetchRealSignals();
     res.json(result);
   } catch (err) {
-    console.error("❌ Failed to fetch real signals:", err.message);
+    console.error("❌ Failed to fetch signals:", err.message);
     res.status(500).json({ error: "Failed to fetch signals" });
   }
+});
+
+// 🔹 API: ایردراپ‌ها (فعلاً تستی واقعی‌نما)
+app.get('/api/airdrops', (req, res) => {
+  res.json([
+    {
+      name: "Galxe – Web3 Quest",
+      description: "Complete simple on-chain and social tasks to earn GAL tokens.",
+      link: "https://galxe.com"
+    },
+    {
+      name: "Zealy – Community Sprint",
+      description: "Join this Zealy sprint to earn project points and get whitelisted.",
+      link: "https://zealy.io"
+    },
+    {
+      name: "LayerZero Airdrop Hunt",
+      description: "Eligible users interacting with bridging protocols may qualify.",
+      link: "https://layerzeroscan.com"
+    }
+  ]);
 });
 
 app.listen(PORT, () => {
