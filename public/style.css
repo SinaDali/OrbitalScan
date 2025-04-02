@@ -1,0 +1,158 @@
+/* === پایه === */
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 40px;
+  }
+  
+  /* === کانتینر مرکزی === */
+  .container {
+    max-width: 800px;
+    width: 90%;
+    text-align: center;
+    background: #161b22;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.05);
+  }
+  
+  /* === عنوان اصلی === */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #58a6ff;
+  }
+  
+  /* === عنوان بخش‌ها (Blockchain Titles) === */
+  h2 {
+    font-size: 1.4rem;
+    color: #58a6ff;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 5px;
+  }
+  
+  /* === کارت سیگنال‌ها === */
+  .signal-card {
+    background-color: #21262d;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.03);
+    transition: transform 0.2s ease;
+  }
+  
+  .signal-card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.2);
+  }
+  
+  /* === دکمه‌ها === */
+  button {
+    margin-top: 30px;
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #58a6ff;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #1f6feb;
+  }
+  
+  /* === واکنش‌گرا برای موبایل === */
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    .signal-card {
+      padding: 12px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+
+  .menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .menu-buttons button {
+    width: 100%;
+    padding: 16px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #238636;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .menu-buttons button:hover {
+    background-color: #2ea043;
+  }
+  
+  section {
+    margin-top: 30px;
+  }
+  
+  .alpha-block {
+    display: flex;
+    align-items: center;
+    background-color: #1a1f24;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .alpha-block:hover {
+    background-color: #2d333b;
+  }
+  
+  .alpha-block h2 {
+    margin: 0;
+    margin-left: 15px;
+    color: #58a6ff;
+  }
+  
+  .chain-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+  
+  .signal-section {
+    margin-top: 10px;
+  }
+  
