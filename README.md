@@ -30,8 +30,8 @@
 
 ## 🔗 Live Links
 
-- 🌐 **Live App:** [https://orbitalscan.onrender.com](https://orbitalscan.onrender.com)  
-- 🤖 **Telegram Mini App:** [@your_bot](https://t.me/your_bot)  
+- 🌐 **Live App:** [[https://orbitalscan.onrender.com](https://orbitalscan.onrender.com) ](https://orbitalscan.onrender.com) 
+- 🤖 **Telegram Mini App:** @orbitalscan_bot  
 > *(replace with actual link)*
 
 ---
