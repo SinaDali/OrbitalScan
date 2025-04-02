@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate – OrbitalScan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>❤️ Support OrbitalScan</h1>
+    <p>This project is built and maintained by a solo dev who truly loves Web3.<br>
+    To keep this Mini App alive and growing, your support is appreciated 💫</p>
+
+    <h3>🚀 Wallet Addresses</h3>
+    <ul style="text-align:left">
+      <li><strong>Ethereum:</strong> <code>0x76c877f5A55ADe97741E23ebE3438d86800dD1b5</code></li>
+      <li><strong>Solana:</strong> <code>YRCtNMRV477S8KMvnjZ6mGTisiFmhJ9oMQBDYreD2NS</code></li>
+      <li><strong>TON:</strong> <code>UQDJ3Q6JUzog9PwOEhpZrtx-_QHIrK34T5s6XyiFIx3Pbv6E</code></li>
+    </ul>
+
+    <h3>📝 Optional Support Form</h3>
+    <form id="donate-form" onsubmit="submitForm(event)">
+      <input type="text" placeholder="Name or Username (optional)" required />
+      <input type="text" placeholder="Donation Amount (optional)" />
+      <textarea placeholder="Message (optional)" rows="4"></textarea>
+      <button type="submit">💌 Submit</button>
+    </form>
+
+    <p style="margin-top: 20px;">
+      🙌 All supporters will be invited to vote & shape the future of OrbitalScan.
+    </p>
+
+    <button onclick="goBack()">⬅️ Back to Menu</button>
+  </div>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Thank you for supporting! Your input has been received.");
+      e.target.reset();
+    }
+
+    function goBack() {
+      window.location.href = "/";
+    }
+  </script>
+</body>
+</html>

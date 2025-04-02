@@ -25,7 +25,12 @@ app.get('/airdrops.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'airdrops.html'));
 });
 
-// 🔹 API: سیگنال‌های دسته‌بندی‌شده (ETH / SOL / TON)
+// 🔹 صفحه Donate
+app.get('/donate.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'donate.html'));
+});
+
+// 🔹 API: سیگنال‌های زنده برای AlphaCall
 app.get('/api/signals', async (req, res) => {
   try {
     const result = await fetchRealSignals();
@@ -36,7 +41,7 @@ app.get('/api/signals', async (req, res) => {
   }
 });
 
-// 🔹 API: ایردراپ‌ها (فعلاً تستی واقعی‌نما)
+// 🔹 API: Airdrops واقعی‌نما
 app.get('/api/airdrops', (req, res) => {
   res.json([
     {
