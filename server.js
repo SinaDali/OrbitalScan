@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 require('dotenv').config();
-const { fetchRealSignals } = require('./utils/fetchSignals');
+const { fetchGeckoSignals } = require('./utils/fetchGeckoSignals');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -10,38 +10,36 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// 🔹 صفحه اصلی Mini App
+// صفحه اصلی
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// 🔹 صفحه AlphaCall
+// صفحات Mini App
 app.get('/alpha.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'alpha.html'));
 });
 
-// 🔹 صفحه Airdrops
 app.get('/airdrops.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'airdrops.html'));
 });
 
-// 🔹 صفحه Donate
 app.get('/donate.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'donate.html'));
 });
 
-// 🔹 API: سیگنال‌های زنده برای AlphaCall
+// API: سیگنال‌های زنده از Geckoterminal
 app.get('/api/signals', async (req, res) => {
   try {
-    const result = await fetchRealSignals();
+    const result = await fetchGeckoSignals();
     res.json(result);
   } catch (err) {
-    console.error("❌ Failed to fetch signals:", err.message);
+    console.error("❌ Failed to fetch Gecko signals:", err.message);
     res.status(500).json({ error: "Failed to fetch signals" });
   }
 });
 
-// 🔹 API: Airdrops واقعی‌نما
+// API: Airdrops تستی (فعلاً)
 app.get('/api/airdrops', (req, res) => {
   res.json([
     {

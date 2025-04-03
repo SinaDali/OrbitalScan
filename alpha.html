@@ -3,70 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AlphaCall – OrbitalScan</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>OrbitalScan | AlphaCall</title>
+  <link rel="stylesheet" href="public/style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🌐 AlphaCall</h1>
-    <p>Explore daily signals for Ethereum, Solana, and TON.</p>
+    <h1>🚀 AlphaCall</h1>
+    
+    <div class="surprise">
+      <h2>🎉 Surprise Coming Soon...</h2>
+      <p>Something powerful is being built behind the scenes.</p>
+    </div>
 
-    <div style="text-align: center; margin-top: 20px;">
+    <div class="signals" id="signal-list"></div>
+
+    <div class="networks">
       <button onclick="showSignals('eth')">
-        <img src="images/eth.png" class="blockchain-logo" alt="ETH"> Ethereum
+        <img src="public/images/eth.png" alt="ETH" class="net-icon" />
       </button>
       <button onclick="showSignals('sol')">
-        <img src="images/sol.png" class="blockchain-logo" alt="SOL"> Solana
+        <img src="public/images/sol.png" alt="SOL" class="net-icon" />
       </button>
-      <button onclick="showSignals('ton')">
-        <img src="images/ton.png" class="blockchain-logo" alt="TON"> TON
+      <button onclick="showSignals('bsc')">
+        <img src="public/images/bsc.png" alt="BSC" class="net-icon" />
       </button>
     </div>
-
-    <div id="signals-list" style="margin-top: 30px;">
-      <p>Loading signals...</p>
-    </div>
-
-    <button onclick="goBack()">⬅️ Back to Menu</button>
   </div>
 
   <script>
-    let allSignals = [];
+    let currentData = {};
 
-    async function loadSignals() {
+    async function fetchSignals() {
       const res = await fetch('/api/signals');
       const data = await res.json();
-      allSignals = data;
+      currentData = data;
       showSignals('eth');
     }
 
-    function showSignals(chain) {
-      const container = document.getElementById('signals-list');
-      container.innerHTML = '';
+    function showSignals(network) {
+      const list = document.getElementById('signal-list');
+      list.innerHTML = '';
 
-      const chainSignals = allSignals[chain] || [];
-      if (chainSignals.length === 0) {
-        container.innerHTML = `<p>No ${chain.toUpperCase()} signals found.</p>`;
+      if (!currentData[network] || currentData[network].length === 0) {
+        list.innerHTML = `<p>No ${network.toUpperCase()} signals found.</p>`;
         return;
       }
 
-      chainSignals.forEach(signal => {
+      currentData[network].forEach(signal => {
         const card = document.createElement('div');
-        card.className = 'signal-card';
+        card.className = 'card';
         card.innerHTML = `
           <h3>${signal.name}</h3>
           <p>${signal.description}</p>
-          <a href="${signal.link}" target="_blank">🌐 View Project</a>
+          <a href="${signal.link}" target="_blank">View Signal</a>
         `;
-        container.appendChild(card);
+        list.appendChild(card);
       });
     }
 
-    function goBack() {
-      window.location.href = "/";
-    }
-
-    loadSignals();
+    fetchSignals();
   </script>
 </body>
 </html>

@@ -1,78 +1,110 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Share+Tech+Mono&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Orbitron', sans-serif;
-  background-image: url('images/cyberpunk-bg.jpg');
+  background: url('/images/bg-cyberpunk.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  color: #fff;
+  color: #ffffff;
+  text-align: center;
+  backdrop-filter: blur(1.5px);
 }
 
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  font-size: 0.75rem;
+  color: #aaa;
+  text-shadow: 0 0 3px #000;
+}
+
+.creator-tag {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.beta-tag {
+  margin-left: 0.5rem;
+  padding: 2px 6px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: #ff69b4;
+  font-size: 0.7rem;
+}
+
+/* Center Message */
 .container {
-  backdrop-filter: blur(8px);
-  background-color: rgba(0, 0, 0, 0.6);
-  margin: 60px auto;
-  padding: 30px;
-  border-radius: 20px;
-  max-width: 800px;
-  box-shadow: 0 0 25px #00fff7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #00fff7;
-  text-align: center;
-  text-shadow: 0 0 10px #0ff;
+.curve {
+  background: rgba(0, 0, 0, 0.65);
+  border: 2px dashed #39ff14;
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
+  padding: 2rem;
+  width: 80%;
+  max-width: 500px;
+  animation: pulse 4s infinite;
+  box-shadow: 0 0 25px #39ff14;
 }
 
-p {
+.curve h2 {
+  color: #f39cff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-shadow: 0 0 8px #000;
+}
+
+.curve p {
   font-size: 1.1rem;
-  text-align: center;
-  color: #eee;
-  margin-top: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  color: #ccc;
+  margin-top: 0.5rem;
 }
 
-button {
-  padding: 14px 28px;
-  margin-top: 20px;
-  font-size: 1rem;
+/* Navigation Bar */
+.nav-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: space-around;
+  padding: 0.8rem 0;
+  border-top: 1px solid #444;
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+.nav-bar button {
+  background: linear-gradient(135deg, #0fffc1 0%, #39ff14 100%);
   border: none;
   border-radius: 12px;
-  background-color: #00fff7;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
   color: #000;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 10px #00fff7, 0 0 20px #0ff inset;
-}
-
-button:hover {
-  background-color: #0ff;
-  color: #000;
-  transform: scale(1.05);
-}
-
-.signal-card {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 15px;
-  border-radius: 12px;
-  margin: 20px 0;
-  box-shadow: 0 0 10px #8f00ff;
-  border-left: 5px solid #00fff7;
-}
-
-a {
-  color: #00fff7;
-  text-decoration: none;
   font-weight: bold;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  box-shadow: 0 0 8px #0fffc1;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.blockchain-logo {
-  width: 32px;
-  height: 32px;
-  vertical-align: middle;
-  margin-right: 8px;
+.nav-bar button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00ffc8;
+}
+
+/* Animation */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.03); opacity: 0.9; }
+  100% { transform: scale(1); opacity: 1; }
 }
