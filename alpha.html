@@ -17,15 +17,61 @@
     </div>
   </div>
 
-  <!-- Content -->
+  <!-- Title -->
   <div class="container">
     <h1>🚀 EarlyCall Signals</h1>
-    <p style="color:#aaa;">Choose your favorite chain to explore fresh meme signals (coming soon!)</p>
+
+    <!-- Blockchain Buttons -->
+    <div class="networks">
+      <button onclick="showSignals('eth')">
+        <img src="/images/eth.png" alt="ETH" class="net-icon" />
+      </button>
+      <button onclick="showSignals('sol')">
+        <img src="/images/sol.png" alt="SOL" class="net-icon" />
+      </button>
+      <button onclick="showSignals('bsc')">
+        <img src="/images/bsc.png" alt="BSC" class="net-icon" />
+      </button>
+    </div>
+
+    <!-- Signal Section -->
+    <div class="signals" id="signal-list">
+      <p style="color:#aaa;">Please select a blockchain to view signals.</p>
+    </div>
   </div>
 
-  <!-- Back Button Only -->
+  <!-- Back Button -->
   <div class="nav-bar">
     <button onclick="location.href='index.html'">Back</button>
   </div>
+
+  <script>
+    let currentData = {
+      eth: [],
+      sol: [],
+      bsc: []
+    };
+
+    function showSignals(network) {
+      const list = document.getElementById('signal-list');
+      list.innerHTML = '';
+
+      if (!currentData[network] || currentData[network].length === 0) {
+        list.innerHTML = `<p style="color:#999;">No ${network.toUpperCase()} signals found yet.</p>`;
+        return;
+      }
+
+      currentData[network].forEach(signal => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <h3>${signal.name}</h3>
+          <p>${signal.description}</p>
+          <a href="${signal.link}" target="_blank">View Signal</a>
+        `;
+        list.appendChild(card);
+      });
+    }
+  </script>
 </body>
 </html>
