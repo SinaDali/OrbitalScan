@@ -15,24 +15,30 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.8rem 1rem;
   font-size: 0.75rem;
-  color: #aaa;
-  text-shadow: 0 0 3px #000;
 }
 
-.creator-tag {
-  font-style: italic;
-  opacity: 0.8;
-}
-
-.beta-tag {
-  margin-left: 0.5rem;
-  padding: 2px 6px;
-  border: 1px solid #555;
+.left-header .beta-tag {
+  padding: 3px 8px;
+  border: 1px solid #39ff14;
   border-radius: 6px;
-  color: #ff69b4;
+  color: #39ff14;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
   font-size: 0.7rem;
+  text-shadow: 0 0 3px #39ff14;
+}
+
+.right-header .creator-tag {
+  font-style: italic;
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 0 0 6px #0fffc1;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3px 10px;
+  border-radius: 8px;
 }
 
 /* Center Message */
