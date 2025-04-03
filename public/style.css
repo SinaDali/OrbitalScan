@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
   background: url('/images/bg-cyberpunk.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
@@ -22,13 +22,13 @@ body {
 
 .left-header .beta-tag {
   padding: 3px 8px;
-  border: 1px solid #39ff14;
+  border: 1px solid #f39cff;
   border-radius: 6px;
-  color: #39ff14;
+  color: #f39cff;
   background-color: rgba(0, 0, 0, 0.4);
   font-weight: 600;
   font-size: 0.7rem;
-  text-shadow: 0 0 3px #39ff14;
+  text-shadow: 0 0 4px #f39cff;
 }
 
 .right-header .creator-tag {
@@ -41,7 +41,7 @@ body {
   border-radius: 8px;
 }
 
-/* Center Content */
+/* Main Content */
 .container {
   display: flex;
   flex-direction: column;
@@ -51,12 +51,26 @@ body {
 }
 
 h1 {
-  color: #39ff14;
+  color: #f39cff;
   font-size: 1.8rem;
-  text-shadow: 0 0 10px #39ff14;
+  text-shadow: 0 0 10px #f39cff;
 }
 
-/* Network Logos */
+.subtext {
+  font-size: 1rem;
+  color: #e2e2e2;
+  margin-top: 0.5rem;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.strong-text {
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #f8f8f8;
+  text-shadow: 0 0 3px #333;
+}
+
+/* Logos (if used) */
 .networks {
   display: flex;
   justify-content: center;
@@ -78,10 +92,9 @@ h1 {
   transform: scale(1.1);
 }
 
-/* Placeholder Signals */
+/* Signals */
 .signals {
   font-size: 1rem;
-  color: #ccc;
   padding-bottom: 2rem;
 }
 
@@ -93,28 +106,29 @@ h1 {
   right: 0;
   background: rgba(0,0,0,0.8);
   display: flex;
-  justify-content: space-around;
-  padding: 0.8rem 0;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
   border-top: 1px solid #444;
   backdrop-filter: blur(6px);
   z-index: 1000;
 }
 
 .nav-bar button {
-  background: linear-gradient(135deg, #0fffc1 0%, #39ff14 100%);
+  background: linear-gradient(135deg, #f39cff 0%, #0fffc1 100%);
   border: none;
   border-radius: 12px;
-  padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
+  padding: 0.6rem 1.4rem;
+  font-size: 0.95rem;
   color: #000;
   font-weight: bold;
   cursor: pointer;
   font-family: 'Orbitron', sans-serif;
-  box-shadow: 0 0 8px #0fffc1;
+  box-shadow: 0 0 10px #f39cff;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .nav-bar button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 12px #00ffc8;
+  transform: scale(1.08);
+  box-shadow: 0 0 14px #f39cff;
 }
