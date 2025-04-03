@@ -3,65 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OrbitalScan | AlphaCall</title>
-  <link rel="stylesheet" href="public/style.css" />
+  <title>OrbitalScan | EarlyCall</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🚀 AlphaCall</h1>
-    
-    <div class="surprise">
-      <h2>🎉 Surprise Coming Soon...</h2>
-      <p>Something powerful is being built behind the scenes.</p>
+  <!-- Header -->
+  <div class="header">
+    <div class="left-header">
+      <span class="beta-tag">BETA Version</span>
     </div>
-
-    <div class="signals" id="signal-list"></div>
-
-    <div class="networks">
-      <button onclick="showSignals('eth')">
-        <img src="public/images/eth.png" alt="ETH" class="net-icon" />
-      </button>
-      <button onclick="showSignals('sol')">
-        <img src="public/images/sol.png" alt="SOL" class="net-icon" />
-      </button>
-      <button onclick="showSignals('bsc')">
-        <img src="public/images/bsc.png" alt="BSC" class="net-icon" />
-      </button>
+    <div class="right-header">
+      <span class="creator-tag">By Sina Salmasi Emirate CO.</span>
     </div>
   </div>
 
-  <script>
-    let currentData = {};
+  <!-- Content -->
+  <div class="container">
+    <h1>🚀 EarlyCall Signals</h1>
+    <p style="color:#aaa;">Choose your favorite chain to explore fresh meme signals (coming soon!)</p>
+  </div>
 
-    async function fetchSignals() {
-      const res = await fetch('/api/signals');
-      const data = await res.json();
-      currentData = data;
-      showSignals('eth');
-    }
-
-    function showSignals(network) {
-      const list = document.getElementById('signal-list');
-      list.innerHTML = '';
-
-      if (!currentData[network] || currentData[network].length === 0) {
-        list.innerHTML = `<p>No ${network.toUpperCase()} signals found.</p>`;
-        return;
-      }
-
-      currentData[network].forEach(signal => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerHTML = `
-          <h3>${signal.name}</h3>
-          <p>${signal.description}</p>
-          <a href="${signal.link}" target="_blank">View Signal</a>
-        `;
-        list.appendChild(card);
-      });
-    }
-
-    fetchSignals();
-  </script>
+  <!-- Back Button Only -->
+  <div class="nav-bar">
+    <button onclick="location.href='index.html'">Back</button>
+  </div>
 </body>
 </html>
