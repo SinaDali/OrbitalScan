@@ -1,196 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Share Tech Mono', monospace;
-  background: url('/images/bg-cyberpunk.jpg') no-repeat center center fixed;
+  font-family: 'Orbitron', sans-serif;
+  background: url('/images/bg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: #ffffff;
+  background-color: #0f0c29;
   text-align: center;
-  backdrop-filter: blur(1.5px);
+  color: #ffffff;
 }
 
-/* Header */
-.header {
+.top-bar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem 1rem;
-  font-size: 0.75rem;
-}
-
-.left-header .beta-tag {
-  padding: 3px 8px;
-  border: 1px solid #f39cff;
-  border-radius: 6px;
-  color: #f39cff;
-  background-color: rgba(0, 0, 0, 0.4);
-  font-weight: 600;
-  font-size: 0.7rem;
-  text-shadow: 0 0 4px #f39cff;
-}
-
-.right-header .creator-tag {
-  font-style: italic;
+  padding: 10px 20px;
+  font-size: 0.8rem;
   color: #ffffff;
-  font-weight: 600;
-  text-shadow: 0 0 6px #0fffc1;
-  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.beta {
+  background: linear-gradient(45deg, #f39cff, #0fffc1);
   padding: 3px 10px;
   border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.7rem;
 }
 
-/* Main */
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 75vh;
-  padding-top: 2rem;
+.creator {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 0.7rem;
 }
 
-.curve {
-  max-width: 90%;
-  padding: 2rem 1rem;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 16px;
-  box-shadow: 0 0 20px #0fffc1;
-  backdrop-filter: blur(3px);
+.center-content {
+  margin-top: 30px;
+}
+
+.center-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
 }
 
 .hero-text {
-  font-size: 1.6rem;
-  color: #ffffff;
-  text-shadow: 0 0 8px #0fffc1, 0 0 15px #f39cff;
-  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  text-shadow: 0 0 10px #f39cff, 0 0 20px #0fffc1;
 }
 
-.subtext {
+.sub-text {
   font-size: 1rem;
-  color: #e2e2e2;
-  margin-top: 0.5rem;
-  font-family: 'Orbitron', sans-serif;
+  color: #cccccc;
+  margin-top: 10px;
 }
 
-.spaceship-icon {
-  height: 64px;
-  width: 64px;
-  margin-bottom: 10px;
-  border-radius: 14px;
-  box-shadow: 0 0 12px #f39cff;
-}
-
-/* Nav Bar */
-.nav-bar {
+.button-group {
   position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0,0.8);
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem 0;
-  border-top: 1px solid #444;
-  backdrop-filter: blur(6px);
-  z-index: 1000;
+  gap: 15px;
 }
 
-.nav-bar button {
-  background: linear-gradient(135deg, #f39cff 0%, #0fffc1 100%);
+.btn {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #0fffc1, #f39cff);
   border: none;
-  border-radius: 12px;
-  padding: 0.6rem 1.4rem;
-  font-size: 0.95rem;
+  border-radius: 10px;
   color: #000;
   font-weight: bold;
-  cursor: pointer;
-  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
   box-shadow: 0 0 10px #f39cff;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.nav-bar button:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 14px #f39cff;
-}
-
-/* Page Layouts */
-.page-container {
-  padding: 3rem 1rem 5rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 80vh;
-}
-
-/* Chain buttons */
-.chain-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin: 2rem 0;
-}
-
-.chain-buttons button {
-  background-color: rgba(255, 255, 255, 0.07);
-  border: 1px solid #f39cff;
-  color: #fff;
-  padding: 0.7rem 1.2rem;
-  font-family: 'Orbitron', sans-serif;
-  font-weight: bold;
-  border-radius: 12px;
-  cursor: pointer;
   transition: 0.3s;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  box-shadow: 0 0 8px #f39cff;
 }
 
-.chain-buttons button:hover {
-  background-color: #f39cff;
-  color: #000;
-}
-
-.chain-icon {
-  width: 22px;
-  height: 22px;
-}
-
-/* Signal container */
-.signal-container {
-  margin-top: 1.5rem;
-  max-width: 90%;
-}
-
-.signal-box {
-  background-color: rgba(255,255,255,0.08);
-  padding: 1rem;
-  border-radius: 12px;
-  border: 1px solid #0fffc1;
-  box-shadow: 0 0 8px #0fffc1;
-}
-
-/* Responsive */
-@media (max-width: 500px) {
-  .spaceship-icon {
-    height: 40px;
-    width: 40px;
-  }
-
-  .hero-text {
-    font-size: 1.3rem;
-  }
-
-  .nav-bar button {
-    padding: 0.5rem 0.9rem;
-    font-size: 0.85rem;
-  }
-
-  .creator-tag, .beta-tag {
-    font-size: 0.6rem;
-  }
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0fffc1;
 }
