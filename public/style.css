@@ -41,7 +41,7 @@ body {
   border-radius: 8px;
 }
 
-/* Main Content */
+/* Main */
 .container {
   display: flex;
   flex-direction: column;
@@ -50,10 +50,20 @@ body {
   padding-top: 2rem;
 }
 
-h1 {
-  color: #f39cff;
-  font-size: 1.8rem;
-  text-shadow: 0 0 10px #f39cff;
+.curve {
+  max-width: 90%;
+  padding: 2rem 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 0 20px #0fffc1;
+  backdrop-filter: blur(3px);
+}
+
+.hero-text {
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-shadow: 0 0 8px #0fffc1, 0 0 15px #f39cff;
+  margin-bottom: 1rem;
 }
 
 .subtext {
@@ -63,42 +73,15 @@ h1 {
   font-family: 'Orbitron', sans-serif;
 }
 
-.strong-text {
-  font-size: 1.05rem;
-  font-weight: bold;
-  color: #f8f8f8;
-  text-shadow: 0 0 3px #333;
+.spaceship-icon {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  box-shadow: 0 0 12px #f39cff;
 }
 
-/* Logos (if used) */
-.networks {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1.5rem 0;
-}
-
-.net-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0.3rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00ffe1;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-}
-
-.net-icon:hover {
-  transform: scale(1.1);
-}
-
-/* Signals */
-.signals {
-  font-size: 1rem;
-  padding-bottom: 2rem;
-}
-
-/* Bottom Navigation */
+/* Nav Bar */
 .nav-bar {
   position: fixed;
   bottom: 0;
@@ -131,4 +114,83 @@ h1 {
 .nav-bar button:hover {
   transform: scale(1.08);
   box-shadow: 0 0 14px #f39cff;
+}
+
+/* Page Layouts */
+.page-container {
+  padding: 3rem 1rem 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Chain buttons */
+.chain-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.chain-buttons button {
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid #f39cff;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 0 8px #f39cff;
+}
+
+.chain-buttons button:hover {
+  background-color: #f39cff;
+  color: #000;
+}
+
+.chain-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Signal container */
+.signal-container {
+  margin-top: 1.5rem;
+  max-width: 90%;
+}
+
+.signal-box {
+  background-color: rgba(255,255,255,0.08);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #0fffc1;
+  box-shadow: 0 0 8px #0fffc1;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .spaceship-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .hero-text {
+    font-size: 1.3rem;
+  }
+
+  .nav-bar button {
+    padding: 0.5rem 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .creator-tag, .beta-tag {
+    font-size: 0.6rem;
+  }
 }

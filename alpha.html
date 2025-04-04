@@ -3,74 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OrbitalScan | EarlyCall</title>
+  <title>OrbitalScan | Early Calls</title>
   <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <!-- Header -->
-  <div class="header">
-    <div class="left-header">
-      <span class="beta-tag">BETA Version</span>
-    </div>
-    <div class="right-header">
-      <span class="creator-tag">By Sina Salmasi Emirate CO.</span>
-    </div>
-  </div>
+  <div class="page-container">
+    <h2>🚀 Choose Blockchain</h2>
 
-  <!-- Title -->
-  <div class="container">
-    <h1>🚀 EarlyCall Signals</h1>
-
-    <!-- Blockchain Buttons -->
-    <div class="networks">
+    <div class="chain-buttons">
       <button onclick="showSignals('eth')">
-        <img src="/images/eth.png" alt="ETH" class="net-icon" />
+        <img src="/images/eth.png" alt="ETH" class="chain-icon" />
+        Ethereum
       </button>
       <button onclick="showSignals('sol')">
-        <img src="/images/sol.png" alt="SOL" class="net-icon" />
+        <img src="/images/sol.png" alt="SOL" class="chain-icon" />
+        Solana
       </button>
       <button onclick="showSignals('bsc')">
-        <img src="/images/bsc.png" alt="BSC" class="net-icon" />
+        <img src="/images/bsc.png" alt="BSC" class="chain-icon" />
+        BSC
       </button>
     </div>
 
-    <!-- Signal Section -->
-    <div class="signals" id="signal-list">
-      <p style="color:#aaa;">Please select a blockchain to view signals.</p>
-    </div>
+    <div id="signal-container" class="signal-container"></div>
   </div>
 
-  <!-- Back Button -->
   <div class="nav-bar">
-    <button onclick="location.href='index.html'">Back</button>
+    <button onclick="location.href='/'">Back</button>
   </div>
 
   <script>
-    let currentData = {
-      eth: [],
-      sol: [],
-      bsc: []
-    };
-
-    function showSignals(network) {
-      const list = document.getElementById('signal-list');
-      list.innerHTML = '';
-
-      if (!currentData[network] || currentData[network].length === 0) {
-        list.innerHTML = `<p style="color:#999;">No ${network.toUpperCase()} signals found yet.</p>`;
-        return;
-      }
-
-      currentData[network].forEach(signal => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerHTML = `
-          <h3>${signal.name}</h3>
-          <p>${signal.description}</p>
-          <a href="${signal.link}" target="_blank">View Signal</a>
-        `;
-        list.appendChild(card);
-      });
+    function showSignals(chain) {
+      document.getElementById("signal-container").innerHTML = `
+        <div class="signal-box">
+          <h3>${chain.toUpperCase()} Memecoins</h3>
+          <p>Signals for ${chain} will be shown here when live!</p>
+        </div>
+      `;
     }
   </script>
 </body>
