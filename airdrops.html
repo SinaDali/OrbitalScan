@@ -3,50 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Airdrops – OrbitalScan</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>OrbitalScan | Airdrops</title>
+  <link rel="stylesheet" href="/style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>🎁 Airdrops</h1>
-    <p>Discover active and real airdrop opportunities you can join today.</p>
+  <div class="page-container">
+    <h2>🪂 Active Airdrops</h2>
+    <p style="margin-bottom: 2rem;">Here you can find active and trusted airdrops. Participate and earn!</p>
 
-    <div id="airdrops-list">
-      <p>Loading airdrops...</p>
+    <div class="signal-container">
+      <div class="signal-box">
+        <h3>Coming soon...</h3>
+        <p>We will list real-time verified airdrops here very soon!</p>
+      </div>
     </div>
-
-    <button onclick="goBack()">⬅️ Back to Menu</button>
   </div>
 
-  <script>
-    async function loadAirdrops() {
-      const res = await fetch('/api/airdrops');
-      const data = await res.json();
-      const container = document.getElementById('airdrops-list');
-      container.innerHTML = "";
-
-      if (!data || data.length === 0) {
-        container.innerHTML = "<p>No airdrops found.</p>";
-        return;
-      }
-
-      data.forEach(drop => {
-        const card = document.createElement('div');
-        card.className = 'signal-card';
-        card.innerHTML = `
-          <h3>${drop.name}</h3>
-          <p>${drop.description}</p>
-          <a href="${drop.link}" target="_blank">🌐 Join Airdrop</a>
-        `;
-        container.appendChild(card);
-      });
-    }
-
-    function goBack() {
-      window.location.href = "/";
-    }
-
-    loadAirdrops();
-  </script>
+  <div class="nav-bar">
+    <button onclick="location.href='/'">Back</button>
+  </div>
 </body>
 </html>
