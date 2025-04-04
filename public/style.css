@@ -4,90 +4,126 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Orbitron', sans-serif;
-  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background: url('/public/images/bg-cyberpunk.jpg') no-repeat center center fixed;
+  background-size: cover;
   color: #ffffff;
   text-align: center;
 }
 
+/* بالای صفحه */
 .top-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
   font-size: 0.8rem;
+  background: rgba(0, 0, 0, 0.6);
 }
 
+/* آیکون BETA */
 .beta {
   background: linear-gradient(45deg, #f39cff, #0fffc1);
+  color: #000;
   padding: 5px 10px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: bold;
 }
 
-.brand {
-  background: rgba(0, 0, 0, 0.4);
+/* نوشته By Sina Salmasi */
+.sina {
+  background: #000;
   padding: 5px 10px;
-  border-radius: 8px;
+  border-radius: 10px;
+  color: #f39cff;
+  font-weight: bold;
 }
 
-.container {
-  padding: 30px 20px;
+/* بدنه صفحه */
+.main-content {
+  padding: 60px 20px;
 }
 
-.main-icon {
-  width: 90px;
+/* آیکون وسط صفحه */
+.center-icon {
+  width: 100px;
   margin-bottom: 20px;
 }
 
+/* عنوان اصلی */
 h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
   text-shadow: 0 0 10px #0fffc1, 0 0 20px #f39cff;
-  margin-bottom: 15px;
 }
 
+/* متن پاراگراف */
 p {
-  color: #e0e0e0;
   font-size: 1rem;
-  margin-bottom: 30px;
+  color: #e0e0e0;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.btn {
-  padding: 0.7rem 1.5rem;
+/* دکمه‌های صفحه اصلی */
+.nav-button {
   background: linear-gradient(45deg, #0fffc1, #f39cff);
   color: #000;
+  padding: 10px 25px;
+  margin: 10px;
+  border-radius: 12px;
   font-weight: bold;
+  font-size: 1rem;
   text-decoration: none;
-  border-radius: 10px;
+  display: inline-block;
+  border: none;
   box-shadow: 0 0 10px #f39cff;
   transition: 0.3s;
 }
 
-.btn:hover {
+.nav-button:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 15px #0fffc1;
 }
 
-.chain-buttons {
-  margin: 30px 0;
-}
-
-.chain-btn {
-  background: none;
+/* دکمه Back */
+.button {
+  margin-top: 30px;
+  padding: 10px 25px;
+  background: linear-gradient(45deg, #f39cff, #0fffc1);
   border: none;
-  margin: 10px;
-  padding: 0;
+  border-radius: 12px;
+  color: #000;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 0 10px #f39cff;
+  transition: 0.3s;
 }
 
-.chain-btn img {
-  width: 60px;
-  height: 60px;
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #0fffc1;
 }
 
-.back-button {
+/* آیدی پایین صفحه */
+.telegram-id {
   margin-top: 40px;
+  font-size: 0.8rem;
+  color: #cccccc;
+}
+
+/* استایل لوگوهای بلاکچین در EarlyCall */
+.blockchain-logos {
+  margin-top: 30px;
+}
+
+.chain-icon {
+  width: 70px; /* اندازه استاندارد لوگو */
+  height: auto;
+  margin: 15px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.chain-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #0fffc1;
 }

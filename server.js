@@ -1,15 +1,13 @@
 const express = require('express');
-const cors = require('cors');
 const path = require('path');
-require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
-app.use(express.static(path.join(__dirname, 'public')));
+// Serve static files from 'public' folder
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
-// صفحات Mini App
+// Routes for HTML pages
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
@@ -30,11 +28,12 @@ app.get('/about.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'about.html'));
 });
 
-// 404
+// 404 handler
 app.use((req, res) => {
   res.status(404).send('<h1>❌ Page not found</h1>');
 });
 
+// Start server
 app.listen(PORT, () => {
   console.log(`✅ OrbitalScan running on http://localhost:${PORT}`);
 });
