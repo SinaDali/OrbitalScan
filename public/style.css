@@ -319,3 +319,93 @@ body, html {
   margin-top: 10px;
   opacity: 0.8;
 }
+
+.comingsoon-container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid #00ffe0;
+  box-shadow: 0 0 20px #00ffe0;
+  backdrop-filter: blur(6px);
+  width: 550px;
+}
+
+.glitch-title {
+  font-size: 32px;
+  color: #ff0066;
+  text-shadow: 0 0 10px #ff0066;
+  margin-bottom: 15px;
+  animation: glitch 2s infinite alternate;
+}
+
+.comingsoon-text {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.home-btn {
+  background: linear-gradient(45deg, #00ffe0, #ff0066);
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.home-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px #ff0066;
+}
+.about-container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  border-radius: 15px;
+  border: 2px solid #ff0066;
+  box-shadow: 0 0 20px #ff0066;
+  backdrop-filter: blur(6px);
+  text-align: center;
+  width: 600px;
+}
+
+.glitch-title {
+  font-size: 32px;
+  color: #00ffe0;
+  text-shadow: 0 0 10px #00ffe0;
+  animation: glitch 1.8s infinite alternate;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.about-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.visit-btn {
+  background: linear-gradient(45deg, #00ffe0, #ff0066);
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.visit-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px #ff0066;
+}
