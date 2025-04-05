@@ -8,22 +8,44 @@
 </head>
 <body>
 
-  <div class="top-bar">
-    <div class="beta">BETA Version</div>
-    <div class="sina">By Sina Salmasi Emirate CO.</div>
-  </div>
-
   <div class="main-content">
-    <h1>Choose Blockchain</h1>
+    <h1>Early Call Signals</h1>
+    <p>Select a blockchain to view fresh calls!</p>
 
-    <div class="blockchain-logos">
-      <img src="public/images/eth.png" alt="Ethereum Logo" class="chain-icon">
-      <img src="public/images/sol.png" alt="Solana Logo" class="chain-icon">
-      <img src="public/images/bsc.png" alt="BSC Logo" class="chain-icon">
+    <div class="chain-logos">
+      <img src="public/images/eth.png" alt="ETH" onclick="showTokens('eth')">
+      <img src="public/images/sol.png" alt="SOL" onclick="showTokens('sol')">
+      <img src="public/images/bsc.png" alt="BSC" onclick="showTokens('bsc')">
     </div>
 
-    <a href="/" class="button">Back</a>
+    <div id="token-list" class="earlycall-text"></div>
+
+    <div class="back-button-container">
+      <a href="/" class="back-button">🔙 Back to Home</a>
+    </div>
+
   </div>
+
+  <script>
+    function showTokens(chain) {
+      const tokenList = {
+        eth: ["🔹 ETH Token 1", "🔹 ETH Token 2", "🔹 ETH Token 3"],
+        sol: ["🔹 SOL Token 1", "🔹 SOL Token 2", "🔹 SOL Token 3"],
+        bsc: ["🔹 BSC Token 1", "🔹 BSC Token 2", "🔹 BSC Token 3"]
+      };
+
+      const listDiv = document.getElementById("token-list");
+      listDiv.innerHTML = "";
+
+      if (tokenList[chain]) {
+        tokenList[chain].forEach(token => {
+          const p = document.createElement("p");
+          p.textContent = token;
+          listDiv.appendChild(p);
+        });
+      }
+    }
+  </script>
 
 </body>
 </html>

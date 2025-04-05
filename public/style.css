@@ -1,129 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
-
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Orbitron', sans-serif;
-  background: url('/public/images/bg-cyberpunk.jpg') no-repeat center center fixed;
+  background-image: url('/public/images/bg-cyberpunk.jpg');
   background-size: cover;
-  color: #ffffff;
-  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
 }
 
-/* بالای صفحه */
 .top-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  font-size: 0.8rem;
   background: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  color: #ffffff;
 }
 
-/* آیکون BETA */
 .beta {
-  background: linear-gradient(45deg, #f39cff, #0fffc1);
-  color: #000;
-  padding: 5px 10px;
-  border-radius: 10px;
+  color: #ff00ff;
   font-weight: bold;
 }
 
-/* نوشته By Sina Salmasi */
 .sina {
-  background: #000;
-  padding: 5px 10px;
-  border-radius: 10px;
-  color: #f39cff;
-  font-weight: bold;
+  font-size: 12px;
+  color: #ffffff;
 }
 
-/* بدنه صفحه */
 .main-content {
-  padding: 60px 20px;
+  text-align: center;
+  padding: 50px 20px;
 }
 
-/* آیکون وسط صفحه */
 .center-icon {
-  width: 100px;
+  width: 120px;
   margin-bottom: 20px;
 }
 
-/* عنوان اصلی */
 h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px #0fffc1, 0 0 20px #f39cff;
+  font-size: 32px;
+  color: #ffffff;
 }
 
-/* متن پاراگراف */
 p {
-  font-size: 1rem;
-  color: #e0e0e0;
-}
-
-/* دکمه‌های صفحه اصلی */
-.nav-button {
-  background: linear-gradient(45deg, #0fffc1, #f39cff);
-  color: #000;
-  padding: 10px 25px;
-  margin: 10px;
-  border-radius: 12px;
-  font-weight: bold;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-block;
-  border: none;
-  box-shadow: 0 0 10px #f39cff;
-  transition: 0.3s;
-}
-
-.nav-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #0fffc1;
-}
-
-/* دکمه Back */
-.button {
-  margin-top: 30px;
-  padding: 10px 25px;
-  background: linear-gradient(45deg, #f39cff, #0fffc1);
-  border: none;
-  border-radius: 12px;
-  color: #000;
-  font-weight: bold;
-  font-size: 1rem;
-  text-decoration: none;
-  box-shadow: 0 0 10px #f39cff;
-  transition: 0.3s;
-}
-
-.button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px #0fffc1;
-}
-
-/* آیدی پایین صفحه */
-.telegram-id {
-  margin-top: 40px;
-  font-size: 0.8rem;
+  font-size: 18px;
   color: #cccccc;
 }
 
-/* استایل لوگوهای بلاکچین در EarlyCall */
-.blockchain-logos {
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.button-container a {
+  text-decoration: none;
+  padding: 12px 30px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 198, 255, 0.5);
+}
+
+.button-container a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 198, 255, 0.7);
+}
+
+/* Logo Images in EarlyCall */
+.chain-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   margin-top: 30px;
 }
 
-.chain-icon {
-  width: 70px; /* اندازه استاندارد لوگو */
+.chain-logos img {
+  width: 70px;
   height: auto;
-  margin: 15px;
-  border-radius: 12px;
-  transition: 0.3s;
+  transition: transform 0.3s;
 }
 
-.chain-icon:hover {
+.chain-logos img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px #0fffc1;
+}
+
+/* EarlyCall Text */
+.earlycall-text {
+  color: #ffffff;
+  font-size: 18px;
+  max-width: 800px;
+  margin: 30px auto;
+  line-height: 1.6;
+}
+
+/* Back Button */
+.back-button {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 25px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Page */
+.contact-text {
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-links {
+  margin-top: 20px;
+}
+
+.contact-links a {
+  margin: 0 10px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+
+.contact-links img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
