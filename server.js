@@ -1,13 +1,12 @@
 const express = require('express');
-const path = require('path');
-
 const app = express();
-const PORT = process.env.PORT || 3000;
+const path = require('path');
+const fs = require('fs');
 
-// Serve static files from 'public' folder
-app.use('/public', express.static(path.join(__dirname, 'public')));
+// Serve static files correctly
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Routes for HTML pages
+// Routes to serve HTML pages
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
@@ -28,12 +27,19 @@ app.get('/about.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'about.html'));
 });
 
-// 404 handler
-app.use((req, res) => {
-  res.status(404).send('<h1>❌ Page not found</h1>');
+// API endpoint to get signals.json
+app.get('/api/signals', (req, res) => {
+  const signalsPath = path.join(__dirname, 'signals.json');
+  fs.readFile(signalsPath, 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading signals:', err);
+      return res.status(500).json({ error: 'Error reading signals' });
+    }
+    res.json(JSON.parse(data));
+  });
 });
 
-// Start server
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`✅ OrbitalScan running on http://localhost:${PORT}`);
+  console.log(`OrbitalScan MiniApp is running on http://localhost:${PORT}`);
 });

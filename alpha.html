@@ -2,50 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EarlyCall - OrbitalScan</title>
-  <link rel="stylesheet" href="public/style.css">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap">
 </head>
 <body>
+  <div class="overlay">
+    <div class="content">
+      <span class="beta-tag">BETA VERSION</span>
+      <span class="by-tag">By Sina Salmasi Emirate Co.</span>
 
-  <div class="main-content">
-    <h1>Early Call Signals</h1>
-    <p>Select a blockchain to view fresh calls!</p>
+      <h1 class="title">🚀 Today's Signals by Blockchain</h1>
 
-    <div class="chain-logos">
-      <img src="public/images/eth.png" alt="ETH" onclick="showTokens('eth')">
-      <img src="public/images/sol.png" alt="SOL" onclick="showTokens('sol')">
-      <img src="public/images/bsc.png" alt="BSC" onclick="showTokens('bsc')">
+      <div class="chains">
+        <button class="chain-btn" onclick="loadSignals('eth')">
+          <img src="/images/eth.png" class="chain-icon">Ethereum
+        </button>
+        <button class="chain-btn" onclick="loadSignals('sol')">
+          <img src="/images/sol.png" class="chain-icon">Solana
+        </button>
+        <button class="chain-btn" onclick="loadSignals('bsc')">
+          <img src="/images/bsc.png" class="chain-icon">BSC
+        </button>
+      </div>
+
+      <div id="signals-container">
+        <p class="info-text">Select a blockchain to view signals.</p>
+      </div>
+
+      <div class="back-btn">
+        <a href="/" class="btn">🔙 Back to Home</a>
+      </div>
     </div>
-
-    <div id="token-list" class="earlycall-text"></div>
-
-    <div class="back-button-container">
-      <a href="/" class="back-button">🔙 Back to Home</a>
-    </div>
-
   </div>
 
-  <script>
-    function showTokens(chain) {
-      const tokenList = {
-        eth: ["🔹 ETH Token 1", "🔹 ETH Token 2", "🔹 ETH Token 3"],
-        sol: ["🔹 SOL Token 1", "🔹 SOL Token 2", "🔹 SOL Token 3"],
-        bsc: ["🔹 BSC Token 1", "🔹 BSC Token 2", "🔹 BSC Token 3"]
-      };
-
-      const listDiv = document.getElementById("token-list");
-      listDiv.innerHTML = "";
-
-      if (tokenList[chain]) {
-        tokenList[chain].forEach(token => {
-          const p = document.createElement("p");
-          p.textContent = token;
-          listDiv.appendChild(p);
-        });
-      }
-    }
-  </script>
-
+  <script src="/signals.js"></script>
 </body>
 </html>

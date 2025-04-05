@@ -1,147 +1,321 @@
-body {
+/* ======= Reset ======= */
+* {
   margin: 0;
   padding: 0;
-  background-image: url('/public/images/bg-cyberpunk.jpg');
+  box-sizing: border-box;
+}
+
+/* ======= Background ======= */
+.overlay {
+  background: url('/images/bg-cyberpunk.jpg') no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
-  font-family: 'Arial', sans-serif;
-}
-
-.top-bar {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+}
+
+/* ======= Main Content ======= */
+.content {
   background: rgba(0, 0, 0, 0.6);
-  font-size: 14px;
-  color: #ffffff;
-}
-
-.beta {
-  color: #ff00ff;
-  font-weight: bold;
-}
-
-.sina {
-  font-size: 12px;
-  color: #ffffff;
-}
-
-.main-content {
+  padding: 40px;
+  border-radius: 20px;
   text-align: center;
-  padding: 50px 20px;
+  width: 90%;
+  max-width: 600px;
 }
 
-.center-icon {
-  width: 120px;
+/* ======= Logo ======= */
+.main-logo {
+  width: 80px;
+  height: 80px;
   margin-bottom: 20px;
 }
 
-h1 {
-  font-size: 32px;
-  color: #ffffff;
-}
-
-p {
-  font-size: 18px;
-  color: #cccccc;
-}
-
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-top: 40px;
-}
-
-.button-container a {
-  text-decoration: none;
-  padding: 12px 30px;
-  background: linear-gradient(45deg, #00c6ff, #0072ff);
-  color: white;
+/* ======= Titles and Text ======= */
+.main-title {
+  color: #00ffe0;
+  font-size: 24px;
+  margin-bottom: 20px;
   font-weight: bold;
-  border-radius: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 200px;
-  text-align: center;
-  font-size: 18px;
-  box-shadow: 0 4px 8px rgba(0, 198, 255, 0.5);
 }
 
-.button-container a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 198, 255, 0.7);
+.main-description {
+  color: white;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 1.5;
 }
 
-/* Logo Images in EarlyCall */
-.chain-logos {
+/* ======= Buttons ======= */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #00ffe0;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #00cccc;
+}
+
+/* ======= MiniApp Link ======= */
+.miniapp-link {
+  color: #ccc;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* ======= Chains Section (alpha.html) ======= */
+.title {
+  color: #00ffe0;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.chains {
+  margin: 20px 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.chain-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #00ffe0;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.chain-btn:hover {
+  background-color: #00cccc;
+}
+
+.chain-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+#signals-container {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* ======= Back Button ======= */
+.back-btn {
   margin-top: 30px;
 }
 
-.chain-logos img {
-  width: 70px;
-  height: auto;
-  transition: transform 0.3s;
+.back-btn .btn {
+  background-color: #00ffe0;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
 }
 
-.chain-logos img:hover {
-  transform: scale(1.1);
+.back-btn .btn:hover {
+  background-color: #00cccc;
 }
 
-/* EarlyCall Text */
-.earlycall-text {
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+body, html {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.beta-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff0066;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.by-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #00ffe0;
+  font-size: 12px;
+}
+
+.content {
+  position: relative;
+  backdrop-filter: blur(8px);
+  background: rgba(0,0,0,0.7);
+  border: 2px solid #00ffe0;
+  box-shadow: 0 0 20px #00ffe0;
+}
+
+.title {
+  font-size: 22px;
+  text-shadow: 0 0 10px #00ffe0;
+  margin-bottom: 30px;
+}
+
+.chain-btn {
+  background: linear-gradient(45deg, #ff0066, #00ffe0);
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.chain-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #ff0066;
+}
+
+.chain-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+#signals-container {
+  margin-top: 20px;
+  color: white;
+  text-shadow: 0 0 5px #00ffe0;
+}
+
+.info-text {
+  color: #cccccc;
+}
+
+.back-btn .btn {
+  background: #ff0066;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.back-btn .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff0066;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+body, html {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.main-container {
+  position: relative;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+  padding: 30px;
+  border: 2px solid #ff0066;
+  box-shadow: 0 0 20px #ff0066;
+  backdrop-filter: blur(6px);
+  width: 600px;
+}
+
+.beta-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff0066;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.by-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #00ffe0;
+  font-size: 12px;
+}
+
+.main-logo {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.glitch-title {
+  font-size: 36px;
+  color: #00ffe0;
+  text-shadow: 0 0 10px #00ffe0;
+  animation: glitch 1.5s infinite alternate;
+}
+
+@keyframes glitch {
+  0%, 100% { text-shadow: 0 0 8px #00ffe0; }
+  50% { text-shadow: 0 0 20px #ff0066; }
+}
+
+.main-description {
   color: #ffffff;
-  font-size: 18px;
-  max-width: 800px;
-  margin: 30px auto;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   line-height: 1.6;
 }
 
-/* Back Button */
-.back-button {
-  display: inline-block;
-  margin-top: 40px;
-  padding: 10px 25px;
-  background: linear-gradient(45deg, #ff00cc, #3333ff);
+.home-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.home-btn {
+  background: linear-gradient(45deg, #ff0066, #00ffe0);
   color: white;
-  border-radius: 8px;
+  padding: 10px 25px;
   text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s;
+  font-size: 14px;
+  border-radius: 25px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.back-button:hover {
-  transform: scale(1.05);
+.home-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px #00ffe0;
 }
 
-/* Contact Page */
-.contact-text {
-  color: #ffffff;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.contact-links {
-  margin-top: 20px;
-}
-
-.contact-links a {
-  margin: 0 10px;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-}
-
-.contact-links img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.footer-tag {
+  font-size: 12px;
+  color: #cccccc;
+  margin-top: 10px;
+  opacity: 0.8;
 }
