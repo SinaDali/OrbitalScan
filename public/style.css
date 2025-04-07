@@ -409,3 +409,77 @@ body, html {
   transform: translateY(-4px);
   box-shadow: 0 0 15px #ff0066;
 }
+/* ======= Signal Card ======= */
+.signal-card {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid #00ffe0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #00ffe0;
+  text-align: left;
+}
+
+.signal-card h3 {
+  color: #00ffe0;
+  margin-bottom: 10px;
+}
+
+.signal-card p {
+  color: white;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.signal-card .links a {
+  margin-right: 10px;
+  color: #ff0066;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.signal-card .links a:hover {
+  text-decoration: underline;
+}
+
+.dyor-message {
+  margin-top: 30px;
+  color: #cccccc;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+/* ======= Title ======= */
+.title {
+  font-size: 26px;
+  color: #00ffe0;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ======= Beta Tag and By Tag ======= */
+.beta-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff0066;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+}
+
+.by-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #00ffe0;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+}

@@ -1,242 +1,86 @@
 [
-    {
-        "chain": "ETH",
-        "text": "☘️**(First Call)** $BitBonds got first call from: \n[Einstein Calls](https://t.me/FindTheGoldenChannel/2516)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 574.57\nTotal calls: 1 \n‎`0xbbB741050e39CB6AcC4197d16f385DBCc526FC79`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xbbB741050e39CB6AcC4197d16f385DBCc526FC79) | [Maestro](https://t.me/MaestroSniperBot?start=0xbbB741050e39CB6AcC4197d16f385DBCc526FC79-callanalyser) | [Photon](https://photon.tinyastro.io/en/r/@CallAnalyser/0xbbB741050e39CB6AcC4197d16f385DBCc526FC79)\n\n🔎**Scan:** [DexS](https://dexscreener.com/ethereum/0x3Cf82455149586F791F71b779419f7D81c6E6FE4) | [DexT](https://www.dextools.io/app/en/ether/pair-explorer/0x3Cf82455149586F791F71b779419f7D81c6E6FE4) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xbbB741050e39CB6AcC4197d16f385DBCc526FC79)\n**🔒MCap**: $48.5K | **Liquid**: $17.3K | **Holders**: 135\n**🕚Volume: 6h**: $40.2K | **1h**: $14.5K\n🔰**Chain:** #ETHEREUM | 🔰**Name:** BitBonds\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001561269312) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001561269312) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserEth](https://t.me/CallAnalyserEth)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🥇Top Trading Bots & Tools (updated) [here🥇](https://t.me/CallAnalyser/106355)",
-        "buy_links": [
-            "https://dexscreener.com/ethereum/0x3Cf82455149586F791F71b779419f7D81c6E6FE4)"
-        ],
-        "date": "2025-04-05 01:55:21+00:00"
+  {
+    "name": "CoolCoin",
+    "contract": "0x123abc...",
+    "links": {
+      "dexscreener": "https://dexscreener.com/eth/0x123abc...",
+      "twitter": "https://twitter.com/coolcoin",
+      "telegram": "https://t.me/coolcoin"
     },
-    {
-        "chain": "ETH",
-        "text": "☘️**(Update)** $AMAZON got one more call from: \n[Nagato's Gem Calls](https://t.me/NagatoGemCalls/5533)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 499.09\n[Total calls: 6](https://t.me/CallAnalyser/123392) \n‎`0xf77137705C38Ff25b7045de17Df1852914713Fc5`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xf77137705C38Ff25b7045de17Df1852914713Fc5) | [Maestro](https://t.me/MaestroSniperBot?start=0xf77137705C38Ff25b7045de17Df1852914713Fc5-callanalyser) | [Photon](https://photon.tinyastro.io/en/r/@CallAnalyser/0xf77137705C38Ff25b7045de17Df1852914713Fc5)\n\n🔎**Scan:** [DexS](https://dexscreener.com/ethereum/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5) | [DexT](https://www.dextools.io/app/en/ether/pair-explorer/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xf77137705C38Ff25b7045de17Df1852914713Fc5)\n**🔒MCap**: $313.5K | **Liquid**: $44.8K | **Holders**: 509\n**🕚Volume: 6h**: $695.2K | **1h**: $79.0K\n🔰**Chain:** #ETHEREUM | 🔰**Name:** Amazon Dot Com\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001641270416) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001641270416) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserEth](https://t.me/CallAnalyserEth)\n➖️➖️➖️➖️➖️➖️➖️➖\n💥 BSC calls only 👉 [link](https://t.me/CallAnalyserBSC)",
-        "buy_links": [
-            "https://dexscreener.com/ethereum/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5)"
-        ],
-        "date": "2025-04-05 00:37:53+00:00"
+    "marketcap": "$300K",
+    "network": "ETH",
+    "confidence": 90
+  },
+  {
+    "name": "New MemeCoin",
+    "contract": "0x1234567890abcdef1234567890abcdef12345678",
+    "links": {
+      "dexscreener": "https://dexscreener.com/eth/0x1234567890abcdef1234567890abcdef12345678",
+      "twitter": "https://twitter.com/testcoin",
+      "telegram": "https://t.me/testcoin"
     },
-    {
-        "chain": "ETH",
-        "text": "☘️**(Update)** $amazon_dot_com_ got one more call from: \n[ApeWizardCalls](https://t.me/ApeWizardCalls/5142)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 578.21\n[Total calls: 7](https://t.me/CallAnalyser/123393) \n‎`0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913) | [Maestro](https://t.me/MaestroSniperBot?start=0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913-callanalyser) | [Photon](https://photon.tinyastro.io/en/r/@CallAnalyser/0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913)\n\n🔎**Scan:** [DexS](https://dexscreener.com/ethereum/0x1099533489dF45B10D88308B177453a44129b307) | [DexT](https://www.dextools.io/app/en/ether/pair-explorer/0x1099533489dF45B10D88308B177453a44129b307) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913)\n**🔒MCap**: $92.8K | **Liquid**: $26.5K | **Holders**: 372\n**🕚Volume: 6h**: $567.6K | **1h**: $38.5K\n🔰**Chain:** #ETHEREUM | 🔰**Name:** amazon_dot_com_\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001410604349) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001410604349) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserEth](https://t.me/CallAnalyserEth)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🌴One-Click [this link](https://t.me/addlist/rV1KJiyIYTdkMTM1) to add all of our channels.",
-        "buy_links": [
-            "https://dexscreener.com/ethereum/0x1099533489dF45B10D88308B177453a44129b307)"
-        ],
-        "date": "2025-04-05 00:04:54+00:00"
+    "marketcap": "N/A",
+    "network": "Unknown",
+    "confidence": 80
+  },
+  {
+    "name": "New MemeCoin",
+    "contract": "0x1234567890abcdef1234567890abcdef12345678",
+    "links": {
+      "dexscreener": "https://dexscreener.com/eth/0x1234567890abcdef1234567890abcdef12345678",
+      "twitter": "https://twitter.com/testcoin",
+      "telegram": "https://t.me/testcoin"
     },
-    {
-        "chain": "ETH",
-        "text": "☘️**(Update)** $AMAZON got one more call from: \n[Maythous Degens](https://t.me/maythousdegens/1245)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 755.9\n[Total calls: 5](https://t.me/CallAnalyser/123392) \n‎`0xf77137705C38Ff25b7045de17Df1852914713Fc5`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xf77137705C38Ff25b7045de17Df1852914713Fc5) | [Maestro](https://t.me/MaestroSniperBot?start=0xf77137705C38Ff25b7045de17Df1852914713Fc5-callanalyser) | [Photon](https://photon.tinyastro.io/en/r/@CallAnalyser/0xf77137705C38Ff25b7045de17Df1852914713Fc5)\n\n🔎**Scan:** [DexS](https://dexscreener.com/ethereum/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5) | [DexT](https://www.dextools.io/app/en/ether/pair-explorer/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xf77137705C38Ff25b7045de17Df1852914713Fc5)\n**🔒MCap**: $137.0K | **Liquid**: $29.4K | **Holders**: 435\n**🕚Volume: 6h**: $579.3K | **1h**: $49.5K\n🔰**Chain:** #ETHEREUM | 🔰**Name:** Amazon Dot Com\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001989363348) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001989363348) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserEth](https://t.me/CallAnalyserEth)\n➖️➖️➖️➖️➖️➖️➖️➖\n💥 BSC calls only 👉 [link](https://t.me/CallAnalyserBSC)",
-        "buy_links": [
-            "https://dexscreener.com/ethereum/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5)"
-        ],
-        "date": "2025-04-04 22:59:13+00:00"
+    "marketcap": "N/A",
+    "network": "Unknown",
+    "confidence": 80
+  },
+  {
+    "name": "New MemeCoin",
+    "contract": "0x1234567890abcdef1234567890abcdef12345678",
+    "links": {
+      "dexscreener": "https://dexscreener.com/eth/0x1234567890abcdef1234567890abcdef12345678",
+      "twitter": "https://twitter.com/testcoin",
+      "telegram": "https://t.me/testcoin"
     },
-    {
-        "chain": "ETH",
-        "text": "☘️**(Update)** $amazon_dot_com_ got one more call from: \n[Nagato's Gem Calls](https://t.me/NagatoGemCalls/5532)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 500.0\n[Total calls: 6](https://t.me/CallAnalyser/123393) \n‎`0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913) | [Maestro](https://t.me/MaestroSniperBot?start=0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913-callanalyser) | [Photon](https://photon.tinyastro.io/en/r/@CallAnalyser/0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913)\n\n🔎**Scan:** [DexS](https://dexscreener.com/ethereum/0x1099533489dF45B10D88308B177453a44129b307) | [DexT](https://www.dextools.io/app/en/ether/pair-explorer/0x1099533489dF45B10D88308B177453a44129b307) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913)\n**🔒MCap**: $249.2K | **Liquid**: $43.1K | **Holders**: 359\n**🕚Volume: 6h**: $470.2K | **1h**: $175.3K\n🔰**Chain:** #ETHEREUM | 🔰**Name:** amazon_dot_com_\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001641270416) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001641270416) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserEth](https://t.me/CallAnalyserEth)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):☘️Most profit wallets and copy trade **Zelfiguru** 👉 [SOL](https://t.me/zelfiguru_on_solana_bot?start=NjU3NjI3Mjg3OA==) | [ETH](https://t.me/zelfiguru_on_eth_bot?start=NjU3NjI3Mjg3OA==) | [BASE](https://t.me/zelfiguru_on_base_bot?start=NjU3NjI3Mjg3OA==)",
-        "buy_links": [
-            "https://dexscreener.com/ethereum/0x1099533489dF45B10D88308B177453a44129b307)"
-        ],
-        "date": "2025-04-04 22:18:05+00:00"
+    "marketcap": "N/A",
+    "network": "Unknown",
+    "confidence": 80
+  },
+  {
+    "name": "New MemeCoin",
+    "contract": "0x1234567890abcdef1234567890abcdef12345678",
+    "links": {
+      "dexscreener": "https://dexscreener.com/eth/0x1234567890abcdef1234567890abcdef12345678",
+      "twitter": "https://twitter.com/testcoin",
+      "telegram": "https://t.me/testcoin"
     },
-    {
-        "chain": "ETH",
-        "text": "☘️**(Update)** $amazon_dot_com_ got one more call from: \n[Brody Calls 📣💎](https://t.me/BrodyCalls/8767)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 590.81\n[Total calls: 5](https://t.me/CallAnalyser/123393) \n‎`0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913) | [Maestro](https://t.me/MaestroSniperBot?start=0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913-callanalyser) | [Photon](https://photon.tinyastro.io/en/r/@CallAnalyser/0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913)\n\n🔎**Scan:** [DexS](https://dexscreener.com/ethereum/0x1099533489dF45B10D88308B177453a44129b307) | [DexT](https://www.dextools.io/app/en/ether/pair-explorer/0x1099533489dF45B10D88308B177453a44129b307) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913)\n**🔒MCap**: $217.4K | **Liquid**: $40.2K | **Holders**: 350\n**🕚Volume: 6h**: $455.5K | **1h**: $172.8K\n🔰**Chain:** #ETHEREUM | 🔰**Name:** amazon_dot_com_\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001237108606) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001237108606) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserEth](https://t.me/CallAnalyserEth)\n➖️➖️➖️➖️➖️➖️➖️➖\n💥 BSC calls only 👉 [link](https://t.me/CallAnalyserBSC)",
-        "buy_links": [
-            "https://dexscreener.com/ethereum/0x1099533489dF45B10D88308B177453a44129b307)"
-        ],
-        "date": "2025-04-04 22:12:50+00:00"
+    "marketcap": "N/A",
+    "network": "Unknown",
+    "confidence": 80
+  },
+  {
+    "name": "New MemeCoin",
+    "contract": "0x1234567890abcdef1234567890abcdef12345678",
+    "links": {
+      "dexscreener": "https://dexscreener.com/eth/0x1234567890abcdef1234567890abcdef12345678",
+      "twitter": "https://twitter.com/testcoin",
+      "telegram": "https://t.me/testcoin"
     },
-    {
-        "chain": "ETH",
-        "text": "☘️**(Update)** $amazon_dot_com_ got one more call from: \n[Shyroshi Gambles](https://t.me/SHYROSHIGAMBLES/7640)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 523.77\n[Total calls: 4](https://t.me/CallAnalyser/123393) \n‎`0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913) | [Maestro](https://t.me/MaestroSniperBot?start=0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913-callanalyser) | [Photon](https://photon.tinyastro.io/en/r/@CallAnalyser/0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913)\n\n🔎**Scan:** [DexS](https://dexscreener.com/ethereum/0x1099533489dF45B10D88308B177453a44129b307) | [DexT](https://www.dextools.io/app/en/ether/pair-explorer/0x1099533489dF45B10D88308B177453a44129b307) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xaD0b7518Cb3FCF01dBCB449af0dd9eB70FEDa913)\n**🔒MCap**: $277.7K | **Liquid**: $45.4K | **Holders**: 348\n**🕚Volume: 6h**: $444.6K | **1h**: $175.8K\n🔰**Chain:** #ETHEREUM | 🔰**Name:** amazon_dot_com_\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001979271631) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001979271631) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserEth](https://t.me/CallAnalyserEth)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):☘️Most profit wallets and copy trade **Zelfiguru** 👉 [SOL](https://t.me/zelfiguru_on_solana_bot?start=NjU3NjI3Mjg3OA==) | [ETH](https://t.me/zelfiguru_on_eth_bot?start=NjU3NjI3Mjg3OA==) | [BASE](https://t.me/zelfiguru_on_base_bot?start=NjU3NjI3Mjg3OA==)",
-        "buy_links": [
-            "https://dexscreener.com/ethereum/0x1099533489dF45B10D88308B177453a44129b307)"
-        ],
-        "date": "2025-04-04 22:06:00+00:00"
+    "marketcap": "N/A",
+    "network": "Unknown",
+    "confidence": 80
+  },
+  {
+    "name": "New MemeCoin",
+    "contract": "",
+    "links": {
+      "dexscreener": "",
+      "twitter": "",
+      "telegram": ""
     },
-    {
-        "chain": "ETH",
-        "text": "☘️**(Update)** $AMAZON got one more call from: \n[Brody Calls 📣💎](https://t.me/BrodyCalls/8766)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 590.81\n[Total calls: 4](https://t.me/CallAnalyser/123392) \n‎`0xf77137705c38ff25b7045de17df1852914713fc5`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xf77137705c38ff25b7045de17df1852914713fc5) | [Maestro](https://t.me/MaestroSniperBot?start=0xf77137705c38ff25b7045de17df1852914713fc5-callanalyser) | [Photon](https://photon.tinyastro.io/en/r/@CallAnalyser/0xf77137705c38ff25b7045de17df1852914713fc5)\n\n🔎**Scan:** [DexS](https://dexscreener.com/ethereum/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5) | [DexT](https://www.dextools.io/app/en/ether/pair-explorer/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xf77137705C38Ff25b7045de17Df1852914713Fc5)\n**🔒MCap**: $168.5K | **Liquid**: $32.2K | **Holders**: 397\n**🕚Volume: 6h**: $480.2K | **1h**: $335.6K\n🔰**Chain:** #ETHEREUM | 🔰**Name:** Amazon Dot Com\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001237108606) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001237108606) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserEth](https://t.me/CallAnalyserEth)\n➖️➖️➖️➖️➖️➖️➖️➖\n💥 BSC calls only 👉 [link](https://t.me/CallAnalyserBSC)",
-        "buy_links": [
-            "https://dexscreener.com/ethereum/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5)"
-        ],
-        "date": "2025-04-04 21:41:29+00:00"
-    },
-    {
-        "chain": "ETH",
-        "text": "☘️**(Update)** $AMAZON got one more call from: \n[The Don’s Degens](https://t.me/degensgems/15614)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 541.11\n[Total calls: 3](https://t.me/CallAnalyser/123392) \n‎`0xf77137705c38ff25b7045de17df1852914713fc5`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xf77137705c38ff25b7045de17df1852914713fc5) | [Maestro](https://t.me/MaestroSniperBot?start=0xf77137705c38ff25b7045de17df1852914713fc5-callanalyser) | [Photon](https://photon.tinyastro.io/en/r/@CallAnalyser/0xf77137705c38ff25b7045de17df1852914713fc5)\n\n🔎**Scan:** [DexS](https://dexscreener.com/ethereum/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5) | [DexT](https://www.dextools.io/app/en/ether/pair-explorer/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xf77137705C38Ff25b7045de17Df1852914713Fc5)\n**🔒MCap**: $199.1K | **Liquid**: $34.8K | **Holders**: 379\n**🕚Volume: 6h**: $457.2K | **1h**: $350.3K\n🔰**Chain:** #ETHEREUM | 🔰**Name:** Amazon Dot Com\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001587879377) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001587879377) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserEth](https://t.me/CallAnalyserEth)\n➖️➖️➖️➖️➖️➖️➖️➖\n💥 BSC calls only 👉 [link](https://t.me/CallAnalyserBSC)",
-        "buy_links": [
-            "https://dexscreener.com/ethereum/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5)"
-        ],
-        "date": "2025-04-04 21:35:13+00:00"
-    },
-    {
-        "chain": "ETH",
-        "text": "☘️**(Update)** $AMAZON got one more call from: \n[Shyroshi Gambles](https://t.me/SHYROSHIGAMBLES/7638)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 523.77\n[Total calls: 2](https://t.me/CallAnalyser/123392) \n‎`0xf77137705C38Ff25b7045de17Df1852914713Fc5`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xf77137705C38Ff25b7045de17Df1852914713Fc5) | [Maestro](https://t.me/MaestroSniperBot?start=0xf77137705C38Ff25b7045de17Df1852914713Fc5-callanalyser) | [Photon](https://photon.tinyastro.io/en/r/@CallAnalyser/0xf77137705C38Ff25b7045de17Df1852914713Fc5)\n\n🔎**Scan:** [DexS](https://dexscreener.com/ethereum/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5) | [DexT](https://www.dextools.io/app/en/ether/pair-explorer/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xf77137705C38Ff25b7045de17Df1852914713Fc5)\n**🔒MCap**: $199.1K | **Liquid**: $34.8K | **Holders**: 380\n**🕚Volume: 6h**: $457.2K | **1h**: $350.3K\n🔰**Chain:** #ETHEREUM | 🔰**Name:** Amazon Dot Com\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001979271631) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001979271631) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserEth](https://t.me/CallAnalyserEth)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🌴One-Click [this link](https://t.me/addlist/rV1KJiyIYTdkMTM1) to add all of our channels.",
-        "buy_links": [
-            "https://dexscreener.com/ethereum/0xd1e07417d81EDce7156F059E7F4A676d695c7Bd5)"
-        ],
-        "date": "2025-04-04 21:34:59+00:00"
-    },
-    {
-        "chain": "SOL",
-        "text": "☘️**(Update)** $Star got one more call from: \n[SD’s CASINO](https://t.me/SDsCASINO/5397)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 472.23\n[Total calls: 2](https://t.me/CallAnalyser/123411) \n‎`79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump`‎\n\n🎯**BUY**: [STB](https://t.me/SolTradingBot?start=79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump-QuEi7kfPK) | [Auto Snipe AI](https://autosnipe.ai/details/79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump?referral_code=asabj0i) | [Bonk](https://t.me/bonkbot_bot?start=ref_analyser_ca_79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser/79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump)\n\n🔎**Scan:**  [MEVX](https://t.me/MevxTradingBot?start=79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump-CallAnalyser) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser1/79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump) | [PIRB Scan](https://t.me/PIRBViewBot?start=79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump) | [DexS](https://dexscreener.com/solana/None) \n**🔒MCap**: $28.6K\n\n🔰**Chain:** #SOLANA | 🔰**Name:** Star the Reindeer\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001895548612) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001895548612) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserSol](https://t.me/CallAnalyserSol)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🌴One-Click [this link](https://t.me/addlist/rV1KJiyIYTdkMTM1) to add all of our channels.",
-        "buy_links": [
-            "https://dexscreener.com/solana/None)"
-        ],
-        "date": "2025-04-05 05:31:46+00:00"
-    },
-    {
-        "chain": "SOL",
-        "text": "☘️**(First Call)** $Watch got first call from: \n[The Alchemist](https://t.me/CryptoAlche/1669)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 631.86\nTotal calls: 1 \n‎`5HJegawps6jYGQKmubpcmi7H1dwNLWnLRiC2rF4bpump`‎\n\n🎯**BUY**: [STB](https://t.me/SolTradingBot?start=5HJegawps6jYGQKmubpcmi7H1dwNLWnLRiC2rF4bpump-QuEi7kfPK) | [Auto Snipe AI](https://autosnipe.ai/details/5HJegawps6jYGQKmubpcmi7H1dwNLWnLRiC2rF4bpump?referral_code=asabj0i) | [Bonk](https://t.me/bonkbot_bot?start=ref_analyser_ca_5HJegawps6jYGQKmubpcmi7H1dwNLWnLRiC2rF4bpump) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser/5HJegawps6jYGQKmubpcmi7H1dwNLWnLRiC2rF4bpump)\n\n🔎**Scan:**  [MEVX](https://t.me/MevxTradingBot?start=5HJegawps6jYGQKmubpcmi7H1dwNLWnLRiC2rF4bpump-CallAnalyser) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser1/5HJegawps6jYGQKmubpcmi7H1dwNLWnLRiC2rF4bpump) | [PIRB Scan](https://t.me/PIRBViewBot?start=5HJegawps6jYGQKmubpcmi7H1dwNLWnLRiC2rF4bpump) | [DexS](https://dexscreener.com/solana/HGyedtZ5ccetkhx5DU8vb55kbSRmfJLPVD8GqKrNomrC) \n**🔒MCap**: $541.8K | **Liquid**: $70.5K\n**🕚Volume: 6h**: $763.8K | **1h**: $26.0K\n🔰**Chain:** #SOLANA | 🔰**Name:** Watchcoin\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001214500831) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001214500831) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserSol](https://t.me/CallAnalyserSol)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🌴One-Click [this link](https://t.me/addlist/rV1KJiyIYTdkMTM1) to add all of our channels.",
-        "buy_links": [
-            "https://dexscreener.com/solana/HGyedtZ5ccetkhx5DU8vb55kbSRmfJLPVD8GqKrNomrC)"
-        ],
-        "date": "2025-04-05 04:59:04+00:00"
-    },
-    {
-        "chain": "SOL",
-        "text": "☘️**(First Call)** $KvK got first call from: \n[Mark Degens](https://t.me/MarkDegens/15411)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 468.42\nTotal calls: 1 \n‎`36hPeebKEpW8b3GYmsaxt1uMhP9J1VSCSH9iy7SUpump`‎\n\n🎯**BUY**: [STB](https://t.me/SolTradingBot?start=36hPeebKEpW8b3GYmsaxt1uMhP9J1VSCSH9iy7SUpump-QuEi7kfPK) | [Auto Snipe AI](https://autosnipe.ai/details/36hPeebKEpW8b3GYmsaxt1uMhP9J1VSCSH9iy7SUpump?referral_code=asabj0i) | [Bonk](https://t.me/bonkbot_bot?start=ref_analyser_ca_36hPeebKEpW8b3GYmsaxt1uMhP9J1VSCSH9iy7SUpump) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser/36hPeebKEpW8b3GYmsaxt1uMhP9J1VSCSH9iy7SUpump)\n\n🔎**Scan:**  [MEVX](https://t.me/MevxTradingBot?start=36hPeebKEpW8b3GYmsaxt1uMhP9J1VSCSH9iy7SUpump-CallAnalyser) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser1/36hPeebKEpW8b3GYmsaxt1uMhP9J1VSCSH9iy7SUpump) | [PIRB Scan](https://t.me/PIRBViewBot?start=36hPeebKEpW8b3GYmsaxt1uMhP9J1VSCSH9iy7SUpump) | [DexS](https://dexscreener.com/solana/3Goh37TMrrqbWZW7bNvKXRqfS69a37aRDkSHXuZopi8n) \n**🔒MCap**: $660.6K | **Liquid**: $83.0K\n**🕚Volume: 6h**: $1.8M | **1h**: $1.1M\n🔰**Chain:** #SOLANA | 🔰**Name:** Kanto vs Kansai\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001763265784) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001763265784) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserSol](https://t.me/CallAnalyserSol)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):☘️Most profit wallets and copy trade **Zelfiguru** 👉 [SOL](https://t.me/zelfiguru_on_solana_bot?start=NjU3NjI3Mjg3OA==) | [ETH](https://t.me/zelfiguru_on_eth_bot?start=NjU3NjI3Mjg3OA==) | [BASE](https://t.me/zelfiguru_on_base_bot?start=NjU3NjI3Mjg3OA==)",
-        "buy_links": [
-            "https://dexscreener.com/solana/3Goh37TMrrqbWZW7bNvKXRqfS69a37aRDkSHXuZopi8n)"
-        ],
-        "date": "2025-04-05 04:58:29+00:00"
-    },
-    {
-        "chain": "SOL",
-        "text": "☘️**(First Call)** $Star got first call from: \n[Saturo’s Journal](https://t.me/satorusjournal/748)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 349.9\nTotal calls: 1 \n‎`79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump`‎\n\n🎯**BUY**: [STB](https://t.me/SolTradingBot?start=79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump-QuEi7kfPK) | [Auto Snipe AI](https://autosnipe.ai/details/79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump?referral_code=asabj0i) | [Bonk](https://t.me/bonkbot_bot?start=ref_analyser_ca_79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser/79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump)\n\n🔎**Scan:**  [MEVX](https://t.me/MevxTradingBot?start=79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump-CallAnalyser) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser1/79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump) | [PIRB Scan](https://t.me/PIRBViewBot?start=79kiqBW7gPe5XU4XLn1dTfvLPDtEBMt9PJmNGymmpump) | [DexS](https://dexscreener.com/solana/None) \n**🔒MCap**: $6.0K\n\n🔰**Chain:** #SOLANA | 🔰**Name:** Star the Reindeer\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1002407791519) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1002407791519) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserSol](https://t.me/CallAnalyserSol)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):☘️Most profit wallets and copy trade **Zelfiguru** 👉 [SOL](https://t.me/zelfiguru_on_solana_bot?start=NjU3NjI3Mjg3OA==) | [ETH](https://t.me/zelfiguru_on_eth_bot?start=NjU3NjI3Mjg3OA==) | [BASE](https://t.me/zelfiguru_on_base_bot?start=NjU3NjI3Mjg3OA==)",
-        "buy_links": [
-            "https://dexscreener.com/solana/None)"
-        ],
-        "date": "2025-04-05 04:47:44+00:00"
-    },
-    {
-        "chain": "SOL",
-        "text": "☘️**(Update)** $BIGCOIN got one more call from: \n[Fay Call](https://t.me/fay_calls/3053)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 661.08\n[Total calls: 3](https://t.me/CallAnalyser/123397) \n‎`HXtMWhXzhinrZtFSYaYVeyaGG9hkFRMbthL2Qu6rpump`‎\n\n🎯**BUY**: [STB](https://t.me/SolTradingBot?start=HXtMWhXzhinrZtFSYaYVeyaGG9hkFRMbthL2Qu6rpump-QuEi7kfPK) | [Auto Snipe AI](https://autosnipe.ai/details/HXtMWhXzhinrZtFSYaYVeyaGG9hkFRMbthL2Qu6rpump?referral_code=asabj0i) | [Bonk](https://t.me/bonkbot_bot?start=ref_analyser_ca_HXtMWhXzhinrZtFSYaYVeyaGG9hkFRMbthL2Qu6rpump) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser/HXtMWhXzhinrZtFSYaYVeyaGG9hkFRMbthL2Qu6rpump)\n\n🔎**Scan:**  [MEVX](https://t.me/MevxTradingBot?start=HXtMWhXzhinrZtFSYaYVeyaGG9hkFRMbthL2Qu6rpump-CallAnalyser) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser1/HXtMWhXzhinrZtFSYaYVeyaGG9hkFRMbthL2Qu6rpump) | [PIRB Scan](https://t.me/PIRBViewBot?start=HXtMWhXzhinrZtFSYaYVeyaGG9hkFRMbthL2Qu6rpump) | [DexS](https://dexscreener.com/solana/51eTB4ifojyfGz51dCf5uDjZ3egqCMjbSnT7fMiYmJgg) \n**🔒MCap**: $49.2K | **Liquid**: $21.1K\n**🕚Volume: 6h**: $346.6K | **1h**: $4.2K\n🔰**Chain:** #SOLANA | 🔰**Name:** BIGCOIN\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001594390210) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001594390210) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserSol](https://t.me/CallAnalyserSol)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🥇Top Trading Bots & Tools (updated) [here🥇](https://t.me/CallAnalyser/106355)",
-        "buy_links": [
-            "https://dexscreener.com/solana/51eTB4ifojyfGz51dCf5uDjZ3egqCMjbSnT7fMiYmJgg)"
-        ],
-        "date": "2025-04-05 04:35:49+00:00"
-    },
-    {
-        "chain": "SOL",
-        "text": "☘️**(First Call)** $TOTORO got first call from: \n[Hankuapes calls](https://t.me/hankusignal/3008)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 370.1\nTotal calls: 1 \n‎`EVB8Np8setRECvTxsCstNPa8vpuhPW1d6AYEsVk8pump`‎\n\n🎯**BUY**: [STB](https://t.me/SolTradingBot?start=EVB8Np8setRECvTxsCstNPa8vpuhPW1d6AYEsVk8pump-QuEi7kfPK) | [Auto Snipe AI](https://autosnipe.ai/details/EVB8Np8setRECvTxsCstNPa8vpuhPW1d6AYEsVk8pump?referral_code=asabj0i) | [Bonk](https://t.me/bonkbot_bot?start=ref_analyser_ca_EVB8Np8setRECvTxsCstNPa8vpuhPW1d6AYEsVk8pump) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser/EVB8Np8setRECvTxsCstNPa8vpuhPW1d6AYEsVk8pump)\n\n🔎**Scan:**  [MEVX](https://t.me/MevxTradingBot?start=EVB8Np8setRECvTxsCstNPa8vpuhPW1d6AYEsVk8pump-CallAnalyser) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser1/EVB8Np8setRECvTxsCstNPa8vpuhPW1d6AYEsVk8pump) | [PIRB Scan](https://t.me/PIRBViewBot?start=EVB8Np8setRECvTxsCstNPa8vpuhPW1d6AYEsVk8pump) | [DexS](https://dexscreener.com/solana/3m2wXGoxorNa3SdGrxryJ3BP3QFi4qFFZoNbEU2UZvPc) \n**🔒MCap**: $40.3K | **Liquid**: $20.7K\n**🕚Volume: 6h**: $1.5M | **1h**: $1.5M\n🔰**Chain:** #SOLANA | 🔰**Name:** GHIBLI TOTORO\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001246506231) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001246506231) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserSol](https://t.me/CallAnalyserSol)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🥇Top Trading Bots & Tools (updated) [here🥇](https://t.me/CallAnalyser/106355)",
-        "buy_links": [
-            "https://dexscreener.com/solana/3m2wXGoxorNa3SdGrxryJ3BP3QFi4qFFZoNbEU2UZvPc)"
-        ],
-        "date": "2025-04-05 04:34:59+00:00"
-    },
-    {
-        "chain": "SOL",
-        "text": "☘️**(First Call)** $Dogify got first call from: \n[CoCo 🔥TradeZ](https://t.me/crypt0coc0/9970)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 470.07\nTotal calls: 1 \n‎`6ctTAgTeKvVqSGS9jK5ktZWVHUic8BvPraPDZMTSpump`‎\n\n🎯**BUY**: [STB](https://t.me/SolTradingBot?start=6ctTAgTeKvVqSGS9jK5ktZWVHUic8BvPraPDZMTSpump-QuEi7kfPK) | [Auto Snipe AI](https://autosnipe.ai/details/6ctTAgTeKvVqSGS9jK5ktZWVHUic8BvPraPDZMTSpump?referral_code=asabj0i) | [Bonk](https://t.me/bonkbot_bot?start=ref_analyser_ca_6ctTAgTeKvVqSGS9jK5ktZWVHUic8BvPraPDZMTSpump) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser/6ctTAgTeKvVqSGS9jK5ktZWVHUic8BvPraPDZMTSpump)\n\n🔎**Scan:**  [MEVX](https://t.me/MevxTradingBot?start=6ctTAgTeKvVqSGS9jK5ktZWVHUic8BvPraPDZMTSpump-CallAnalyser) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser1/6ctTAgTeKvVqSGS9jK5ktZWVHUic8BvPraPDZMTSpump) | [PIRB Scan](https://t.me/PIRBViewBot?start=6ctTAgTeKvVqSGS9jK5ktZWVHUic8BvPraPDZMTSpump) | [DexS](https://dexscreener.com/solana/None) \n**🔒MCap**: $13.1K\n\n🔰**Chain:** #SOLANA | 🔰**Name:** Dogification  Dogify\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001582651667) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001582651667) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserSol](https://t.me/CallAnalyserSol)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🌴One-Click [this link](https://t.me/addlist/rV1KJiyIYTdkMTM1) to add all of our channels.",
-        "buy_links": [
-            "https://dexscreener.com/solana/None)"
-        ],
-        "date": "2025-04-05 04:26:23+00:00"
-    },
-    {
-        "chain": "SOL",
-        "text": "☘️**(Update)** $401K got one more call from: \n[Mark Degens](https://t.me/MarkDegens/15407)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 468.55\n[Total calls: 2](https://t.me/CallAnalyser/123294) \n‎`GnE4ENEezNzxLoxdfZa714KC8utWbqGnsT99DYCDpump`‎\n\n🎯**BUY**: [STB](https://t.me/SolTradingBot?start=GnE4ENEezNzxLoxdfZa714KC8utWbqGnsT99DYCDpump-QuEi7kfPK) | [Auto Snipe AI](https://autosnipe.ai/details/GnE4ENEezNzxLoxdfZa714KC8utWbqGnsT99DYCDpump?referral_code=asabj0i) | [Bonk](https://t.me/bonkbot_bot?start=ref_analyser_ca_GnE4ENEezNzxLoxdfZa714KC8utWbqGnsT99DYCDpump) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser/GnE4ENEezNzxLoxdfZa714KC8utWbqGnsT99DYCDpump)\n\n🔎**Scan:**  [MEVX](https://t.me/MevxTradingBot?start=GnE4ENEezNzxLoxdfZa714KC8utWbqGnsT99DYCDpump-CallAnalyser) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser1/GnE4ENEezNzxLoxdfZa714KC8utWbqGnsT99DYCDpump) | [PIRB Scan](https://t.me/PIRBViewBot?start=GnE4ENEezNzxLoxdfZa714KC8utWbqGnsT99DYCDpump) | [DexS](https://dexscreener.com/solana/4dvuaBvKuAJSZq9rHSj2d4nWiDuS96gLoG941wes6fDL) \n**🔒MCap**: $986.3K | **Liquid**: $114.2K\n**🕚Volume: 6h**: $650.0K | **1h**: $233.8K\n🔰**Chain:** #SOLANA | 🔰**Name:** 401K\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001763265784) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001763265784) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserSol](https://t.me/CallAnalyserSol)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🌴One-Click [this link](https://t.me/addlist/rV1KJiyIYTdkMTM1) to add all of our channels.",
-        "buy_links": [
-            "https://dexscreener.com/solana/4dvuaBvKuAJSZq9rHSj2d4nWiDuS96gLoG941wes6fDL)"
-        ],
-        "date": "2025-04-05 03:42:42+00:00"
-    },
-    {
-        "chain": "SOL",
-        "text": "☘️**(Update)** $SUPA got one more call from: \n[Degen Seals](https://t.me/DegenSeals/11593)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 576.08\n[Total calls: 3](https://t.me/CallAnalyser/119116) \n‎`zi87E9xtFPRQ2o9qqerFxUDQLZgEkHrhpHDxxZhYi9a`‎\n\n🎯**BUY**: [STB](https://t.me/SolTradingBot?start=zi87E9xtFPRQ2o9qqerFxUDQLZgEkHrhpHDxxZhYi9a-QuEi7kfPK) | [Auto Snipe AI](https://autosnipe.ai/details/zi87E9xtFPRQ2o9qqerFxUDQLZgEkHrhpHDxxZhYi9a?referral_code=asabj0i) | [Bonk](https://t.me/bonkbot_bot?start=ref_analyser_ca_zi87E9xtFPRQ2o9qqerFxUDQLZgEkHrhpHDxxZhYi9a) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser/zi87E9xtFPRQ2o9qqerFxUDQLZgEkHrhpHDxxZhYi9a)\n\n🔎**Scan:**  [MEVX](https://t.me/MevxTradingBot?start=zi87E9xtFPRQ2o9qqerFxUDQLZgEkHrhpHDxxZhYi9a-CallAnalyser) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser1/zi87E9xtFPRQ2o9qqerFxUDQLZgEkHrhpHDxxZhYi9a) | [PIRB Scan](https://t.me/PIRBViewBot?start=zi87E9xtFPRQ2o9qqerFxUDQLZgEkHrhpHDxxZhYi9a) | [DexS](https://dexscreener.com/solana/55ox7jP7BxwyQPhxpxsBQ3Da31w6ywvLybZvENieKwST) \n**🔒MCap**: $235.1K | **Liquid**: $74.1K\n**🕚Volume: 6h**: $69.4K | **1h**: $69.4K\n🔰**Chain:** #SOLANA | 🔰**Name:** Supa Pump\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001523523939) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001523523939) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserSol](https://t.me/CallAnalyserSol)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🥇Top Trading Bots & Tools (updated) [here🥇](https://t.me/CallAnalyser/106355)",
-        "buy_links": [
-            "https://dexscreener.com/solana/55ox7jP7BxwyQPhxpxsBQ3Da31w6ywvLybZvENieKwST)"
-        ],
-        "date": "2025-04-05 02:54:29+00:00"
-    },
-    {
-        "chain": "SOL",
-        "text": "☘️**(Update)** $TOYS got one more call from: \n[666 🔥 Calls](https://t.me/x666calls/6236)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 630.68\n[Total calls: 3](https://t.me/CallAnalyser/123403) \n‎`FyXkPjwqmJXkh1uN6wnNaksUEMuYafKJrrKVD2Dppump`‎\n\n🎯**BUY**: [STB](https://t.me/SolTradingBot?start=FyXkPjwqmJXkh1uN6wnNaksUEMuYafKJrrKVD2Dppump-QuEi7kfPK) | [Auto Snipe AI](https://autosnipe.ai/details/FyXkPjwqmJXkh1uN6wnNaksUEMuYafKJrrKVD2Dppump?referral_code=asabj0i) | [Bonk](https://t.me/bonkbot_bot?start=ref_analyser_ca_FyXkPjwqmJXkh1uN6wnNaksUEMuYafKJrrKVD2Dppump) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser/FyXkPjwqmJXkh1uN6wnNaksUEMuYafKJrrKVD2Dppump)\n\n🔎**Scan:**  [MEVX](https://t.me/MevxTradingBot?start=FyXkPjwqmJXkh1uN6wnNaksUEMuYafKJrrKVD2Dppump-CallAnalyser) | [Photon](https://photon-sol.tinyastro.io/en/r/@CallAnalyser1/FyXkPjwqmJXkh1uN6wnNaksUEMuYafKJrrKVD2Dppump) | [PIRB Scan](https://t.me/PIRBViewBot?start=FyXkPjwqmJXkh1uN6wnNaksUEMuYafKJrrKVD2Dppump) | [DexS](https://dexscreener.com/solana/6a1jzPthh6EtQFMV3u48oAEWzrsqVZPc9WSvmFSELPeg) \n**🔒MCap**: $210.2K | **Liquid**: $43.7K\n**🕚Volume: 6h**: $703.0K | **1h**: $126.2K\n🔰**Chain:** #SOLANA | 🔰**Name:** plush toys \n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001903316574) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001903316574) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserSol](https://t.me/CallAnalyserSol)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):☘️Most profit wallets and copy trade **Zelfiguru** 👉 [SOL](https://t.me/zelfiguru_on_solana_bot?start=NjU3NjI3Mjg3OA==) | [ETH](https://t.me/zelfiguru_on_eth_bot?start=NjU3NjI3Mjg3OA==) | [BASE](https://t.me/zelfiguru_on_base_bot?start=NjU3NjI3Mjg3OA==)",
-        "buy_links": [
-            "https://dexscreener.com/solana/6a1jzPthh6EtQFMV3u48oAEWzrsqVZPc9WSvmFSELPeg)"
-        ],
-        "date": "2025-04-05 02:48:29+00:00"
-    },
-    {
-        "chain": "BSC",
-        "text": "☘️**(First Call)** $BNBMECCA got first call from: \n[Z99 live trade](https://t.me/jerryjeetPlayground/3566)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 605.51\nTotal calls: 1 \n‎`0x129C75CFE28a7bA5BA29A13e8D90EBa27ba24444`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0x129C75CFE28a7bA5BA29A13e8D90EBa27ba24444) | [Maestro](https://t.me/MaestroSniperBot?start=0x129C75CFE28a7bA5BA29A13e8D90EBa27ba24444-callanalyser) | [Maestro Pro](https://t.me/MaestroProBot?start=0x129C75CFE28a7bA5BA29A13e8D90EBa27ba24444-callanalyser)\n\n🔎**Scan:** [DexS](https://dexscreener.com/bsc/0xAA66a39351b0C3EB02ca704aE044dEafE8755e14) | [DexT](https://www.dextools.io/app/en/bnb/pair-explorer/0xAA66a39351b0C3EB02ca704aE044dEafE8755e14) | [PIRB Scan](https://t.me/PIRBViewBot?start=0x129C75CFE28a7bA5BA29A13e8D90EBa27ba24444)\n**🔒MCap**: $158.2K | **Liquid**: $47.1K | **Holders**: 970\n**🕚Volume: 6h**: $2.3M | **1h**: $369.6K\n🔰**Chain:** #BSC | 🔰**Name:** Ancient Bnb\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1002051083197) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1002051083197) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserBSC](https://t.me/CallAnalyserBSC)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🌴One-Click [this link](https://t.me/addlist/rV1KJiyIYTdkMTM1) to add all of our channels.",
-        "buy_links": [
-            "https://dexscreener.com/bsc/0xAA66a39351b0C3EB02ca704aE044dEafE8755e14)"
-        ],
-        "date": "2025-04-05 05:30:06+00:00"
-    },
-    {
-        "chain": "BSC",
-        "text": "☘️**(First Call)** $MAJOR got first call from: \n[Z99 live trade](https://t.me/jerryjeetPlayground/3560)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 607.74\nTotal calls: 1 \n‎`0xF865624552b0881c620661B898C21aac6ff74444`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0xF865624552b0881c620661B898C21aac6ff74444) | [Maestro](https://t.me/MaestroSniperBot?start=0xF865624552b0881c620661B898C21aac6ff74444-callanalyser) | [Maestro Pro](https://t.me/MaestroProBot?start=0xF865624552b0881c620661B898C21aac6ff74444-callanalyser)\n\n🔎**Scan:** [DexS](https://dexscreener.com/bsc/0xc7e8A3a39339e4BB78a33f1a1acC901fCe9a4d14) | [DexT](https://www.dextools.io/app/en/bnb/pair-explorer/0xc7e8A3a39339e4BB78a33f1a1acC901fCe9a4d14) | [PIRB Scan](https://t.me/PIRBViewBot?start=0xF865624552b0881c620661B898C21aac6ff74444)\n**🔒MCap**: $205.6K | **Liquid**: $49.5K | **Holders**: 705\n**🕚Volume: 6h**: $404.0K | **1h**: $404.0K\n🔰**Chain:** #BSC | 🔰**Name:** Major Coins\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1002051083197) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1002051083197) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserBSC](https://t.me/CallAnalyserBSC)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🌴One-Click [this link](https://t.me/addlist/rV1KJiyIYTdkMTM1) to add all of our channels.",
-        "buy_links": [
-            "https://dexscreener.com/bsc/0xc7e8A3a39339e4BB78a33f1a1acC901fCe9a4d14)"
-        ],
-        "date": "2025-04-05 02:15:58+00:00"
-    },
-    {
-        "chain": "BSC",
-        "text": "☘️**(Update)** $PAWZ got one more call from: \n[Doxxed GEM Club 宝藏频道💎](https://t.me/DoxxedChannel/13673)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 630.98\n[Total calls: 3](https://t.me/CallAnalyser/123386) \n‎`0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444) | [Maestro](https://t.me/MaestroSniperBot?start=0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444-callanalyser) | [Maestro Pro](https://t.me/MaestroProBot?start=0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444-callanalyser)\n\n🔎**Scan:** [DexS](https://dexscreener.com/bsc/0xEdf0B9B6902A1dA02961417A87B573ed355869bA) | [DexT](https://www.dextools.io/app/en/bnb/pair-explorer/0xEdf0B9B6902A1dA02961417A87B573ed355869bA) | [PIRB Scan](https://t.me/PIRBViewBot?start=0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444)\n**🔒MCap**: $1.1M | **Liquid**: $111.3K | **Holders**: 302\n**🕚Volume: 6h**: $578.9K | **1h**: $27.2K\n🔰**Chain:** #BSC | 🔰**Name:** Pawzident\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001678344669) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001678344669) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserBSC](https://t.me/CallAnalyserBSC)\n➖️➖️➖️➖️➖️➖️➖️➖\n💥 BSC calls only 👉 [link](https://t.me/CallAnalyserBSC)",
-        "buy_links": [
-            "https://dexscreener.com/bsc/0xEdf0B9B6902A1dA02961417A87B573ed355869bA)"
-        ],
-        "date": "2025-04-04 21:46:04+00:00"
-    },
-    {
-        "chain": "BSC",
-        "text": "☘️**(Update)** $PAWZ got one more call from: \n[eezzy’s journal](https://t.me/eezzyjournal/2980)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 855.77\n[Total calls: 2](https://t.me/CallAnalyser/123386) \n‎`0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444) | [Maestro](https://t.me/MaestroSniperBot?start=0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444-callanalyser) | [Maestro Pro](https://t.me/MaestroProBot?start=0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444-callanalyser)\n\n🔎**Scan:** [DexS](https://dexscreener.com/bsc/0xEdf0B9B6902A1dA02961417A87B573ed355869bA) | [DexT](https://www.dextools.io/app/en/bnb/pair-explorer/0xEdf0B9B6902A1dA02961417A87B573ed355869bA) | [PIRB Scan](https://t.me/PIRBViewBot?start=0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444)\n**🔒MCap**: $1.1M | **Liquid**: $111.9K | **Holders**: 289\n**🕚Volume: 6h**: $512.0K | **1h**: $49.3K\n🔰**Chain:** #BSC | 🔰**Name:** Pawzident\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001451577025) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001451577025) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserBSC](https://t.me/CallAnalyserBSC)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🥇Top Trading Bots & Tools (updated) [here🥇](https://t.me/CallAnalyser/106355)",
-        "buy_links": [
-            "https://dexscreener.com/bsc/0xEdf0B9B6902A1dA02961417A87B573ed355869bA)"
-        ],
-        "date": "2025-04-04 20:16:25+00:00"
-    },
-    {
-        "chain": "BSC",
-        "text": "☘️**(First Call)** $PAWZ got first call from: \n[Nyales Kripto Channel's 💎](https://t.me/NyaleskriptoChannel/2347)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 499.27\nTotal calls: 1 \n‎`0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444) | [Maestro](https://t.me/MaestroSniperBot?start=0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444-callanalyser) | [Maestro Pro](https://t.me/MaestroProBot?start=0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444-callanalyser)\n\n🔎**Scan:** [DexS](https://dexscreener.com/bsc/0xEdf0B9B6902A1dA02961417A87B573ed355869bA) | [DexT](https://www.dextools.io/app/en/bnb/pair-explorer/0xEdf0B9B6902A1dA02961417A87B573ed355869bA) | [PIRB Scan](https://t.me/PIRBViewBot?start=0x76e6437F0f2A5ba3B92cC1F905f0ef61698D4444)\n**🔒MCap**: $848.3K | **Liquid**: $99.1K | **Holders**: 267\n**🕚Volume: 6h**: $448.5K | **1h**: $46.6K\n🔰**Chain:** #BSC | 🔰**Name:** Pawzident\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001682393879) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001682393879) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserBSC](https://t.me/CallAnalyserBSC)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🥇Top Trading Bots & Tools (updated) [here🥇](https://t.me/CallAnalyser/106355)",
-        "buy_links": [
-            "https://dexscreener.com/bsc/0xEdf0B9B6902A1dA02961417A87B573ed355869bA)"
-        ],
-        "date": "2025-04-04 19:11:31+00:00"
-    },
-    {
-        "chain": "BSC",
-        "text": "☘️**(Update)** $ROCKET got one more call from: \n[Fay Call](https://t.me/fay_calls/3043)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 666.81\n[Total calls: 17](https://t.me/CallAnalyser/123363) \n‎`0x4a1C76B8e8B347E1852352eA931bfe649fc64444`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0x4a1C76B8e8B347E1852352eA931bfe649fc64444) | [Maestro](https://t.me/MaestroSniperBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444-callanalyser) | [Maestro Pro](https://t.me/MaestroProBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444-callanalyser)\n\n🔎**Scan:** [DexS](https://dexscreener.com/bsc/0xa7a9612E354B7300F122c87726F9d54AB1688C5a) | [DexT](https://www.dextools.io/app/en/bnb/pair-explorer/0xa7a9612E354B7300F122c87726F9d54AB1688C5a) | [PIRB Scan](https://t.me/PIRBViewBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444)\n**🔒MCap**: $1.2M | **Liquid**: $133.8K | **Holders**: 1.7K\n**🕚Volume: 6h**: $1.5M | **1h**: $235.0K\n🔰**Chain:** #BSC | 🔰**Name:** DOGE ROCKET\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001594390210) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001594390210) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserBSC](https://t.me/CallAnalyserBSC)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🥇Top Trading Bots & Tools (updated) [here🥇](https://t.me/CallAnalyser/106355)",
-        "buy_links": [
-            "https://dexscreener.com/bsc/0xa7a9612E354B7300F122c87726F9d54AB1688C5a)"
-        ],
-        "date": "2025-04-04 17:57:16+00:00"
-    },
-    {
-        "chain": "BSC",
-        "text": "☘️**(Update)** $ROCKET got one more call from: \n[Doxxed GEM Club 宝藏频道💎](https://t.me/DoxxedChannel/13670)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 631.58\n[Total calls: 16](https://t.me/CallAnalyser/123363) \n‎`0x4a1C76B8e8B347E1852352eA931bfe649fc64444`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0x4a1C76B8e8B347E1852352eA931bfe649fc64444) | [Maestro](https://t.me/MaestroSniperBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444-callanalyser) | [Maestro Pro](https://t.me/MaestroProBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444-callanalyser)\n\n🔎**Scan:** [DexS](https://dexscreener.com/bsc/0xa7a9612E354B7300F122c87726F9d54AB1688C5a) | [DexT](https://www.dextools.io/app/en/bnb/pair-explorer/0xa7a9612E354B7300F122c87726F9d54AB1688C5a) | [PIRB Scan](https://t.me/PIRBViewBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444)\n**🔒MCap**: $1.2M | **Liquid**: $131.7K | **Holders**: 1.7K\n**🕚Volume: 6h**: $1.5M | **1h**: $233.4K\n🔰**Chain:** #BSC | 🔰**Name:** DOGE ROCKET\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001678344669) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001678344669) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserBSC](https://t.me/CallAnalyserBSC)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):🥇Top Trading Bots & Tools (updated) [here🥇](https://t.me/CallAnalyser/106355)",
-        "buy_links": [
-            "https://dexscreener.com/bsc/0xa7a9612E354B7300F122c87726F9d54AB1688C5a)"
-        ],
-        "date": "2025-04-04 17:53:56+00:00"
-    },
-    {
-        "chain": "BSC",
-        "text": "☘️**(Update)** $ROCKET got one more call from: \n[🦁 LION CALLS 🦁 (Crypto AMAs & Reviews)](https://t.me/None/11607)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 535.36\n[Total calls: 15](https://t.me/CallAnalyser/123363) \n‎`0x4a1C76B8e8B347E1852352eA931bfe649fc64444`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0x4a1C76B8e8B347E1852352eA931bfe649fc64444) | [Maestro](https://t.me/MaestroSniperBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444-callanalyser) | [Maestro Pro](https://t.me/MaestroProBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444-callanalyser)\n\n🔎**Scan:** [DexS](https://dexscreener.com/bsc/0xa7a9612E354B7300F122c87726F9d54AB1688C5a) | [DexT](https://www.dextools.io/app/en/bnb/pair-explorer/0xa7a9612E354B7300F122c87726F9d54AB1688C5a) | [PIRB Scan](https://t.me/PIRBViewBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444)\n**🔒MCap**: $1.2M | **Liquid**: $129.6K | **Holders**: 1.7K\n**🕚Volume: 6h**: $1.7M | **1h**: $185.7K\n🔰**Chain:** #BSC | 🔰**Name:** DOGE ROCKET\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001650343718) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001650343718) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserBSC](https://t.me/CallAnalyserBSC)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):☘️Most profit wallets and copy trade **Zelfiguru** 👉 [SOL](https://t.me/zelfiguru_on_solana_bot?start=NjU3NjI3Mjg3OA==) | [ETH](https://t.me/zelfiguru_on_eth_bot?start=NjU3NjI3Mjg3OA==) | [BASE](https://t.me/zelfiguru_on_base_bot?start=NjU3NjI3Mjg3OA==)",
-        "buy_links": [
-            "https://dexscreener.com/bsc/0xa7a9612E354B7300F122c87726F9d54AB1688C5a)"
-        ],
-        "date": "2025-04-04 17:12:15+00:00"
-    },
-    {
-        "chain": "BSC",
-        "text": "☘️**(Update)** $ROCKET got one more call from: \n[Nyales Kripto Channel's 💎](https://t.me/NyaleskriptoChannel/2345)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 500.72\n[Total calls: 14](https://t.me/CallAnalyser/123363) \n‎`0x4a1C76B8e8B347E1852352eA931bfe649fc64444`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0x4a1C76B8e8B347E1852352eA931bfe649fc64444) | [Maestro](https://t.me/MaestroSniperBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444-callanalyser) | [Maestro Pro](https://t.me/MaestroProBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444-callanalyser)\n\n🔎**Scan:** [DexS](https://dexscreener.com/bsc/0xa7a9612E354B7300F122c87726F9d54AB1688C5a) | [DexT](https://www.dextools.io/app/en/bnb/pair-explorer/0xa7a9612E354B7300F122c87726F9d54AB1688C5a) | [PIRB Scan](https://t.me/PIRBViewBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444)\n**🔒MCap**: $1.4M | **Liquid**: $139.1K | **Holders**: 1.6K\n**🕚Volume: 6h**: $1.7M | **1h**: $246.8K\n🔰**Chain:** #BSC | 🔰**Name:** DOGE ROCKET\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001682393879) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001682393879) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserBSC](https://t.me/CallAnalyserBSC)\n➖️➖️➖️➖️➖️➖️➖️➖\n💥 BSC calls only 👉 [link](https://t.me/CallAnalyserBSC)",
-        "buy_links": [
-            "https://dexscreener.com/bsc/0xa7a9612E354B7300F122c87726F9d54AB1688C5a)"
-        ],
-        "date": "2025-04-04 16:46:43+00:00"
-    },
-    {
-        "chain": "BSC",
-        "text": "☘️**(Update)** $ROCKET got one more call from: \n[Jeety Calls](https://t.me/JeetyCall/10486)   |**⚡️**[**Avg CPW**](https://t.me/CallAnalyserPortal/130)**:** 449.51\n[Total calls: 13](https://t.me/CallAnalyser/123363) \n‎`0x4a1C76B8e8B347E1852352eA931bfe649fc64444`‎\n\n🎯**BUY**: [Sigma](https://t.me/Sigma_buyBot?start=x6576272878-0x4a1C76B8e8B347E1852352eA931bfe649fc64444) | [Maestro](https://t.me/MaestroSniperBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444-callanalyser) | [Maestro Pro](https://t.me/MaestroProBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444-callanalyser)\n\n🔎**Scan:** [DexS](https://dexscreener.com/bsc/0xa7a9612E354B7300F122c87726F9d54AB1688C5a) | [DexT](https://www.dextools.io/app/en/bnb/pair-explorer/0xa7a9612E354B7300F122c87726F9d54AB1688C5a) | [PIRB Scan](https://t.me/PIRBViewBot?start=0x4a1C76B8e8B347E1852352eA931bfe649fc64444)\n**🔒MCap**: $1.7M | **Liquid**: $155.9K | **Holders**: 1.6K\n**🕚Volume: 6h**: $1.8M | **1h**: $439.0K\n🔰**Chain:** #BSC | 🔰**Name:** DOGE ROCKET\n📞**Caller:** [% ROI](https://t.me/CallAnalyserBot?start=scan-caller-1001712900374) | [Top Week](https://t.me/CallAnalyserBot?start=latest-week-calls-1001712900374) \n📈**Trending:** [KOL Trending 🔥](https://t.me/walloftrophies/136)\n\n**Listen to qualified calls in real time**[@CallAnalyserBSC](https://t.me/CallAnalyserBSC)\n➖️➖️➖️➖️➖️➖️➖️➖\n📢 [Ad](https://t.me/CallAnalyser/3):☘️Most profit wallets and copy trade **Zelfiguru** 👉 [SOL](https://t.me/zelfiguru_on_solana_bot?start=NjU3NjI3Mjg3OA==) | [ETH](https://t.me/zelfiguru_on_eth_bot?start=NjU3NjI3Mjg3OA==) | [BASE](https://t.me/zelfiguru_on_base_bot?start=NjU3NjI3Mjg3OA==)",
-        "buy_links": [
-            "https://dexscreener.com/bsc/0xa7a9612E354B7300F122c87726F9d54AB1688C5a)"
-        ],
-        "date": "2025-04-04 16:10:07+00:00"
-    }
+    "marketcap": "N/A",
+    "network": "Unknown",
+    "confidence": 80
+  }
 ]
