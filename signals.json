@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "New MemeCoin",
+    "contract": "0x2fd272db83a5ec5d4f0efb53cb30c25740d3f0fa",
+    "links": {
+      "dexscreener": "",
+      "twitter": "",
+      "telegram": "https://t.me/EtherDog_ERC20"
+    },
+    "marketcap": "N/A",
+    "network": "Unknown",
+    "confidence": 80
+  }
+]
