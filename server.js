@@ -1,39 +1,25 @@
 const express = require('express');
 const path = require('path');
+
 const app = express();
+const port = process.env.PORT || 10000;  // استفاده از پورت مشخص شده
 
-// Set the port for the server
-const port = process.env.PORT || 10000;
-
-// Serve static files from the "public" folder
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Serve the home page (index.html)
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-// Serve alpha page
+// Serve alpha.html
 app.get('/alpha', (req, res) => {
-  res.sendFile(path.join(__dirname, 'alpha.html'));
+    res.sendFile(path.join(__dirname, 'alpha.html'));
 });
 
-// Serve airdrop page
-app.get('/airdrops', (req, res) => {
-  res.sendFile(path.join(__dirname, 'airdrops.html'));
-});
-
-// Serve NFT page
+// Serve other pages
 app.get('/nft', (req, res) => {
-  res.sendFile(path.join(__dirname, 'nft.html'));
+    res.sendFile(path.join(__dirname, 'nft.html'));
 });
 
-// Serve about page
+// Serve about.html
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'about.html'));
+    res.sendFile(path.join(__dirname, 'about.html'));
 });
 
 // Listen on the port
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
