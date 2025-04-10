@@ -1,29 +1,47 @@
 const express = require('express');
 const path = require('path');
-
+const fs = require('fs');
 const app = express();
-const PORT = process.env.PORT || 10000;
 
-// Serve static files from the public folder
+// Serve static files from the 'public' folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Serve HTML files
+// API route to serve signals data from signals.json
+app.get('/api/signals', (req, res) => {
+  const signalsPath = path.join(__dirname, 'signals.json');
+  fs.readFile(signalsPath, 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading signals.json:', err);
+      return res.status(500).send('Error reading signals');
+    }
+    const signals = JSON.parse(data);
+    res.json(signals);  // Send signals to MiniApp
+  });
+});
+
+// Serve the home page and other pages dynamically
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Serve any other HTML file dynamically
-app.get('/:page', (req, res) => {
-  const page = req.params.page;
-  const filePath = path.join(__dirname, page);
-
-  res.sendFile(filePath, function (err) {
-    if (err) {
-      res.status(404).send('Page not found');
-    }
-  });
+app.get('/alpha', (req, res) => {
+  res.sendFile(path.join(__dirname, 'alpha.html'));
 });
 
+app.get('/airdrops', (req, res) => {
+  res.sendFile(path.join(__dirname, 'airdrops.html'));
+});
+
+app.get('/nft', (req, res) => {
+  res.sendFile(path.join(__dirname, 'nft.html'));
+});
+
+app.get('/about', (req, res) => {
+  res.sendFile(path.join(__dirname, 'about.html'));
+});
+
+// Important: Use Render's provided port
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => {
-  console.log(`OrbitalScan MiniApp is running on http://localhost:${PORT}`);
+  console.log(`OrbitalScan MiniApp is running on port ${PORT}`);
 });
