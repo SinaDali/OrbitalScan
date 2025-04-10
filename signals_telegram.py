@@ -82,7 +82,7 @@ async def save_signal(signal_data):
         signals.append(signal_data)
 
         # Keep only last 20 signals
-        signals = signals[-20:]
+        signals = signals[-10:]
 
         with open(signals_path, 'w') as f:
             json.dump(signals, f, indent=2, ensure_ascii=False)
@@ -98,7 +98,11 @@ async def save_signal(signal_data):
     'mad_apes_gambles',
     'CriptoGemas_Anuncios',
     'ZoroChinese_Calls',
-    'CatfishcallsbyPoe'
+    'CatfishcallsbyPoe',
+    'ThanosGems',
+    'x666calls',
+    'DreamCalls100x',
+    'bunnycalls'
 ]))
 async def signal_handler(event):
     message_text = event.raw_text
