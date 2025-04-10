@@ -5,7 +5,7 @@ const app = express();
 // Set the port for the server
 const port = process.env.PORT || 10000;
 
-// Serve static files
+// Serve static files from the "public" folder
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve the home page (index.html)
