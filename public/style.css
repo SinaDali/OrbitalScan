@@ -306,3 +306,30 @@ body, html {
   line-height: 1.6;
   margin-bottom: 30px;
 }
+.airdrops-container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid #ff0066;
+  box-shadow: 0 0 20px #ff0066;
+  backdrop-filter: blur(6px);
+  width: 90%;
+  max-width: 550px;
+  margin: auto;
+}
+
+.airdrops-container .title {
+  font-size: 26px;
+  color: #ff0066;
+  text-shadow: 0 0 10px #ff0066;
+  margin-bottom: 20px;
+}
+
+.airdrops-container .info-text {
+  color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
