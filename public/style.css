@@ -141,3 +141,44 @@ body, html {
   font-size: 14px;
   color: #00ff99;
 }
+/* ====== Beta and By Tag (only for index page) ====== */
+.beta-tag {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #ff0066;
+  color: white;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.by-tag {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #00ffe0;
+  color: black;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+/* ====== Main Container Adjustments ====== */
+.main-container {
+  position: relative;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+  padding: 30px;
+  border: 2px solid #ff0066;
+  box-shadow: 0 0 20px #ff0066;
+  backdrop-filter: blur(8px);
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
