@@ -23,7 +23,7 @@ def fetch_new_solana_tokens():
         response = requests.get(url, headers=headers)
         response.raise_for_status()
         data = response.json()
-        tokens = data.get('data', {}).get('tokens', [])  # ✅ اینجا درست شد
+        tokens = data.get('data', {}).get('tokens', [])  # ✅ گرفتن لیست توکن‌ها
         return tokens
     except Exception as e:
         print(f"⚠️ Error fetching data: {e}")
@@ -40,11 +40,12 @@ def save_signals(tokens):
             "name": token.get("name", "Unknown Token"),
             "contract": token.get("address", "Unknown Address"),
             "marketcap": token.get("market_cap", "Unknown MarketCap"),
-            "confidence": 50  # Default confidence, can adjust later
+            "confidence": 50  # Default confidence
         }
         signals.append(signal)
     
-    with open("signals.json", "w") as f:
+    # ❗ تغییر مسیر ذخیره‌سازی به public/
+    with open("public/signals.json", "w") as f:
         json.dump(signals, f, indent=2)
     
     print(f"✅ {len(signals)} new signals saved.")
