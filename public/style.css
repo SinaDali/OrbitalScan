@@ -262,3 +262,20 @@ body, html {
   font-size: 14px;
   margin-bottom: 30px;
 }
+.back-btn .btn {
+  background: linear-gradient(45deg, #ff0066, #00ffe0);
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.back-btn .btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px #00ffe0;
+}
