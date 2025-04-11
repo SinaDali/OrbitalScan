@@ -1,38 +1,39 @@
 const express = require('express');
 const path = require('path');
-
 const app = express();
-const port = process.env.PORT || 10000;  // پورت سرور
+const PORT = process.env.PORT || 3000;
 
-// Serve static files (CSS, JS, Images)
+// Serve static files (html, css, js, images)
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
-// Serve Home page (index.html)
+// Routes
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// Serve EarlyCall page (alpha.html)
 app.get('/alpha.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'alpha.html'));
+  res.sendFile(path.join(__dirname, 'alpha.html'));
 });
 
-// Serve NFT page (nft.html)
 app.get('/nft.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'nft.html'));
+  res.sendFile(path.join(__dirname, 'nft.html'));
 });
 
-// Serve Airdrops page (airdrops.html)
 app.get('/airdrops.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'airdrops.html'));
+  res.sendFile(path.join(__dirname, 'airdrops.html'));
 });
 
-// Serve About page (about.html)
 app.get('/about.html', (req, res) => {
-    res.sendFile(path.join(__dirname, 'about.html'));
+  res.sendFile(path.join(__dirname, 'about.html'));
 });
 
-// Listen on the specified port
-app.listen(port, () => {
-    console.log(`OrbitalScan MiniApp is running on port ${port}`);
+// Serve signals.json
+app.get('/signals.json', (req, res) => {
+  res.sendFile(path.join(__dirname, 'signals.json'));
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
