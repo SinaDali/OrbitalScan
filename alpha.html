@@ -2,41 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>EarlyCall - OrbitalScan</title>
+  <title>Early Calls - OrbitalScan</title>
   <link rel="stylesheet" href="/style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap">
 </head>
 <body>
   <div class="overlay">
     <div class="content">
-      <h1 class="title">🚀 Early MemeCoin Discoveries</h1>
+
+      <h1 class="section-title">Early MemeCoin Discoveries</h1>
 
       <div id="signals-container">
-        <!-- Signals will be dynamically inserted here -->
-      </div>
-
-      <div class="info-text" id="no-signal-message" style="display: none;">
-        📢 No signals available right now. Stay tuned — fresh opportunities are coming!
-        <br><br>
-        ✅ All listed signals are fully tradable and trust-worthy.
+        <p class="info-text">No signals available right now. Stay tuned for fresh opportunities!</p>
+        <p class="trust-text">All listed signals are fully tradeable and trustworthy.</p>
       </div>
 
       <div class="back-btn">
         <a href="/" class="btn">Back to Home</a>
       </div>
+
     </div>
   </div>
 
   <script src="/signals.js"></script>
-  <script>
-    // If no signals exist, show the no-signal-message
-    document.addEventListener('DOMContentLoaded', () => {
-      const container = document.getElementById('signals-container');
-      const noSignalMessage = document.getElementById('no-signal-message');
-      if (!container.hasChildNodes()) {
-        noSignalMessage.style.display = 'block';
-      }
-    });
-  </script>
 </body>
 </html>
