@@ -37,3 +37,18 @@ app.use((req, res) => {
 app.listen(PORT, () => {
   console.log(`🚀 Server is running on port ${PORT}`);
 });
+app.get('/alpha', (req, res) => {
+  res.sendFile(path.join(__dirname, 'alpha.html'));
+});
+
+app.get('/nft', (req, res) => {
+  res.sendFile(path.join(__dirname, 'nft.html'));
+});
+
+app.get('/airdrops', (req, res) => {
+  res.sendFile(path.join(__dirname, 'airdrops.html'));
+});
+
+app.get('/about', (req, res) => {
+  res.sendFile(path.join(__dirname, 'about.html'));
+});
