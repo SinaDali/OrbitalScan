@@ -1,36 +1,50 @@
 const express = require('express');
 const path = require('path');
+const { exec } = require('child_process');
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Serve static files (html, css, js, images)
-app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(__dirname));
+// Serve static files from public folder
+app.use(express.static('public'));
 
-// Routes
+// Route to serve signals.json
+app.get('/api/signals', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'signals.json'));
+});
+
+// Home route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.get('/alpha.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'alpha.html'));
-});
+// Schedule scanner_ai.py to run every 10 minutes
+setInterval(() => {
+  console.log('Running scanner_ai.py...');
+  exec('python scanner_ai.py', (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error running scanner_ai.py: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+      console.error(`stderr: ${stderr}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+  });
+}, 10 * 60 * 1000); // 10 minutes
 
-app.get('/nft.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'nft.html'));
-});
-
-app.get('/airdrops.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'airdrops.html'));
-});
-
-app.get('/about.html', (req, res) => {
-  res.sendFile(path.join(__dirname, 'about.html'));
-});
-
-// Serve signals.json
-app.get('/signals.json', (req, res) => {
-  res.sendFile(path.join(__dirname, 'signals.json'));
+// Run scanner immediately once on start
+exec('python scanner_ai.py', (error, stdout, stderr) => {
+  if (error) {
+    console.error(`Error running scanner_ai.py: ${error.message}`);
+    return;
+  }
+  if (stderr) {
+    console.error(`stderr: ${stderr}`);
+    return;
+  }
+  console.log(`stdout: ${stdout}`);
 });
 
 // Start server
