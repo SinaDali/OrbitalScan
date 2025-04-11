@@ -333,3 +333,30 @@ body, html {
   line-height: 1.6;
   margin-bottom: 30px;
 }
+.about-container {
+  position: relative;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid #00ffe0;
+  box-shadow: 0 0 20px #00ffe0;
+  backdrop-filter: blur(6px);
+  width: 90%;
+  max-width: 550px;
+  margin: auto;
+}
+
+.about-container .title {
+  font-size: 26px;
+  color: #00ffe0;
+  text-shadow: 0 0 10px #00ffe0;
+  margin-bottom: 20px;
+}
+
+.about-container .about-text {
+  color: white;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
