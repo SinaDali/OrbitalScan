@@ -1,53 +1,46 @@
 const express = require('express');
 const path = require('path');
-const { exec } = require('child_process');
+const fs = require('fs');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Serve static files from public folder
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Route to serve signals.json
-app.get('/api/signals', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'signals.json'));
-});
-
-// Home route
+// Serve the main HTML files directly
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-// Schedule scanner_ai.py to run every 10 minutes
-setInterval(() => {
-  console.log('Running scanner_ai.py...');
-  exec('python scanner_ai.py', (error, stdout, stderr) => {
-    if (error) {
-      console.error(`Error running scanner_ai.py: ${error.message}`);
-      return;
-    }
-    if (stderr) {
-      console.error(`stderr: ${stderr}`);
-      return;
-    }
-    console.log(`stdout: ${stdout}`);
-  });
-}, 10 * 60 * 1000); // 10 minutes
-
-// Run scanner immediately once on start
-exec('python scanner_ai.py', (error, stdout, stderr) => {
-  if (error) {
-    console.error(`Error running scanner_ai.py: ${error.message}`);
-    return;
-  }
-  if (stderr) {
-    console.error(`stderr: ${stderr}`);
-    return;
-  }
-  console.log(`stdout: ${stdout}`);
+app.get('/alpha.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'alpha.html'));
 });
 
-// Start server
+app.get('/airdrops.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'airdrops.html'));
+});
+
+app.get('/nft.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'nft.html'));
+});
+
+app.get('/about.html', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'about.html'));
+});
+
+// Serve signals API
+app.get('/api/signals', (req, res) => {
+  const signalsPath = path.join(__dirname, 'public', 'signals.json');
+  if (fs.existsSync(signalsPath)) {
+    const signalsData = fs.readFileSync(signalsPath);
+    res.setHeader('Content-Type', 'application/json');
+    res.send(signalsData);
+  } else {
+    res.status(404).json({ error: 'Signals file not found' });
+  }
+});
+
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
