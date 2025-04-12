@@ -1,1 +1,62 @@
-[]
+[
+  {
+    "name": "Wrapped SOL",
+    "contract": "So11111111111111111111111111111111111111112",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "USD Coin",
+    "contract": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "Fartcoin ",
+    "contract": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "USDT",
+    "contract": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "OFFICIAL TRUMP",
+    "contract": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "Wrapped BTC (Wormhole)",
+    "contract": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "Coinbase Wrapped BTC",
+    "contract": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "EURC",
+    "contract": "HzwqbKZw8HxMN6bF2yFZNrht3c2iXXzpKcFu7uBEDKtr",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "Barron Trump ",
+    "contract": "H5wZLLVoP3Eb3eFKv5kBSWASBgfHdtnBAQpRqq8hpump",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "Bang",
+    "contract": "CEK3J5DavCqqn3bV1smLZz7LxJR5eaRN5KxCxDZBq7SG",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  }
+]
