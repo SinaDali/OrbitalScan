@@ -3,45 +3,36 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// سرو کردن تمام فایل‌های استاتیک از پوشه public
+// serve static files from public folder
 app.use(express.static(path.join(__dirname, 'public')));
 
-// روت صفحه اصلی
+// routes
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-// روت برای صفحه EarlyCall
 app.get('/alpha', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'alpha.html'));
+  res.sendFile(path.join(__dirname, 'alpha.html'));
 });
 
-// روت برای صفحه NFT Zone
 app.get('/nft', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'nft.html'));
+  res.sendFile(path.join(__dirname, 'nft.html'));
 });
 
-// روت برای صفحه Airdrops
 app.get('/airdrops', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'airdrops.html'));
+  res.sendFile(path.join(__dirname, 'airdrops.html'));
 });
 
-// روت برای صفحه About Us
 app.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'about.html'));
+  res.sendFile(path.join(__dirname, 'about.html'));
 });
 
-// روت برای خواندن signals.json به عنوان API
-app.get('/api/signals', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'signals.json'));
-});
-
-// هندل کردن صفحات ناموجود (404)
+// if route not found
 app.use((req, res) => {
   res.status(404).send('Page Not Found');
 });
 
-// ران کردن سرور
+// start server
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
