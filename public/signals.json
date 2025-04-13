@@ -18,14 +18,14 @@
     "confidence": 50
   },
   {
-    "name": "USDT",
-    "contract": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+    "name": "OFFICIAL TRUMP",
+    "contract": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
     "marketcap": "Unknown MarketCap",
     "confidence": 50
   },
   {
-    "name": "OFFICIAL TRUMP",
-    "contract": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
+    "name": "USDT",
+    "contract": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
     "marketcap": "Unknown MarketCap",
     "confidence": 50
   },
@@ -36,26 +36,26 @@
     "confidence": 50
   },
   {
+    "name": "mutumbo",
+    "contract": "4StuLHHsHobhBh4BCNhreFtQ5EvSZHvbAMxJ44JWpump",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "Jito Staked SOL",
+    "contract": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "Jupiter Perps LP",
+    "contract": "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
     "name": "Coinbase Wrapped BTC",
     "contract": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
-  },
-  {
-    "name": "Barron Trump ",
-    "contract": "H5wZLLVoP3Eb3eFKv5kBSWASBgfHdtnBAQpRqq8hpump",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
-  },
-  {
-    "name": "Bang",
-    "contract": "CEK3J5DavCqqn3bV1smLZz7LxJR5eaRN5KxCxDZBq7SG",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
-  },
-  {
-    "name": "EURC",
-    "contract": "HzwqbKZw8HxMN6bF2yFZNrht3c2iXXzpKcFu7uBEDKtr",
     "marketcap": "Unknown MarketCap",
     "confidence": 50
   }
