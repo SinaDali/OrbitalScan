@@ -360,38 +360,57 @@ body, html {
   line-height: 1.6;
   margin-bottom: 30px;
 }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 #signals-container {
+  max-width: 360px;
+  margin: 20px auto;
+  padding: 10px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+  gap: 15px;
 }
 
 .signal-card {
-  background: rgba(0, 0, 50, 0.6);
+  background: rgba(0, 0, 50, 0.7);
   border: 1px solid #00ffff;
-  border-radius: 12px;
-  padding: 15px;
-  box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
-  font-family: 'Orbitron', sans-serif;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 0 12px #00ffff, 0 0 18px #ff00ff;
   color: #ffffff;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(4px);
   transition: transform 0.3s, box-shadow 0.3s;
+  overflow-wrap: break-word;
 }
 
 .signal-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff;
+  transform: scale(1.03);
+  box-shadow: 0 0 22px #ff00ff, 0 0 28px #00ffff;
 }
 
 .signal-card h3 {
-  font-size: 18px;
+  font-size: 16px;
   color: #00ffff;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .signal-card p {
-  font-size: 14px;
+  font-size: 13px;
+  margin: 4px 0;
   color: #ffffff;
-  margin: 5px 0;
+  word-break: break-word;
+}
+
+.info-text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 20px;
 }
