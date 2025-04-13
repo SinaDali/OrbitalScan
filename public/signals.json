@@ -42,12 +42,6 @@
     "confidence": 50
   },
   {
-    "name": "EURC",
-    "contract": "HzwqbKZw8HxMN6bF2yFZNrht3c2iXXzpKcFu7uBEDKtr",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
-  },
-  {
     "name": "Barron Trump ",
     "contract": "H5wZLLVoP3Eb3eFKv5kBSWASBgfHdtnBAQpRqq8hpump",
     "marketcap": "Unknown MarketCap",
@@ -56,6 +50,12 @@
   {
     "name": "Bang",
     "contract": "CEK3J5DavCqqn3bV1smLZz7LxJR5eaRN5KxCxDZBq7SG",
+    "marketcap": "Unknown MarketCap",
+    "confidence": 50
+  },
+  {
+    "name": "EURC",
+    "contract": "HzwqbKZw8HxMN6bF2yFZNrht3c2iXXzpKcFu7uBEDKtr",
     "marketcap": "Unknown MarketCap",
     "confidence": 50
   }
