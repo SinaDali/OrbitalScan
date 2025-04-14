@@ -414,3 +414,25 @@ body {
   font-size: 14px;
   padding: 20px;
 }
+#signals-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px; /* 👈 این فاصله درست از بالا */
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.signal-card {
+  width: 90%;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #00ffff;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  backdrop-filter: blur(10px);
+}
