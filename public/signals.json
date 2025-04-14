@@ -1,62 +1,62 @@
 [
   {
-    "name": "Wrapped SOL",
-    "contract": "So11111111111111111111111111111111111111112",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
+    "name": "MegaMonk",
+    "contract": "0x0BaeA509Cb3eA2109b39AdD7e0D5194A885ba3b9",
+    "marketcap": "290K",
+    "confidence": 82
   },
   {
-    "name": "USD Coin",
-    "contract": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
+    "name": "SolXtreme",
+    "contract": "J3YtZAbUgxvRc1Z2Jj7g1GsRt5MKJMB3Bi4gMEomAMwX",
+    "marketcap": "105K",
+    "confidence": 75
   },
   {
-    "name": "Fartcoin ",
-    "contract": "9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
+    "name": "ETHGOD",
+    "contract": "0x622e23D264D788776d654210Bc86d7DEd9b8c229",
+    "marketcap": "450K",
+    "confidence": 88
   },
   {
-    "name": "OFFICIAL TRUMP",
-    "contract": "6p6xgHyF7AeE6TZkSmFsko444wqoP15icUSqi2jfGiPN",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
+    "name": "SolCasper",
+    "contract": "BshnM9sC2ujQe3UJZxDGQMyXJfGDUhHQM8JqWeqgBdES",
+    "marketcap": "67K",
+    "confidence": 70
   },
   {
-    "name": "USDT",
-    "contract": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
+    "name": "AIKUMA",
+    "contract": "0x374f2832C1E15A571BF2cfa3AaFF9dB1b01fF81f",
+    "marketcap": "380K",
+    "confidence": 83
   },
   {
-    "name": "Wrapped BTC (Wormhole)",
-    "contract": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
+    "name": "SolGhost",
+    "contract": "8UweVcmr6qFzNnTuKMQGdxW1XmiR1zLUzXE9zdBLN7LM",
+    "marketcap": "132K",
+    "confidence": 77
   },
   {
-    "name": "Jupiter Perps LP",
-    "contract": "27G8MtK7VtTcCHkpASjSDdkWWYfoqT6ggEuKidVJidD4",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
+    "name": "ETHRAIN",
+    "contract": "0x7eA6E5c56BD72391d81a4EFb452B5c2c79E6E4a0",
+    "marketcap": "420K",
+    "confidence": 81
   },
   {
-    "name": "Jito Staked SOL",
-    "contract": "J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
+    "name": "SappyDoge",
+    "contract": "H7YkKH42TS2eTh7EGk2aSftHFAtLNgBaGbq9eGiYqUVo",
+    "marketcap": "96K",
+    "confidence": 74
   },
   {
-    "name": "Coinbase Wrapped BTC",
-    "contract": "cbbtcf3aa214zXHbiAZQwf4122FBYbraNdFqgw4iMij",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
+    "name": "EtherCheems",
+    "contract": "0xc9639E1e3D3A26A77E0e4f9d024C2b7e380621b1",
+    "marketcap": "150K",
+    "confidence": 79
   },
   {
-    "name": "TRUMP PEPE",
-    "contract": "8gYjQWk4DxNjYLh7GxtQQooEaeLe99FmD3FbVgvTpump",
-    "marketcap": "Unknown MarketCap",
-    "confidence": 50
+    "name": "SolPorter",
+    "contract": "93ArJ45T2E8ZKUo7jCEwN51RBM5utvMUzV3cUPAhXqfT",
+    "marketcap": "84K",
+    "confidence": 73
   }
 ]
