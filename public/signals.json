@@ -1,62 +1,62 @@
 [
   {
-    "name": "MegaMonk",
-    "contract": "0x0BaeA509Cb3eA2109b39AdD7e0D5194A885ba3b9",
-    "marketcap": "290K",
-    "confidence": 82
+    "name": "LOCK IN",
+    "marketcap": "690K",
+    "confidence": "80%",
+    "contract": "8Ki8D...zBd5"
   },
   {
-    "name": "SolXtreme",
-    "contract": "J3YtZAbUgxvRc1Z2Jj7g1GsRt5MKJMB3Bi4gMEomAMwX",
-    "marketcap": "105K",
-    "confidence": 75
+    "name": "PLS BUY ME I LOCK LP",
+    "marketcap": "2",
+    "confidence": "60%",
+    "contract": "HrbaA...V83D"
   },
   {
-    "name": "ETHGOD",
-    "contract": "0x622e23D264D788776d654210Bc86d7DEd9b8c229",
-    "marketcap": "450K",
-    "confidence": 88
+    "name": "Liquidity Lock",
+    "marketcap": "<1",
+    "confidence": "65%",
+    "contract": "0x79e7dab4c9a3fc6e436289c5dbf42657b717d9ff"
   },
   {
-    "name": "SolCasper",
-    "contract": "BshnM9sC2ujQe3UJZxDGQMyXJfGDUhHQM8JqWeqgBdES",
-    "marketcap": "67K",
-    "confidence": 70
+    "name": "LOCKED",
+    "marketcap": "Unknown",
+    "confidence": "58%",
+    "contract": "6r9gj...Sz1x"
   },
   {
-    "name": "AIKUMA",
-    "contract": "0x374f2832C1E15A571BF2cfa3AaFF9dB1b01fF81f",
-    "marketcap": "380K",
-    "confidence": 83
+    "name": "Moonshot Token",
+    "marketcap": "Unknown",
+    "confidence": "75%",
+    "contract": "0xMoon...Shot"
   },
   {
-    "name": "SolGhost",
-    "contract": "8UweVcmr6qFzNnTuKMQGdxW1XmiR1zLUzXE9zdBLN7LM",
-    "marketcap": "132K",
-    "confidence": 77
+    "name": "NextGen Bets",
+    "marketcap": "10K",
+    "confidence": "72%",
+    "contract": "0xNext...Gen"
   },
   {
-    "name": "ETHRAIN",
-    "contract": "0x7eA6E5c56BD72391d81a4EFb452B5c2c79E6E4a0",
-    "marketcap": "420K",
-    "confidence": 81
+    "name": "PornHub Coin",
+    "marketcap": "11K",
+    "confidence": "69%",
+    "contract": "0xPhub...420"
   },
   {
-    "name": "SappyDoge",
-    "contract": "H7YkKH42TS2eTh7EGk2aSftHFAtLNgBaGbq9eGiYqUVo",
-    "marketcap": "96K",
-    "confidence": 74
+    "name": "Bear Bacon",
+    "marketcap": "12K",
+    "confidence": "77%",
+    "contract": "0xBear...Bcn"
   },
   {
-    "name": "EtherCheems",
-    "contract": "0xc9639E1e3D3A26A77E0e4f9d024C2b7e380621b1",
-    "marketcap": "150K",
-    "confidence": 79
+    "name": "YGG LOL Land Game",
+    "marketcap": "Unknown",
+    "confidence": "68%",
+    "contract": "0xYggL...and"
   },
   {
-    "name": "SolPorter",
-    "contract": "93ArJ45T2E8ZKUo7jCEwN51RBM5utvMUzV3cUPAhXqfT",
-    "marketcap": "84K",
-    "confidence": 73
+    "name": "SolVibe",
+    "marketcap": "13K",
+    "confidence": "73%",
+    "contract": "0xSolV...ibe"
   }
 ]
