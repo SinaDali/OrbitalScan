@@ -1,4 +1,4 @@
-// auth-check.js
+// js/auth-check.js
 
 async function checkUserAuthorization() {
   const username = prompt('Enter your Telegram username (include @):');

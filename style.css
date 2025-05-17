@@ -1,438 +1,64 @@
-/* ======= Reset ======= */
-* {
+body {
   margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #0ff;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.6em;
+  color: #ccc;
+}
+
+.button, .back-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: #0ff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.button:hover, .back-button:hover {
+  background-color: #0cc;
+  transform: scale(1.05);
+}
+
+ul {
+  list-style: none;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* ======= Body and Fonts ======= */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
-
-body, html {
-  font-family: 'Orbitron', sans-serif;
-  height: 100%;
-  width: 100%;
-  overflow-x: hidden;
+ul li {
+  margin: 8px 0;
+  color: #0ff;
 }
 
-/* ======= Background ======= */
+.disclaimer, .contact-section, .coming-soon {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background-color: #111;
+}
+
 .overlay {
   background: url('/images/bg-cyberpunk.jpg') no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-/* ======= Top Bar (Beta + By Sina) ======= */
-.top-bar {
-  position: absolute;
-  top: 10px;
-  width: 100%;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.beta-tag {
-  background: #ff0066;
-  color: white;
-  padding: 5px 12px;
-  font-size: 12px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-.by-tag {
-  background: #00ffe0;
-  color: black;
-  padding: 5px 12px;
-  font-size: 12px;
-  border-radius: 8px;
-  font-weight: bold;
-}
-
-/* ======= Main Container ======= */
-.main-container {
-  position: relative;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.75);
-  border: 2px solid #ff0066;
-  box-shadow: 0 0 20px #ff0066;
-  border-radius: 15px;
-  padding: 40px 30px;
-  width: 90%;
-  max-width: 600px;
-  backdrop-filter: blur(8px);
-}
-
-/* ======= Logo ======= */
-.main-logo {
-  width: 90px;
-  height: 90px;
-  margin-bottom: 20px;
-}
-
-/* ======= Title (Glitch Effect) ======= */
-.glitch-title {
-  font-size: 36px;
-  color: #00ffe0;
-  text-shadow: 0 0 10px #00ffe0;
-  margin-bottom: 20px;
-  animation: glitch 1.5s infinite alternate;
-}
-
-@keyframes glitch {
-  0%, 100% { text-shadow: 0 0 8px #00ffe0; }
-  50% { text-shadow: 0 0 20px #ff0066; }
-}
-
-/* ======= Description ======= */
-.main-description {
-  color: #ffffff;
-  font-size: 14px;
-  margin-bottom: 30px;
-  line-height: 1.6;
-}
-
-/* ======= Navigation Buttons ======= */
-.home-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.home-btn {
-  background: linear-gradient(45deg, #ff0066, #00ffe0);
-  color: white;
-  padding: 10px 25px;
-  text-decoration: none;
-  font-size: 14px;
-  border-radius: 25px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.home-btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 15px #00ffe0;
-}
-
-/* ======= Footer Tag ======= */
-.footer-tag {
-  font-size: 12px;
-  color: #cccccc;
-  margin-top: 10px;
-  opacity: 0.8;
-}
-.no-signal-message {
-  color: #ffcc00;
-  margin-top: 50px;
-  font-size: 18px;
-}
-
-.trust-message {
-  margin-top: 30px;
-  font-size: 14px;
-  color: #00ff99;
-}
-/* ====== Beta and By Tag (only for index page) ====== */
-.beta-tag {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  background: #ff0066;
-  color: white;
-  padding: 6px 12px;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 8px;
-  z-index: 1000;
-}
-
-.by-tag {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  background: #00ffe0;
-  color: black;
-  padding: 6px 12px;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 8px;
-  z-index: 1000;
-}
-
-/* ====== Main Container Adjustments ====== */
-.main-container {
-  position: relative;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 20px;
-  padding: 30px;
-  border: 2px solid #ff0066;
-  box-shadow: 0 0 20px #ff0066;
-  backdrop-filter: blur(8px);
-  width: 90%;
-  max-width: 500px;
-  margin: auto;
-}
-/* ======= Top Bar (Beta Version and By Tag) ======= */
-.top-bar {
-  position: absolute;
-  top: 10px;
-  left: 0;
-  right: 0;
-  padding: 0 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-}
-
-.beta-tag {
-  background: #ff0066;
-  color: white;
-  padding: 4px 8px;
-  font-size: 10px;
-  border-radius: 8px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-}
-
-.by-tag {
-  background: #00ffe0;
-  color: black;
-  padding: 4px 8px;
-  font-size: 10px;
-  border-radius: 8px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-}
-
-/* ======= Fix Main Container ======= */
-.main-container {
-  position: relative;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.75);
-  border-radius: 15px;
-  padding: 30px;
-  border: 2px solid #ff0066;
-  box-shadow: 0 0 20px #ff0066;
-  backdrop-filter: blur(6px);
-  width: 600px;
-  margin-top: 40px; /* Add margin to push it down */
-}
-/* ======= EarlyCall Page Special Styling ======= */
-.earlycall-container {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 30px;
-  border-radius: 15px;
-  border: 2px solid #00ffe0;
-  box-shadow: 0 0 20px #00ffe0;
-  backdrop-filter: blur(6px);
-  text-align: center;
-  max-width: 600px;
-  width: 90%;
-  margin: 100px auto 0;
-}
-
-.earlycall-title {
-  font-size: 28px;
-  color: #00ffe0;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-shadow: 0 0 10px #00ffe0;
-}
-
-.earlycall-description {
-  color: white;
-  font-size: 16px;
-  margin-bottom: 20px;
-  line-height: 1.6;
-}
-
-.earlycall-note {
-  color: #ccc;
-  font-size: 14px;
-  margin-bottom: 30px;
-}
-.back-btn .btn {
-  background: linear-gradient(45deg, #ff0066, #00ffe0);
-  padding: 10px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  font-size: 14px;
-  display: inline-block;
-  margin-top: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.back-btn .btn:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 0 15px #00ffe0;
-}
-.nft-container {
-  position: relative;
-  background: rgba(0, 0, 0, 0.75);
-  padding: 40px;
-  border-radius: 15px;
-  text-align: center;
-  border: 2px solid #00ffe0;
-  box-shadow: 0 0 20px #00ffe0;
-  backdrop-filter: blur(6px);
-  width: 90%;
-  max-width: 550px;
-  margin: auto;
-}
-
-.nft-container .title {
-  font-size: 26px;
-  color: #00ffe0;
-  text-shadow: 0 0 10px #00ffe0;
-  margin-bottom: 20px;
-}
-
-.nft-container .info-text {
-  color: white;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-.airdrops-container {
-  position: relative;
-  background: rgba(0, 0, 0, 0.75);
-  padding: 40px;
-  border-radius: 15px;
-  text-align: center;
-  border: 2px solid #ff0066;
-  box-shadow: 0 0 20px #ff0066;
-  backdrop-filter: blur(6px);
-  width: 90%;
-  max-width: 550px;
-  margin: auto;
-}
-
-.airdrops-container .title {
-  font-size: 26px;
-  color: #ff0066;
-  text-shadow: 0 0 10px #ff0066;
-  margin-bottom: 20px;
-}
-
-.airdrops-container .info-text {
-  color: white;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-.about-container {
-  position: relative;
-  background: rgba(0, 0, 0, 0.75);
-  padding: 40px;
-  border-radius: 15px;
-  text-align: center;
-  border: 2px solid #00ffe0;
-  box-shadow: 0 0 20px #00ffe0;
-  backdrop-filter: blur(6px);
-  width: 90%;
-  max-width: 550px;
-  margin: auto;
-}
-
-.about-container .title {
-  font-size: 26px;
-  color: #00ffe0;
-  text-shadow: 0 0 10px #00ffe0;
-  margin-bottom: 20px;
-}
-
-.about-container .about-text {
-  color: white;
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Orbitron', sans-serif;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-#signals-container {
-  max-width: 360px;
-  margin: 20px auto;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.signal-card {
-  background: rgba(0, 0, 50, 0.7);
-  border: 1px solid #00ffff;
-  border-radius: 10px;
-  padding: 12px;
-  box-shadow: 0 0 12px #00ffff, 0 0 18px #ff00ff;
-  color: #ffffff;
-  backdrop-filter: blur(4px);
-  transition: transform 0.3s, box-shadow 0.3s;
-  overflow-wrap: break-word;
-}
-
-.signal-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 0 22px #ff00ff, 0 0 28px #00ffff;
-}
-
-.signal-card h3 {
-  font-size: 16px;
-  color: #00ffff;
-  margin-bottom: 8px;
-}
-
-.signal-card p {
-  font-size: 13px;
-  margin: 4px 0;
-  color: #ffffff;
-  word-break: break-word;
-}
-
-.info-text {
-  text-align: center;
-  color: #ffffff;
-  font-size: 14px;
-  padding: 20px;
-}
-#signals-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px; /* 👈 این فاصله درست از بالا */
-  overflow-y: auto;
-  height: 100vh;
-  box-sizing: border-box;
-}
-
-.signal-card {
-  width: 90%;
-  max-width: 350px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid #00ffff;
-  border-radius: 15px;
-  padding: 15px;
-  margin-bottom: 20px;
-  color: white;
-  font-family: 'Orbitron', sans-serif;
-  backdrop-filter: blur(10px);
 }
