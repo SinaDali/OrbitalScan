@@ -4,28 +4,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OrbitalScan - Dashboard</title>
+  <title>User Dashboard - OrbitalScan</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="overlay">
-  <div class="container">
-    <h1>OrbitalScan VIP Dashboard</h1>
-    <p>Welcome, VIP. Choose your exclusive content:</p>
+<body class="overlay" style="background-image: url('images/bg.jpg');">
 
-    <div class="buttons">
-      <a href="memecoins.html" class="button">Memecoin Radar</a>
-      <a href="nfts.html" class="button">NFT Picks</a>
-      <a href="airdrops.html" class="button">Airdrop Radar</a>
-      <a href="quests.html" class="button">Quest of the Day</a>
-      <a href="features.html" class="button">What We Offer</a>
-      <a href="whoarewe.html" class="button">Who We Are</a>
+  <div class="container" style="text-align: center; padding: 40px 20px 0;">
+    <h1 class="neon-title">User Dashboard</h1>
+    <p class="tagline">Your subscription and account overview.</p>
+  </div>
+
+  <div style="padding: 20px;">
+    <div class="neon-box" style="margin-bottom: 20px;">
+      <p><strong>Username:</strong> @your_username</p>
+      <p><strong>Join Date:</strong> 2024-12-01</p>
+      <p><strong>Plan:</strong> Free Access</p>
+      <p><strong>Days Remaining:</strong> Unlimited (Free)</p>
     </div>
 
-    <div class="back">
-      <a href="index.html" class="back-button">← Back to Home</a>
+    <div class="neon-box" style="margin-bottom: 20px;">
+      <p><strong>Available Plans:</strong></p>
+      <ul style="line-height: 1.6;">
+        <li>Monthly Access – 9.99 USDT</li>
+        <li>Yearly Access – 89.99 USDT</li>
+      </ul>
+    </div>
+
+    <div class="neon-box">
+      <p><strong>Payment Wallets:</strong></p>
+      <p>ETH (ERC20): <code>0xYourEthAddress</code></p>
+      <p>SOL: <code>SoLAddressHere</code></p>
+      <p>TON: <code>UQYourTonAddress</code></p>
     </div>
   </div>
 
-  <script src="js/auth-check.js"></script>
+  <div style="text-align: center; margin-top: 30px; padding-bottom: 20px;">
+    <a href="index.html" class="back-button">← Back to Home</a>
+  </div>
+
 </body>
 </html>

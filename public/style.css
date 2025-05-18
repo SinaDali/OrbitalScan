@@ -9,32 +9,68 @@ body {
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
   background-blend-mode: darken;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 28px;
+h1, h2, h3 {
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ffff, 0 0 12px #00ffff;
+  letter-spacing: 1px;
+}
+
+.neon-title {
+  font-size: 32px;
+  text-shadow: 0 0 6px #00faff, 0 0 12px #00c7ff, 0 0 24px #00a0ff;
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-p {
-  font-size: 16px;
-  margin: 5px 0;
-  color: #ccc;
+.tagline {
+  font-size: 15px;
+  color: #cceeff;
+  margin-top: 5px;
+}
+
+.age-warning {
+  font-size: 13px;
+  color: #ffa0a0;
+  margin-top: 10px;
+}
+
+p, li {
+  font-size: 15px;
+  color: #dddddd;
+}
+
+code {
+  font-family: monospace;
+  background-color: rgba(255,255,255,0.05);
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .footer-nav {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgba(20, 20, 20, 0.9);
+  background-color: rgba(20, 20, 20, 0.95);
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 10px 0;
   border-top: 1px solid #444;
+  z-index: 10;
 }
 
 .footer-button {
@@ -46,8 +82,8 @@ p {
 }
 
 .footer-button img {
-  width: 48px;
-  height: 48px;
+  width: 42px;
+  height: 42px;
   margin-bottom: 4px;
 }
 
@@ -56,11 +92,9 @@ p {
   color: #00ffff;
 }
 
-/* Universal back button style (for other pages) */
 .back-button {
-  position: fixed;
-  top: 12px;
-  left: 12px;
+  display: inline-block;
+  margin-top: 20px;
   padding: 8px 16px;
   background-color: rgba(255, 255, 255, 0.08);
   color: #ffffff;
@@ -68,11 +102,24 @@ p {
   border: 1px solid #555;
   border-radius: 8px;
   text-decoration: none;
-  z-index: 999;
   transition: background-color 0.2s ease;
 }
 
 .back-button:hover {
   background-color: rgba(255, 255, 255, 0.2);
   color: #00ffff;
+}
+
+.neon-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ffff55;
+  box-shadow: 0 0 8px #00ffff55;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.disabled {
+  opacity: 0.4;
+  pointer-events: none;
 }
