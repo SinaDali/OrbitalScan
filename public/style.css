@@ -1,64 +1,78 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #000;
-  color: #fff;
-}
-
-.container {
-  padding: 40px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-h1, h2, h3 {
-  color: #0ff;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 1.1em;
-  line-height: 1.6em;
-  color: #ccc;
-}
-
-.button, .back-button {
-  display: inline-block;
-  margin: 10px;
-  padding: 12px 24px;
-  background-color: #0ff;
-  color: #000;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.button:hover, .back-button:hover {
-  background-color: #0cc;
-  transform: scale(1.05);
-}
-
-ul {
-  list-style: none;
   padding: 0;
-}
-
-ul li {
-  margin: 8px 0;
-  color: #0ff;
-}
-
-.disclaimer, .contact-section, .coming-soon {
-  margin-top: 30px;
-  padding: 20px;
-  border: 1px solid #333;
-  border-radius: 10px;
-  background-color: #111;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
 }
 
 .overlay {
-  background: url('/images/bg-cyberpunk.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(20, 20, 20, 0.9);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #444;
+}
+
+.footer-button {
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.footer-button img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 4px;
+}
+
+.footer-button:hover {
+  transform: scale(1.1);
+  color: #00ffff;
+}
+
+/* Universal back button style (for other pages) */
+.back-button {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  font-size: 14px;
+  border: 1px solid #555;
+  border-radius: 8px;
+  text-decoration: none;
+  z-index: 999;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #00ffff;
 }
