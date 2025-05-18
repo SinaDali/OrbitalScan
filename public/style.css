@@ -16,13 +16,13 @@ body {
 
 h1, h2, h3 {
   color: #ffffff;
-  text-shadow: 0 0 8px #00ffff, 0 0 12px #00ffff;
+  text-shadow: 0 0 4px #a67cff, 0 0 10px #a67cff;
   letter-spacing: 1px;
 }
 
 .neon-title {
   font-size: 32px;
-  text-shadow: 0 0 6px #00faff, 0 0 12px #00c7ff, 0 0 24px #00a0ff;
+  text-shadow: 0 0 4px #a67cff, 0 0 12px #a67cff;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -35,7 +35,7 @@ h1, h2, h3 {
 
 .age-warning {
   font-size: 13px;
-  color: #ffa0a0;
+  color: #ffa0f0;
   margin-top: 10px;
 }
 
@@ -96,24 +96,25 @@ a:hover {
   display: inline-block;
   margin-top: 20px;
   padding: 8px 16px;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 192, 255, 0.08);
   color: #ffffff;
   font-size: 14px;
-  border: 1px solid #555;
+  border: 1px solid #ff80ff;
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.2s ease;
+  box-shadow: 0 0 8px #ff80ff33;
 }
 
 .back-button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: #00ffff;
+  background-color: rgba(255, 192, 255, 0.2);
+  color: #ffccff;
 }
 
 .neon-box {
-  background-color: rgba(255, 255, 255, 0.05);
-  border: 1px solid #00ffff55;
-  box-shadow: 0 0 8px #00ffff55;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid #00ffff40;
+  box-shadow: 0 0 8px #00ffff22;
   padding: 15px;
   margin-bottom: 20px;
   border-radius: 10px;
