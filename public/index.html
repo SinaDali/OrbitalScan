@@ -44,12 +44,12 @@
 <body class="lighter-overlay" style="background-image: url('images/bg-home.jpg');">
 
   <!-- LOADER SCREEN -->
-  <div id="loader-screen">
+  <div id="loader-screen" style="display:none;">
     <div id="loader-text">Loading Web3 Alpha...</div>
   </div>
 
   <!-- MAIN CONTENT -->
-  <div id="main-content" style="display:none;">
+  <div id="main-content">
     <div class="container" style="text-align: center; padding-top: 80px;">
       <h1 class="neon-title" style="text-shadow: 0 0 4px #a67cff, 0 0 12px #a67cff;">OrbitalScan</h1>
       <p class="tagline">Your gateway to smarter Web3 investing, daily.</p>
@@ -76,26 +76,32 @@
     const audio = document.getElementById("welcome-audio");
 
     window.addEventListener("load", () => {
-      const alreadyVisited = sessionStorage.getItem("orbitalVisited");
+      const alreadyPlayed = sessionStorage.getItem("introPlayed");
 
-      if (!alreadyVisited) {
-        sessionStorage.setItem("orbitalVisited", "true");
+      if (!alreadyPlayed) {
+        // First time load: show loader and play sound
+        loader.style.display = "flex";
+        main.style.display = "none";
+
+        setTimeout(() => {
+          loader.style.display = "none";
+          main.style.display = "block";
+        }, 1200);
 
         const playAudio = () => {
           audio.play().catch(() => {});
+          sessionStorage.setItem("introPlayed", "true");
           document.removeEventListener("click", playAudio);
           document.removeEventListener("touchstart", playAudio);
         };
         document.addEventListener("click", playAudio);
         document.addEventListener("touchstart", playAudio);
       } else {
-        audio.remove(); // don't play again
-      }
-
-      setTimeout(() => {
-        loader.style.display = "none";
+        // Return visit or back navigation: skip loader and audio
+        loader.remove();
+        audio.remove();
         main.style.display = "block";
-      }, 800); // Reduced loader time to 800ms
+      }
     });
   </script>
 
