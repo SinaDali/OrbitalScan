@@ -33,11 +33,11 @@
     }
   </style>
 </head>
-<body class="overlay" style="background-image: url('images/bg.jpg');">
+<body class="overlay" style="background-image: url('images/bg-home.jpg');">
 
   <!-- LOADER SCREEN -->
   <div id="loader-screen">
-    <div id="loader-text">OrbitalScan...</div>
+    <div id="loader-text">Loading Web3 Alpha...</div>
   </div>
 
   <!-- MAIN CONTENT -->
@@ -71,7 +71,6 @@
       document.addEventListener("click", playAudio);
       document.addEventListener("touchstart", playAudio);
 
-      // Animation hide loader
       setTimeout(() => {
         document.getElementById("loader-screen").style.display = "none";
         document.getElementById("main-content").style.display = "block";
