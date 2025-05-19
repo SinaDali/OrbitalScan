@@ -45,7 +45,7 @@
 
   <!-- LOADER SCREEN -->
   <div id="loader-screen">
-    <div id="loader-text">OrbitalScan...</div>
+    <div id="loader-text">Loading Web3 Alpha...</div>
   </div>
 
   <!-- MAIN CONTENT -->
@@ -53,7 +53,12 @@
     <div class="container" style="text-align: center; padding-top: 80px;">
       <h1 class="neon-title" style="text-shadow: 0 0 4px #a67cff, 0 0 12px #a67cff;">OrbitalScan</h1>
       <p class="tagline">Your gateway to smarter Web3 investing, daily.</p>
-      <p class="age-warning">This MiniApp is intended for users aged <span style="color:#ff4444;font-weight:bold;">21+</span> due to its financial nature.</p>
+
+      <img src="images/logo.png" alt="OrbitalScan Logo" style="width: 120px; margin: 30px auto;" />
+
+      <p class="age-warning" style="margin-top: 10px;">
+        This MiniApp is intended for users aged <span style="color:#ff4444;font-weight:bold;">21+</span> due to its financial nature.
+      </p>
     </div>
 
     <div class="footer-nav">
@@ -70,14 +75,21 @@
 
   <script>
     window.addEventListener("load", () => {
+      // Audio logic: play only once per session
+      const played = sessionStorage.getItem("audioPlayed");
       const audio = document.getElementById("welcome-audio");
-      const playAudio = () => {
-        audio.play().catch(() => {});
-        document.removeEventListener("click", playAudio);
-        document.removeEventListener("touchstart", playAudio);
-      };
-      document.addEventListener("click", playAudio);
-      document.addEventListener("touchstart", playAudio);
+      if (!played) {
+        const playAudio = () => {
+          audio.play().catch(() => {});
+          sessionStorage.setItem("audioPlayed", "true");
+          document.removeEventListener("click", playAudio);
+          document.removeEventListener("touchstart", playAudio);
+        };
+        document.addEventListener("click", playAudio);
+        document.addEventListener("touchstart", playAudio);
+      } else {
+        audio.remove();
+      }
 
       setTimeout(() => {
         document.getElementById("loader-screen").style.display = "none";
