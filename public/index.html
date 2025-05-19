@@ -31,9 +31,17 @@
       50% { opacity: 0.4; }
       100% { opacity: 1; }
     }
+    body.lighter-overlay {
+      background-color: rgba(0, 0, 0, 0.3);
+      background-blend-mode: darken;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+    }
   </style>
 </head>
-<body class="overlay" style="background-image: url('images/bg-home.jpg');">
+<body class="lighter-overlay" style="background-image: url('images/bg-home.jpg');">
 
   <!-- LOADER SCREEN -->
   <div id="loader-screen">
