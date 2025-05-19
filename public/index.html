@@ -6,21 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>OrbitalScan</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    #loader-screen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0d0d0d;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #loader-text {
+      font-size: 20px;
+      font-weight: bold;
+      color: #00ffff;
+      animation: pulse 1.5s infinite;
+      text-shadow: 0 0 6px #00ffff;
+    }
+    @keyframes pulse {
+      0% { opacity: 1; }
+      50% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+  </style>
 </head>
 <body class="overlay" style="background-image: url('images/bg.jpg');">
 
-  <div class="container" style="text-align: center; padding-top: 80px;">
-    <h1 class="neon-title" style="text-shadow: 0 0 4px #a67cff, 0 0 12px #a67cff;">OrbitalScan</h1>
-    <p class="tagline">Your gateway to smarter Web3 investing, daily.</p>
-    <p class="age-warning">This MiniApp is intended for users aged <span style="color:#ff4444;font-weight:bold;">21+</span> due to its financial nature.</p>
+  <!-- LOADER SCREEN -->
+  <div id="loader-screen">
+    <div id="loader-text">Loading Web3 Alpha...</div>
   </div>
 
-  <div class="footer-nav">
-    <a href="features.html" class="footer-button"><img src="images/icon-services.png" alt="Services" /><br />Services</a>
-    <a href="whoarewe.html" class="footer-button"><img src="images/icon-team.png" alt="Team" /><br />Who We Are</a>
-    <a href="contact.html" class="footer-button"><img src="images/icon-contact.png" alt="Contact" /><br />Contact</a>
-    <a href="dashboard.html" class="footer-button"><img src="images/icon-dashboard.png" alt="Dashboard" /><br />Dashboard</a>
+  <!-- MAIN CONTENT -->
+  <div id="main-content" style="display:none;">
+    <div class="container" style="text-align: center; padding-top: 80px;">
+      <h1 class="neon-title" style="text-shadow: 0 0 4px #a67cff, 0 0 12px #a67cff;">OrbitalScan</h1>
+      <p class="tagline">Your gateway to smarter Web3 investing, daily.</p>
+      <p class="age-warning">This MiniApp is intended for users aged <span style="color:#ff4444;font-weight:bold;">21+</span> due to its financial nature.</p>
+    </div>
+
+    <div class="footer-nav">
+      <a href="features.html" class="footer-button"><img src="images/icon-services.png" alt="Services" /><br />Services</a>
+      <a href="whoarewe.html" class="footer-button"><img src="images/icon-team.png" alt="Team" /><br />Who We Are</a>
+      <a href="contact.html" class="footer-button"><img src="images/icon-contact.png" alt="Contact" /><br />Contact</a>
+      <a href="dashboard.html" class="footer-button"><img src="images/icon-dashboard.png" alt="Dashboard" /><br />Dashboard</a>
+    </div>
   </div>
+
+  <audio id="welcome-audio" autoplay>
+    <source src="audio/welcome.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script>
+    window.addEventListener("load", () => {
+      const audio = document.getElementById("welcome-audio");
+      const playAudio = () => {
+        audio.play().catch(() => {});
+        document.removeEventListener("click", playAudio);
+        document.removeEventListener("touchstart", playAudio);
+      };
+      document.addEventListener("click", playAudio);
+      document.addEventListener("touchstart", playAudio);
+
+      // Animation hide loader
+      setTimeout(() => {
+        document.getElementById("loader-screen").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+      }, 1800);
+    });
+  </script>
 
 </body>
 </html>

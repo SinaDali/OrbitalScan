@@ -16,7 +16,7 @@
 
   <div style="padding: 20px;">
     <div class="neon-box">
-      <p><strong>Username:</strong> @your_username</p>
+      <p><strong>Username:</strong> <span id="nickname">Loading...</span></p>
       <p><strong>Join Date:</strong> 2024-12-01</p>
       <p><strong>Plan:</strong> Free Access</p>
       <p><strong>Days Remaining:</strong> Unlimited (Free)</p>
@@ -41,6 +41,19 @@
   <div style="text-align: center; margin-top: 30px; padding-bottom: 20px;">
     <a href="index.html" class="back-button">← Back to Home</a>
   </div>
+
+  <script>
+    window.addEventListener("load", () => {
+      let nickname = localStorage.getItem("nickname");
+      if (!nickname) {
+        nickname = prompt("Enter your name:");
+        if (nickname) {
+          localStorage.setItem("nickname", nickname);
+        }
+      }
+      document.getElementById("nickname").textContent = nickname || "Guest";
+    });
+  </script>
 
 </body>
 </html>
