@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +9,7 @@
     #loader-screen {
       position: fixed;
       top: 0; left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100%; height: 100%;
       background: #0d0d0d;
       z-index: 9999;
       display: flex;
@@ -28,7 +26,7 @@
     }
     @keyframes pulse {
       0% { opacity: 1; }
-      50% { opacity: 0.4; }
+      50% { opacity: 0.3; }
       100% { opacity: 1; }
     }
     body.lighter-overlay {
@@ -41,9 +39,9 @@
     }
   </style>
 </head>
-<body class="lighter-overlay" style="background-image: url('images/bg-home.jpg');">
+<body id="mainBody" class="lighter-overlay" style="background-image: url('images/bg-home.jpg');">
 
-  <div id="loader-screen" style="display: none;">
+  <div id="loader-screen">
     <div id="loader-text">Loading Web3 Alpha...</div>
   </div>
 
@@ -64,7 +62,7 @@
     </div>
   </div>
 
-  <audio id="welcome-audio" autoplay>
+  <audio id="welcome-audio" preload="auto">
     <source src="audio/welcome.mp3" type="audio/mpeg" />
   </audio>
 
@@ -72,35 +70,26 @@
     const loader = document.getElementById("loader-screen");
     const main = document.getElementById("main-content");
     const audio = document.getElementById("welcome-audio");
+    const isBack = performance.getEntriesByType("navigation")[0].type !== "navigate";
 
-    function isBackNavigation() {
-      return performance.getEntriesByType("navigation")[0].type !== "navigate";
-    }
+    window.addEventListener("DOMContentLoaded", () => {
+      const played = sessionStorage.getItem("introPlayed");
 
-    const firstVisit = !sessionStorage.getItem("introPlayed");
-    const backNav = isBackNavigation();
-
-    if (firstVisit && !backNav) {
-      loader.style.display = "flex";
-      setTimeout(() => {
-        loader.style.display = "none";
+      if (!played && !isBack) {
+        // First-time launch only
+        setTimeout(() => {
+          loader.style.display = "none";
+          main.style.display = "block";
+          audio.play().catch(() => {});
+          sessionStorage.setItem("introPlayed", "true");
+        }, 1200);
+      } else {
+        // Skip loader and audio for returning or back nav
+        loader.remove();
+        audio.remove();
         main.style.display = "block";
-      }, 1200);
-
-      const playAudio = () => {
-        audio.play().catch(() => {});
-        sessionStorage.setItem("introPlayed", "true");
-        document.removeEventListener("click", playAudio);
-        document.removeEventListener("touchstart", playAudio);
-      };
-      document.addEventListener("click", playAudio);
-      document.addEventListener("touchstart", playAudio);
-    } else {
-      // No loader or sound for back navigation or after first load
-      loader.remove();
-      audio.remove();
-      main.style.display = "block";
-    }
+      }
+    });
   </script>
 
 </body>
