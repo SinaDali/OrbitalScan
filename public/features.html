@@ -1,30 +1,35 @@
-<!-- features.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services - OrbitalScan</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="js/auth-check.js" defer></script>
 </head>
-<body class="overlay" style="background-image: url('images/bg.jpg');">
+<body class="lighter-overlay" style="background-image: url('images/bg.jpg');">
 
-  <div class="container" style="text-align: center; padding-top: 40px;">
-    <h1 class="neon-title">What We Offer</h1>
-    <p class="tagline">Tap on any section to explore deeper.</p>
+  <div class="container">
+    <h1 class="neon-title">Our Services</h1>
+
+    <div id="access-denied" style="display:none; text-align:center; color:#ff4444; margin-top:40px;">
+      <p><strong>Access Denied</strong></p>
+      <p>You need a valid subscription to view this section.</p>
+    </div>
+
+    <div id="service-list" style="display:none;">
+      <div class="neon-box"><a href="memecoins.html">Memecoin Radar</a></div>
+      <div class="neon-box"><a href="nfts.html">NFT Picks</a></div>
+      <div class="neon-box"><a href="airdrops.html">Airdrops</a></div>
+      <div class="neon-box"><a href="quests.html">Game Projects</a></div>
+      <div class="neon-box disabled">Mining (Coming Soon)</div>
+      <div class="neon-box disabled">AI Agent (Coming Soon)</div>
+    </div>
+
+    <div style="text-align:center; margin-top: 40px;">
+      <a href="index.html" class="back-button">Back to Home</a>
+    </div>
   </div>
 
-  <div style="padding: 20px;">
-    <div class="neon-box"><strong>Memecoin Radar</strong><br />Discover top meme tokens on ETH, SOL, BSC</div>
-    <div class="neon-box"><strong>NFT Picks</strong><br />Curated NFTs with mint or flip potential</div>
-    <div class="neon-box"><strong>Airdrop Radar</strong><br />Claimable airdrops & limited-time rewards</div>
-    <div class="neon-box"><strong>Quest of the Day</strong><br />Simple daily tasks for points (Coming Soon)</div>
-    <div class="neon-box disabled"><strong>AI Alpha Agent</strong><br />24/7 signal scouting by Web3 AI (Coming Soon)</div>
-    <div class="neon-box disabled"><strong>Mining Mode</strong><br />Token mining + reputation (Coming Soon)</div>
-  </div>
-
-  <div style="text-align: center; margin-top: 20px; padding-bottom: 20px;">
-    <a href="index.html" class="back-button">← Back to Home</a>
-  </div>
 </body>
 </html>

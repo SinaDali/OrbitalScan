@@ -1,29 +1,11 @@
-// js/auth-check.js
+document.addEventListener("DOMContentLoaded", () => {
+  const hasAccess = localStorage.getItem("subscriptionActive") === "true";
+  const serviceList = document.getElementById("service-list");
+  const denied = document.getElementById("access-denied");
 
-async function checkUserAuthorization() {
-  const username = prompt('Enter your Telegram username (include @):');
-
-  if (!username) {
-    alert('Username is required to continue.');
-    window.location.href = 'index.html';
-    return;
+  if (hasAccess) {
+    serviceList.style.display = "block";
+  } else {
+    denied.style.display = "block";
   }
-
-  try {
-    const response = await fetch('data/users.json');
-    const data = await response.json();
-    const authorized = data.authorized_users.some(user => user.telegram_username === username);
-
-    if (!authorized) {
-      alert('You are not authorized to access this page.');
-      window.location.href = 'index.html';
-    }
-  } catch (error) {
-    console.error('Error checking authorization:', error);
-    alert('An error occurred. Please try again later.');
-    window.location.href = 'index.html';
-  }
-}
-
-// Run check on page load
-window.onload = checkUserAuthorization;
+});
