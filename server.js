@@ -1,10 +1,9 @@
 // server.js
-// Express server for verifying Telegram usernames and serving static frontend
+// Express server for verifying Telegram usernames and serving static frontend (no wildcard route for Node v22 compatibility)
 
 const express = require('express');
 const fs = require('fs');
 const cors = require('cors');
-const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -45,11 +44,6 @@ app.post('/check-subscription', (req, res) => {
       return res.status(500).json({ access: 'denied', error: 'Parsing error' });
     }
   });
-});
-
-// Fallback to index.html for unmatched routes (for MiniApp compatibility)
-app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });
 
 // Start the server
