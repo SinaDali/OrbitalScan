@@ -1,49 +1,48 @@
 // server.js
-const { Telegraf } = require("telegraf");
-const fs = require("fs");
-const path = require("path");
-require("dotenv").config();
+// Express server for verifying Telegram usernames against the subscription list
 
-const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN);
+const express = require('express');
+const fs = require('fs');
+const cors = require('cors');
+const app = express();
+const PORT = 3000;
 
-const USERS_FILE = path.join(__dirname, "data", "users.json");
+// Middleware
+app.use(cors());
+app.use(express.json());
 
-function loadUsers() {
-  try {
-    const data = fs.readFileSync(USERS_FILE, "utf8");
-    return JSON.parse(data);
-  } catch (error) {
-    return { authorized_users: [] };
-  }
-}
-
-function saveUsers(users) {
-  fs.writeFileSync(USERS_FILE, JSON.stringify(users, null, 2));
-}
-
-bot.start((ctx) => {
-  const username = ctx.from.username ? `@${ctx.from.username}` : null;
+// Endpoint: Check if a Telegram username is authorized
+app.post('/check-subscription', (req, res) => {
+  const username = req.body.username;
 
   if (!username) {
-    return ctx.reply("⚠️ Your Telegram username is required.");
+    return res.status(400).json({ access: 'denied', error: 'No username provided' });
   }
 
-  const users = loadUsers();
-  const alreadyExists = users.authorized_users.find((u) => u.telegram_username === username);
+  // Load the users.json file
+  fs.readFile('./data/users.json', 'utf8', (err, data) => {
+    if (err) {
+      console.error('Error reading users.json:', err);
+      return res.status(500).json({ access: 'denied', error: 'Server error' });
+    }
 
-  if (alreadyExists) {
-    ctx.reply("✅ You already have access to OrbitalScan MiniApp.");
-  } else {
-    users.authorized_users.push({
-      telegram_username: username,
-      wallet: "",
-      network: "",
-      txhash: "",
-    });
-    saveUsers(users);
-    ctx.reply("✅ Access granted! You can now use the OrbitalScan MiniApp.");
-  }
+    try {
+      const json = JSON.parse(data);
+      const authorized = json.authorized_users.some(user => user.telegram_username.replace('@', '') === username.replace('@', ''));
+
+      if (authorized) {
+        return res.json({ access: 'granted' });
+      } else {
+        return res.json({ access: 'denied' });
+      }
+    } catch (e) {
+      console.error('Error parsing users.json:', e);
+      return res.status(500).json({ access: 'denied', error: 'Parsing error' });
+    }
+  });
 });
 
-bot.launch();
-console.log("🤖 Bot is running...");
+// Start server
+app.listen(PORT, () => {
+  console.log(`Subscription server running at http://localhost:${PORT}`);
+});
