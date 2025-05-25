@@ -2,34 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services - OrbitalScan</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="js/auth-check.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OrbitalScan - Our Services</title>
+  <link href="../style.css" rel="stylesheet" />
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+    }
+
+    #service-container {
+      display: none;
+    }
+
+    .back-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 2px solid #ff00ff;
+      background: transparent;
+      color: white;
+      font-size: 16px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #ff00ff;
+      text-decoration: none;
+    }
+
+    #access-message {
+      color: #ff3b3b;
+      background: rgba(255, 255, 255, 0.05);
+      border: 2px solid #ff3b3b;
+      padding: 12px 16px;
+      margin-top: 20px;
+      width: fit-content;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 12px #ff3b3b;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 8px #00ffff;
+    }
+  </style>
 </head>
-<body class="lighter-overlay" style="background-image: url('images/bg.jpg');">
+<body>
+  <img src="images/logo.png" alt="Logo" class="logo" />
+  <h1>Our Services</h1>
 
-  <div class="container">
-    <h1 class="neon-title">Our Services</h1>
+  <!-- Access Denied Message -->
+  <div id="access-message">Checking access...</div>
 
-    <div id="access-denied" style="display:none; text-align:center; color:#ff4444; margin-top:40px;">
-      <p><strong>Access Denied</strong></p>
-      <p>You need a valid subscription to view this section.</p>
-    </div>
-
-    <div id="service-list" style="display:none;">
-      <div class="neon-box"><a href="memecoins.html">Memecoin Radar</a></div>
-      <div class="neon-box"><a href="nfts.html">NFT Picks</a></div>
-      <div class="neon-box"><a href="airdrops.html">Airdrops</a></div>
-      <div class="neon-box"><a href="quests.html">Game Projects</a></div>
-      <div class="neon-box disabled">Mining (Coming Soon)</div>
-      <div class="neon-box disabled">AI Agent (Coming Soon)</div>
-    </div>
-
-    <div style="text-align:center; margin-top: 40px;">
-      <a href="index.html" class="back-button">Back to Home</a>
-    </div>
+  <!-- Service container (hidden unless access is granted) -->
+  <div id="service-container">
+    <!-- Future services go here -->
   </div>
 
+  <a href="index.html" class="back-button">Back to Home</a>
+
+  <script src="js/auth-check.js"></script>
 </body>
 </html>
