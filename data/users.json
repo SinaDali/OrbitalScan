@@ -1,6 +1,16 @@
 {
-  "telegram_username": "@alonedegan",
-  "wallet": "",
-  "network": "",
-  "txhash": ""
+  "authorized_users": [
+    {
+      "telegram_username": "@Sina_Salmasi",
+      "wallet": "",
+      "network": "",
+      "txhash": ""
+    },
+    {
+      "telegram_username": "@alonedegan",
+      "wallet": "",
+      "network": "",
+      "txhash": ""
+    }
+  ]
 }
