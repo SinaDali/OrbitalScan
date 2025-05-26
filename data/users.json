@@ -1,10 +1,17 @@
 {
   "authorized_users": [
     {
-      "telegram_username": "@SinaSalmasi",
+      "telegram_username": "@Sina_Salmasi",
       "wallet": "0x123...abc",
       "network": "ERC20",
       "txhash": "0xabcde123456789"
     }
   ]
+}
+
+{
+  "telegram_username": "@Alonedegan",
+  "wallet": "",
+  "network": "",
+  "txhash": ""
 }
