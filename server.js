@@ -1,52 +1,45 @@
-// server.js
-// Express server for verifying Telegram usernames and serving static frontend (no wildcard route for Node v22 compatibility)
-
-const express = require('express');
-const fs = require('fs');
-const cors = require('cors');
+const express = require("express");
+const fs = require("fs");
+const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Serve static frontend files from /public
-app.use(express.static('public'));
-
-// API: Check if a Telegram username is authorized
-app.post('/check-subscription', (req, res) => {
-  const username = req.body.username;
+app.post("/check-subscription", (req, res) => {
+  const { username } = req.body;
 
   if (!username) {
-    return res.status(400).json({ access: 'denied', error: 'No username provided' });
+    return res.status(400).json({ access: "denied", reason: "Missing username" });
   }
 
-  fs.readFile('./data/users.json', 'utf8', (err, data) => {
+  fs.readFile("./data/users.json", "utf8", (err, data) => {
     if (err) {
-      console.error('Error reading users.json:', err);
-      return res.status(500).json({ access: 'denied', error: 'Server error' });
+      console.error("Error reading users.json:", err);
+      return res.status(500).json({ access: "denied", reason: "Server error" });
     }
 
     try {
-      const json = JSON.parse(data);
-      const authorized = json.authorized_users.some(user =>
-        user.telegram_username.replace('@', '') === username.replace('@', '')
+      const users = JSON.parse(data).authorized_users || [];
+      const formattedUsername = `@${username}`;
+
+      const found = users.some(user =>
+        user.telegram_username.toLowerCase() === formattedUsername.toLowerCase()
       );
 
-      if (authorized) {
-        return res.json({ access: 'granted' });
+      if (found) {
+        return res.json({ access: "granted" });
       } else {
-        return res.json({ access: 'denied' });
+        return res.json({ access: "denied" });
       }
     } catch (e) {
-      console.error('Error parsing users.json:', e);
-      return res.status(500).json({ access: 'denied', error: 'Parsing error' });
+      console.error("JSON parse error:", e);
+      return res.status(500).json({ access: "denied", reason: "Parse error" });
     }
   });
 });
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Subscription server running at http://localhost:${PORT}`);
 });
