@@ -1,5 +1,5 @@
 // auth-check.js
-// This script runs inside the MiniApp and checks user's Telegram username via your backend API
+// Secure MiniApp access control via Telegram username check
 
 window.addEventListener('DOMContentLoaded', async () => {
   const tg = window.Telegram.WebApp;
@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', async () => {
   const serviceContainer = document.getElementById('service-container');
   const accessMessage = document.getElementById('access-message');
 
-  // Clear previous content
+  // Start with hiding services
   serviceContainer.style.display = 'none';
   accessMessage.textContent = 'Checking access...';
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ username }),
+      body: JSON.stringify({ username })
     });
 
     const data = await response.json();
@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', async () => {
       accessMessage.textContent = 'Access Denied: You must subscribe to access services.';
     }
   } catch (error) {
-    console.error('Error checking subscription:', error);
+    console.error('Auth check failed:', error);
     accessMessage.textContent = 'Access Denied: Server error.';
   }
 });
