@@ -1,13 +1,19 @@
 {
   "authorized_users": [
     {
+      "telegram_username": "@Alonedegan",
+      "wallet": "",
+      "network": "",
+      "txhash": ""
+    },
+    {
       "telegram_username": "@Sina_Salmasi",
       "wallet": "",
       "network": "",
       "txhash": ""
     },
     {
-      "telegram_username": "@alonedegan",
+      "telegram_username": "@Arisavak",
       "wallet": "",
       "network": "",
       "txhash": ""
