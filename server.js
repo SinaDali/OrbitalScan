@@ -4,16 +4,27 @@ const path = require("path");
 const cors = require("cors");
 
 const app = express();
-app.use(cors());
-
 const PORT = process.env.PORT || 3000;
+
+app.use(cors());
+app.use(express.json());
+
+// Serve static files from public directory
+app.use(express.static(path.join(__dirname, "public")));
+
+// Serve index.html at root
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
 const USERS_FILE = path.join(__dirname, "data", "users.json");
 
-// Always authorized usernames
+// Always allowed usernames
 const alwaysAuthorized = ["@Sina_Salmasi", "@Alonedegan", "@Arisavak"];
 
-app.get("/auth-check", (req, res) => {
-  const username = req.query.username;
+app.post("/check-subscription", (req, res) => {
+  const { username } = req.body;
+
   if (!username) {
     return res.status(400).json({ access: "denied", reason: "No username provided" });
   }
@@ -21,17 +32,17 @@ app.get("/auth-check", (req, res) => {
   try {
     const data = fs.readFileSync(USERS_FILE, "utf8");
     const parsed = JSON.parse(data);
-    const user = parsed.authorized_users.find(u => u.telegram_username === username);
+    const user = parsed.authorized_users.find(u => u.telegram_username === "@" + username);
 
     const now = Date.now();
 
-    if (alwaysAuthorized.includes(username)) {
+    if (alwaysAuthorized.includes("@" + username)) {
       return res.json({ access: "granted", reason: "Always authorized user" });
     }
 
     if (user) {
       const registeredAt = user.registered_at;
-      const expired = now - registeredAt > 2 * 24 * 60 * 60 * 1000; // 2 days
+      const expired = now - registeredAt > 2 * 24 * 60 * 60 * 1000;
 
       if (!expired) {
         return res.json({ access: "granted", reason: "Within free trial" });
@@ -40,7 +51,7 @@ app.get("/auth-check", (req, res) => {
       }
     } else {
       parsed.authorized_users.push({
-        telegram_username: username,
+        telegram_username: "@" + username,
         registered_at: now
       });
 
