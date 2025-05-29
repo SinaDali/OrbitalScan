@@ -9,13 +9,18 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-const USERS_FILE = path.join(__dirname, "data", "users.json");
+// Serve static frontend files
+app.use(express.static(path.join(__dirname, "public")));
 
-// Homepage route
+// Serve index.html on root path
 app.get("/", (req, res) => {
-  res.send("OrbitalScan Backend is Running ✅");
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
+// File to track users and trial access
+const USERS_FILE = path.join(__dirname, "data", "users.json");
+
+// Endpoint to check subscription
 app.post("/check-subscription", (req, res) => {
   const { username } = req.body;
 
@@ -36,7 +41,7 @@ app.post("/check-subscription", (req, res) => {
       const now = Date.now();
 
       let user = users.find(u =>
-        user.telegram_username.toLowerCase() === formattedUsername.toLowerCase()
+        u.telegram_username.toLowerCase() === formattedUsername.toLowerCase()
       );
 
       if (!user) {
@@ -69,5 +74,5 @@ app.post("/check-subscription", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Subscription server with trial and root route running at http://localhost:${PORT}`);
+  console.log(`Subscription server with trial running at http://localhost:${PORT}`);
 });
