@@ -1,41 +1,42 @@
-// auth-check.js
-// Secure MiniApp access control via Telegram username check
+document.addEventListener("DOMContentLoaded", () => {
+  const username = window.Telegram.WebApp.initDataUnsafe.user?.username;
 
-window.addEventListener('DOMContentLoaded', async () => {
-  const tg = window.Telegram.WebApp;
-  const username = tg?.initDataUnsafe?.user?.username;
+  const accessMessage = document.createElement("div");
+  accessMessage.id = "accessMessage";
+  accessMessage.style.textAlign = "center";
+  accessMessage.style.marginTop = "50px";
+  accessMessage.style.fontSize = "20px";
+  accessMessage.style.color = "#fff";
 
-  const serviceContainer = document.getElementById('service-container');
-  const accessMessage = document.getElementById('access-message');
-
-  // Start with hiding services
-  serviceContainer.style.display = 'none';
-  accessMessage.textContent = 'Checking access...';
+  const content = document.getElementById("content");
+  content.innerHTML = ""; // Clear previous content
+  content.appendChild(accessMessage);
 
   if (!username) {
-    accessMessage.textContent = 'Access Denied: Telegram username not found.';
+    accessMessage.innerText = "Access Denied: Username not found.";
     return;
   }
 
-  try {
-    const response = await fetch('https://orbitalscan.onrender.com/check-subscription', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ username })
+  fetch("/check-subscription", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ username })
+  })
+    .then(response => response.json())
+    .then(data => {
+      if (data.access === "granted") {
+        accessMessage.innerText = "Access Granted ✅";
+        setTimeout(() => {
+          window.location.href = "features.html";
+        }, 1000);
+      } else {
+        accessMessage.innerText = "🔒 Access Denied: Your trial has expired. Please subscribe to continue.";
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      accessMessage.innerText = "Server Error. Try again later.";
     });
-
-    const data = await response.json();
-
-    if (data.access === 'granted') {
-      accessMessage.style.display = 'none';
-      serviceContainer.style.display = 'block';
-    } else {
-      accessMessage.textContent = 'Access Denied: You must subscribe to access services.';
-    }
-  } catch (error) {
-    console.error('Auth check failed:', error);
-    accessMessage.textContent = 'Access Denied: Server error.';
-  }
 });
