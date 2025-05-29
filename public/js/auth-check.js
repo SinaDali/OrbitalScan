@@ -1,19 +1,25 @@
 document.addEventListener("DOMContentLoaded", () => {
   const username = window.Telegram.WebApp.initDataUnsafe.user?.username;
 
-  const accessMessage = document.createElement("div");
-  accessMessage.id = "accessMessage";
-  accessMessage.style.textAlign = "center";
-  accessMessage.style.marginTop = "50px";
-  accessMessage.style.fontSize = "20px";
-  accessMessage.style.color = "#fff";
+  const accessBox = document.createElement("div");
+  accessBox.id = "accessBox";
+  accessBox.style.textAlign = "center";
+  accessBox.style.marginTop = "60px";
+  accessBox.style.padding = "15px";
+  accessBox.style.border = "2px solid red";
+  accessBox.style.borderRadius = "12px";
+  accessBox.style.color = "#ff6666";
+  accessBox.style.background = "rgba(255,0,0,0.1)";
+  accessBox.style.width = "80%";
+  accessBox.style.marginLeft = "auto";
+  accessBox.style.marginRight = "auto";
 
   const content = document.getElementById("content");
-  content.innerHTML = ""; // Clear previous content
-  content.appendChild(accessMessage);
+  content.innerHTML = "";
+  content.appendChild(accessBox);
 
   if (!username) {
-    accessMessage.innerText = "Access Denied: Username not found.";
+    accessBox.innerText = "Access Denied: No Telegram username detected.";
     return;
   }
 
@@ -24,19 +30,19 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     body: JSON.stringify({ username })
   })
-    .then(response => response.json())
-    .then(data => {
+    .then((res) => res.json())
+    .then((data) => {
       if (data.access === "granted") {
-        accessMessage.innerText = "Access Granted ✅";
+        accessBox.innerText = "Access Granted ✅ Redirecting...";
         setTimeout(() => {
           window.location.href = "features.html";
         }, 1000);
       } else {
-        accessMessage.innerText = "🔒 Access Denied: Your trial has expired. Please subscribe to continue.";
+        accessBox.innerText = "Access Denied: Please subscribe to access this section.";
       }
     })
-    .catch(error => {
-      console.error("Error:", error);
-      accessMessage.innerText = "Server Error. Try again later.";
+    .catch((err) => {
+      console.error(err);
+      accessBox.innerText = "Server Error: Please try again later.";
     });
 });
