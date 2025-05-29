@@ -76,3 +76,4 @@ app.post("/check-subscription", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Subscription server with trial running at http://localhost:${PORT}`);
 });
+// updated for force deploy
