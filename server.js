@@ -11,6 +11,11 @@ app.use(express.json());
 
 const USERS_FILE = path.join(__dirname, "data", "users.json");
 
+// Homepage route
+app.get("/", (req, res) => {
+  res.send("OrbitalScan Backend is Running ✅");
+});
+
 app.post("/check-subscription", (req, res) => {
   const { username } = req.body;
 
@@ -31,10 +36,9 @@ app.post("/check-subscription", (req, res) => {
       const now = Date.now();
 
       let user = users.find(u =>
-        u.telegram_username.toLowerCase() === formattedUsername.toLowerCase()
+        user.telegram_username.toLowerCase() === formattedUsername.toLowerCase()
       );
 
-      // First time user
       if (!user) {
         const newUser = {
           telegram_username: formattedUsername,
@@ -48,7 +52,6 @@ app.post("/check-subscription", (req, res) => {
         return res.json({ access: "granted", trial: true });
       }
 
-      // Check if within 2 days (172800000 ms)
       const registeredAt = user.registered_at || now;
       const expired = now - registeredAt > 2 * 24 * 60 * 60 * 1000;
 
@@ -66,5 +69,5 @@ app.post("/check-subscription", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Subscription server with trial running at http://localhost:${PORT}`);
+  console.log(`Subscription server with trial and root route running at http://localhost:${PORT}`);
 });
