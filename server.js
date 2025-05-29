@@ -1,79 +1,58 @@
 const express = require("express");
 const fs = require("fs");
-const cors = require("cors");
 const path = require("path");
+const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
-
 app.use(cors());
-app.use(express.json());
 
-// Serve static frontend files
-app.use(express.static(path.join(__dirname, "public")));
-
-// Serve index.html on root path
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
-
-// File to track users and trial access
+const PORT = process.env.PORT || 3000;
 const USERS_FILE = path.join(__dirname, "data", "users.json");
 
-// Endpoint to check subscription
-app.post("/check-subscription", (req, res) => {
-  const { username } = req.body;
+// Always authorized usernames
+const alwaysAuthorized = ["@Sina_Salmasi", "@Alonedegan", "@Arisavak"];
 
+app.get("/auth-check", (req, res) => {
+  const username = req.query.username;
   if (!username) {
-    return res.status(400).json({ access: "denied", reason: "Missing username" });
+    return res.status(400).json({ access: "denied", reason: "No username provided" });
   }
 
-  fs.readFile(USERS_FILE, "utf8", (err, data) => {
-    if (err) {
-      console.error("Error reading users.json:", err);
-      return res.status(500).json({ access: "denied", reason: "Server error" });
+  try {
+    const data = fs.readFileSync(USERS_FILE, "utf8");
+    const parsed = JSON.parse(data);
+    const user = parsed.authorized_users.find(u => u.telegram_username === username);
+
+    const now = Date.now();
+
+    if (alwaysAuthorized.includes(username)) {
+      return res.json({ access: "granted", reason: "Always authorized user" });
     }
 
-    try {
-      const json = JSON.parse(data);
-      const users = json.authorized_users || [];
-      const formattedUsername = `@${username}`;
-      const now = Date.now();
+    if (user) {
+      const registeredAt = user.registered_at;
+      const expired = now - registeredAt > 2 * 24 * 60 * 60 * 1000; // 2 days
 
-      let user = users.find(u =>
-        u.telegram_username.toLowerCase() === formattedUsername.toLowerCase()
-      );
-
-      if (!user) {
-        const newUser = {
-          telegram_username: formattedUsername,
-          registered_at: now,
-          wallet: "",
-          network: "",
-          txhash: ""
-        };
-        users.push(newUser);
-        fs.writeFileSync(USERS_FILE, JSON.stringify({ authorized_users: users }, null, 2));
-        return res.json({ access: "granted", trial: true });
-      }
-
-      const registeredAt = user.registered_at || now;
-      const expired = now - registeredAt > 2 * 24 * 60 * 60 * 1000;
-
-      if (expired) {
-        return res.json({ access: "denied", reason: "Trial expired" });
+      if (!expired) {
+        return res.json({ access: "granted", reason: "Within free trial" });
       } else {
-        return res.json({ access: "granted", trial: true });
+        return res.json({ access: "denied", reason: "Free trial expired" });
       }
+    } else {
+      parsed.authorized_users.push({
+        telegram_username: username,
+        registered_at: now
+      });
 
-    } catch (parseError) {
-      console.error("JSON parse error:", parseError);
-      return res.status(500).json({ access: "denied", reason: "Invalid data format" });
+      fs.writeFileSync(USERS_FILE, JSON.stringify(parsed, null, 2));
+      return res.json({ access: "granted", reason: "New user trial started" });
     }
-  });
+  } catch (err) {
+    console.error("Error reading users file:", err);
+    return res.status(500).json({ access: "denied", reason: "Server error" });
+  }
 });
 
 app.listen(PORT, () => {
-  console.log(`Subscription server with trial running at http://localhost:${PORT}`);
+  console.log(`Subscription server running at http://localhost:${PORT}`);
 });
-// updated for force deploy
