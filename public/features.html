@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -56,16 +57,30 @@
 <body>
   <h1>Our Services</h1>
 
-  <!-- Access Denied Message -->
   <div id="access-message">Access Denied: Please subscribe to access this section.</div>
-
-  <!-- Service container (hidden unless access is granted) -->
   <div id="service-container">
-    <!-- Future services go here -->
+    <p>Welcome to the premium features!</p>
   </div>
 
   <a href="index.html" class="back-button">Back to Home</a>
 
-  <script src="js/auth-check.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const tgUser = window.Telegram.WebApp.initDataUnsafe?.user?.username;
+        if (!tgUser) return;
+
+        const res = await fetch(`/auth-check?username=@${tgUser}`);
+        const data = await res.json();
+
+        if (data.access === true) {
+          document.getElementById("access-message").style.display = "none";
+          document.getElementById("service-container").style.display = "block";
+        }
+      } catch (e) {
+        console.error("Auth check failed:", e);
+      }
+    });
+  </script>
 </body>
 </html>
