@@ -3,14 +3,13 @@ const express = require("express");
 const fs = require("fs");
 const path = require("path");
 const dotenv = require("dotenv");
-const TelegramBot = require("node-telegram-bot-api");
 
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 10000;
-const bot = new TelegramBot(process.env.BOT_TOKEN || "your-token-here");
 
 app.use(express.static("public"));
+app.use(express.json());
 
 const USERS_FILE = path.join(__dirname, "data", "users.json");
 const ALWAYS_ALLOWED = ["@Sina_Salmasi", "@Alonedegan", "@Arisavak"];
