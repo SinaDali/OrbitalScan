@@ -9,10 +9,8 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Serve frontend static files
 app.use(express.static(path.join(__dirname, "public")));
 
-// Show index.html for root
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
@@ -22,13 +20,14 @@ const alwaysAuthorized = ["@Sina_Salmasi", "@Alonedegan", "@Arisavak"];
 
 app.post("/check-subscription", (req, res) => {
   const username = req.body.username;
+  console.log("🟡 Username received:", username); // DEBUG LOG
+
   if (!username) {
     return res.status(400).json({ access: "denied", reason: "Missing username" });
   }
 
   const formattedUsername = username.startsWith("@") ? username : "@" + username;
 
-  // Always allow these users
   if (alwaysAuthorized.includes(formattedUsername)) {
     return res.json({ access: "granted", reason: "Always allowed user" });
   }
@@ -72,5 +71,5 @@ app.post("/check-subscription", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server fully running with access control at http://localhost:${PORT}`);
+  console.log(`Subscription server running at http://localhost:${PORT}`);
 });
