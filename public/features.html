@@ -4,95 +4,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OrbitalScan - Services Debug</title>
+  <title>OrbitalScan Debug</title>
   <link href="../style.css" rel="stylesheet" />
   <style>
     body {
-      background: url('images/bg.png') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-      font-family: 'Orbitron', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      background: #000;
+      color: #0ff;
+      font-family: monospace;
       padding: 20px;
     }
 
-    .neon-box {
-      border: 2px solid #00ffff;
+    .container {
+      background: #111;
+      border: 1px solid #0ff;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 0 12px #00ffff;
-      background: rgba(0,0,0,0.6);
-      text-align: center;
-      max-width: 90%;
-    }
-
-    .error {
-      color: #ff3b3b;
-      box-shadow: 0 0 12px #ff3b3b;
-      border-color: #ff3b3b;
+      box-shadow: 0 0 10px #0ff;
     }
 
     h1 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      text-shadow: 0 0 10px #00ffff;
+      color: #0ff;
+      text-shadow: 0 0 8px #0ff;
     }
 
-    p {
-      margin: 10px 0;
-      font-size: 16px;
+    pre {
+      color: #fff;
+      background: #222;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      margin-top: 15px;
     }
 
-    .back-button {
-      margin-top: 25px;
-      padding: 10px 20px;
+    .back {
+      margin-top: 20px;
+      display: inline-block;
+      color: #fff;
       border: 2px solid #ff00ff;
-      background: transparent;
-      color: white;
-      font-size: 16px;
+      padding: 10px 15px;
       border-radius: 10px;
-      box-shadow: 0 0 12px #ff00ff;
       text-decoration: none;
+      box-shadow: 0 0 10px #ff00ff;
     }
   </style>
 </head>
 <body>
-  <div class="neon-box" id="status-box">
-    <h1>Service Access Status</h1>
-    <p><strong>Username:</strong> <span id="username">@loading...</span></p>
-    <p><strong>Access:</strong> <span id="access">Checking...</span></p>
+  <div class="container">
+    <h1>Telegram initData Debug</h1>
+    <p><strong>Username:</strong> <span id="username">loading...</span></p>
+    <p><strong>initDataUnsafe:</strong></p>
+    <pre id="jsonOutput">{}</pre>
   </div>
-  <a href="index.html" class="back-button">Back to Home</a>
+
+  <a href="index.html" class="back">Back to Home</a>
 
   <script>
-    window.addEventListener("DOMContentLoaded", async () => {
+    window.addEventListener("DOMContentLoaded", () => {
+      const initData = Telegram.WebApp?.initDataUnsafe || null;
+      const output = document.getElementById("jsonOutput");
+      const usernameField = document.getElementById("username");
+
+      if (initData && initData.user) {
+        usernameField.textContent = `@${initData.user.username}`;
+      } else {
+        usernameField.textContent = "No username found";
+      }
+
       try {
-        const tgUser = window.Telegram.WebApp.initDataUnsafe?.user?.username;
-        document.getElementById("username").innerText = tgUser ? `@${tgUser}` : "Unknown";
-
-        if (!tgUser) {
-          document.getElementById("access").innerText = "❌ (No username found)";
-          document.getElementById("status-box").classList.add("error");
-          return;
-        }
-
-        const res = await fetch(`/auth-check?username=@${tgUser}`);
-        const data = await res.json();
-
-        if (data.access === true) {
-          document.getElementById("access").innerText = "✅ (Access granted)";
-        } else {
-          document.getElementById("access").innerText = "❌ (Access denied)";
-          document.getElementById("status-box").classList.add("error");
-        }
-      } catch (err) {
-        document.getElementById("access").innerText = "❌ (Error occurred)";
-        document.getElementById("status-box").classList.add("error");
-        console.error(err);
+        output.textContent = JSON.stringify(initData, null, 2);
+      } catch (e) {
+        output.textContent = "Could not stringify initDataUnsafe";
       }
     });
   </script>
