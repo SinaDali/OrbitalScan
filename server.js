@@ -1,22 +1,31 @@
 
-const express = require("express");
-const path = require("path");
+require('dotenv').config();
+const express = require('express');
+const { Telegraf } = require('telegraf');
+const cors = require('cors');
+const path = require('path');
+
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
+const botToken = process.env.BOT_TOKEN;
+const bot = new Telegraf(botToken);
 
-// Serve static files from 'public' directory
-app.use(express.static(path.join(__dirname, "public")));
+app.use(cors());
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Root route
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+// OPEN ACCESS — NO SUBSCRIPTION CHECK
+app.get('/auth-check', (req, res) => {
+  return res.json({ access: "granted" });
 });
 
-// Fallback route to serve index.html for all other paths
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+// Launch Telegram Bot
+bot.launch().then(() => {
+  console.log('Telegram bot started');
+}).catch(err => {
+  console.error('Bot launch failed:', err);
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+// Start server
+app.listen(port, () => {
+  console.log(`Subscription server running at http://localhost:${port}`);
 });
