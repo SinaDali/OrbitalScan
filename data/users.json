@@ -1,22 +1,9 @@
 {
-  "authorized_users": [
-    {
-      "telegram_username": "@Alonedegan",
-      "wallet": "",
-      "network": "",
-      "txhash": ""
-    },
-    {
-      "telegram_username": "@Sina_Salmasi",
-      "wallet": "",
-      "network": "",
-      "txhash": ""
-    },
-    {
-      "telegram_username": "@Arisavak",
-      "wallet": "",
-      "network": "",
-      "txhash": ""
-    }
-  ]
+    "always_allowed": [
+        "@Alonedegan",
+        "@Sina_Salmasi",
+        "@Arisavak"
+    ],
+    "subscribed_users": [],
+    "free_trial_users": {}
 }
