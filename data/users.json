@@ -1,9 +1,14 @@
 {
-    "always_allowed": [
-        "@Alonedegan",
-        "@Sina_Salmasi",
-        "@Arisavak"
-    ],
-    "subscribed_users": [],
-    "free_trial_users": {}
+  "@Sina_Salmasi": {
+    "created": "2025-05-30T15:20:24.371179Z",
+    "subscription": null
+  },
+  "@Alonedegan": {
+    "created": "2025-05-30T15:20:24.371188Z",
+    "subscription": null
+  },
+  "@Arisavak": {
+    "created": "2025-05-30T15:20:24.371191Z",
+    "subscription": null
+  }
 }
