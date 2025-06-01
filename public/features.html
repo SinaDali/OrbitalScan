@@ -1,4 +1,4 @@
-
+/
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,50 +7,67 @@
   <title>OrbitalScan - Services</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
     body {
       background-color: black;
       color: #0ff;
-      font-family: "Orbitron", sans-serif;
+      font-family: 'Share Tech Mono', monospace;
       text-align: center;
       padding: 20px;
     }
 
     .neon-box {
       border: 2px solid #00ffff;
-      box-shadow: 0 0 10px #00ffff;
+      box-shadow: 0 0 12px #00ffff;
       padding: 10px 20px;
       border-radius: 10px;
-      margin: 10px auto;
+      margin: 10px auto 30px;
       width: fit-content;
       font-size: 14px;
+      color: #00ffff;
     }
 
     .service-link {
       display: block;
-      margin: 20px auto;
-      width: 250px;
-      padding: 15px 20px;
+      margin: 15px auto;
+      width: 260px;
+      padding: 14px 20px;
       font-size: 18px;
       background-color: transparent;
-      color: #0ff;
-      border: 2px solid #0ff;
+      color: #66ffcc;
+      border: 2px solid #66ffcc;
       border-radius: 12px;
       text-decoration: none;
-      box-shadow: 0 0 15px #0ff;
+      box-shadow: 0 0 12px #66ffcc;
       transition: all 0.2s ease-in-out;
     }
 
     .service-link:hover {
-      background-color: #0ff;
+      background-color: #66ffcc;
       color: black;
-      transform: scale(1.05);
+      transform: scale(1.04);
+    }
+
+    .service-disabled {
+      display: block;
+      margin: 15px auto;
+      width: 260px;
+      padding: 14px 20px;
+      font-size: 18px;
+      color: #999;
+      border: 2px dashed #444;
+      border-radius: 12px;
+      background-color: #111;
+      pointer-events: none;
+      opacity: 0.6;
     }
 
     h1 {
       font-size: 32px;
-      margin-top: 40px;
-      color: #0ff;
-      text-shadow: 0 0 10px #0ff;
+      margin-top: 20px;
+      color: #66ffcc;
+      text-shadow: 0 0 10px #00ffcc;
     }
 
     .back-btn {
@@ -68,14 +85,15 @@
 </head>
 <body>
 
-  <div class="neon-box">🚀 Beta Mode Activated — All users have full access for now!</div>
+  <div class="neon-box">Beta Mode Activated — All users have full access for now!</div>
 
   <h1>Our Services</h1>
 
-  <a class="service-link" href="memecoins.html">🪙 Memecoin Radar</a>
-  <a class="service-link" href="nfts.html">🧬 NFT Picks</a>
-  <a class="service-link" href="airdrops.html">💸 Airdrop Vault</a>
-  <a class="service-link" href="gameprojects.html">🎮 Game Projects</a>
+  <a class="service-link" href="memecoins.html">Memecoin Radar</a>
+  <a class="service-link" href="nfts.html">NFT Picks</a>
+  <a class="service-link" href="airdrops.html">Airdrop Vault</a>
+  <a class="service-link" href="gameprojects.html">Game Projects</a>
+  <div class="service-disabled">AI Agent (Coming Soon)</div>
 
   <a class="back-btn" href="index.html">Back to Home</a>
 
