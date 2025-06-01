@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,7 +58,7 @@
     <div class="footer-nav">
       <a href="features.html" class="footer-button"><img src="images/icon-services.png" alt="Services" /><br />Services</a>
       <a href="whoarewe.html" class="footer-button"><img src="images/icon-team.png" alt="Team" /><br />Who We Are</a>
-      <a href="contact.html" class="footer-button"><img src="images/icon-contact.png" alt="Contact" /><br />Contact</a>
+      <a href="announcements.html" class="footer-button"><img src="images/icon-contact.png" alt="Announcements" /><br />Announcements</a>
       <a href="dashboard.html" class="footer-button"><img src="images/icon-dashboard.png" alt="Dashboard" /><br />Dashboard</a>
     </div>
   </div>
@@ -76,7 +77,6 @@
       const played = sessionStorage.getItem("introPlayed");
 
       if (!played && !isBack) {
-        // First-time launch only
         setTimeout(() => {
           loader.style.display = "none";
           main.style.display = "block";
@@ -84,7 +84,6 @@
           sessionStorage.setItem("introPlayed", "true");
         }, 1200);
       } else {
-        // Skip loader and audio for returning or back nav
         loader.remove();
         audio.remove();
         main.style.display = "block";
