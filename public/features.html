@@ -3,45 +3,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OrbitalScan Debug</title>
-  <link href="../style.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OrbitalScan - Services</title>
+  <link rel="stylesheet" href="style.css"/>
   <style>
     body {
-      background: #000;
+      background-color: black;
       color: #0ff;
-      font-family: monospace;
+      font-family: "Orbitron", sans-serif;
+      text-align: center;
       padding: 20px;
     }
 
-    .container {
-      background: #111;
-      border: 1px solid #0ff;
-      padding: 20px;
+    .neon-box {
+      border: 2px solid #00ffff;
+      box-shadow: 0 0 10px #00ffff;
+      padding: 10px 20px;
       border-radius: 10px;
-      box-shadow: 0 0 10px #0ff;
-    }
-
-    h1 {
-      color: #0ff;
-      text-shadow: 0 0 8px #0ff;
-    }
-
-    pre {
-      color: #fff;
-      background: #222;
-      padding: 15px;
-      border-radius: 5px;
-      overflow-x: auto;
-      margin-top: 15px;
-    }
-
-    .back {
-      margin-top: 20px;
+      margin-bottom: 15px;
       display: inline-block;
+      font-size: 14px;
+    }
+
+    .heading {
+      font-size: 28px;
+      margin: 40px 0 20px;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .status {
+      font-size: 18px;
+      color: #0f0;
+      text-shadow: 0 0 6px #0f0;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
       color: #fff;
+      background-color: black;
       border: 2px solid #ff00ff;
-      padding: 10px 15px;
       border-radius: 10px;
       text-decoration: none;
       box-shadow: 0 0 10px #ff00ff;
@@ -49,33 +51,11 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Telegram initData Debug</h1>
-    <p><strong>Username:</strong> <span id="username">loading...</span></p>
-    <p><strong>initDataUnsafe:</strong></p>
-    <pre id="jsonOutput">{}</pre>
-  </div>
+  <div class="neon-box">🚀 Beta Mode Activated — All users have full access for now!</div>
 
-  <a href="index.html" class="back">Back to Home</a>
+  <h1 class="heading">Our Services</h1>
+  <div class="status">✅ Access Granted - Open Beta Mode</div>
 
-  <script>
-    window.addEventListener("DOMContentLoaded", () => {
-      const initData = Telegram.WebApp?.initDataUnsafe || null;
-      const output = document.getElementById("jsonOutput");
-      const usernameField = document.getElementById("username");
-
-      if (initData && initData.user) {
-        usernameField.textContent = `@${initData.user.username}`;
-      } else {
-        usernameField.textContent = "No username found";
-      }
-
-      try {
-        output.textContent = JSON.stringify(initData, null, 2);
-      } catch (e) {
-        output.textContent = "Could not stringify initDataUnsafe";
-      }
-    });
-  </script>
+  <a class="back-btn" href="index.html">Back to Home</a>
 </body>
 </html>
