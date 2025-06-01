@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OrbitalScan - Services</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       background-color: black;
@@ -20,26 +20,42 @@
       box-shadow: 0 0 10px #00ffff;
       padding: 10px 20px;
       border-radius: 10px;
-      margin-bottom: 15px;
-      display: inline-block;
+      margin: 10px auto;
+      width: fit-content;
       font-size: 14px;
     }
 
-    .heading {
-      font-size: 28px;
-      margin: 40px 0 20px;
-      text-shadow: 0 0 10px #0ff;
+    .service-link {
+      display: block;
+      margin: 20px auto;
+      width: 250px;
+      padding: 15px 20px;
+      font-size: 18px;
+      background-color: transparent;
+      color: #0ff;
+      border: 2px solid #0ff;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 0 15px #0ff;
+      transition: all 0.2s ease-in-out;
     }
 
-    .status {
-      font-size: 18px;
-      color: #0f0;
-      text-shadow: 0 0 6px #0f0;
+    .service-link:hover {
+      background-color: #0ff;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-top: 40px;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
     }
 
     .back-btn {
       display: inline-block;
-      margin-top: 30px;
+      margin-top: 40px;
       padding: 10px 20px;
       color: #fff;
       background-color: black;
@@ -51,11 +67,17 @@
   </style>
 </head>
 <body>
+
   <div class="neon-box">🚀 Beta Mode Activated — All users have full access for now!</div>
 
-  <h1 class="heading">Our Services</h1>
-  <div class="status">✅ Access Granted - Open Beta Mode</div>
+  <h1>Our Services</h1>
+
+  <a class="service-link" href="memecoins.html">🪙 Memecoin Radar</a>
+  <a class="service-link" href="nfts.html">🧬 NFT Picks</a>
+  <a class="service-link" href="airdrops.html">💸 Airdrop Vault</a>
+  <a class="service-link" href="gameprojects.html">🎮 Game Projects</a>
 
   <a class="back-btn" href="index.html">Back to Home</a>
+
 </body>
 </html>
