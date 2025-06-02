@@ -5,56 +5,63 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Announcements</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background-color: #0d0d0d;
+      background-color: #000;
+      color: #fff;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #00ff99;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
+      height: 100vh;
+      margin: 0;
     }
+
     .container {
-      margin-top: 60px;
-      width: 90%;
-      max-width: 800px;
       background-color: #111;
-      border: 1px solid #00ff99;
-      border-radius: 12px;
-      padding: 30px;
-      box-shadow: 0 0 25px #00ff99;
-    }
-    h1 {
-      text-align: center;
-      font-size: 1.8rem;
-      color: #00ff99;
-      margin-bottom: 30px;
-    }
-    .header-icon {
-      font-size: 1.2rem;
-      margin-right: 8px;
-    }
-    p {
-      line-height: 1.6;
-      font-size: 1rem;
-      color: #ccc;
-    }
-    .back-btn {
-      margin-top: 40px;
-      display: block;
-      text-align: center;
-      background-color: transparent;
       border: 2px solid #00ff99;
-      padding: 12px 24px;
-      font-size: 1rem;
+      padding: 20px;
+      max-width: 340px;
+      width: 90%;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 15px #00ff99;
+    }
+
+    .title {
       color: #00ff99;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title span {
+      margin-right: 8px;
+      font-size: 1.2em;
+    }
+
+    .content {
+      font-size: 0.95em;
+      line-height: 1.5em;
+      color: #ddd;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      background-color: #000;
+      border: 2px solid #00ff99;
+      color: #00ff99;
+      padding: 10px 20px;
       border-radius: 8px;
       text-decoration: none;
-      transition: background 0.3s, color 0.3s;
+      display: inline-block;
+      transition: background 0.3s;
     }
-    .back-btn:hover {
+
+    .button:hover {
       background-color: #00ff99;
       color: #000;
     }
@@ -62,11 +69,15 @@
 </head>
 <body>
   <div class="container">
-    <h1><span class="header-icon">🛸</span>Announcements</h1>
-    <p>We’re currently in beta mode. All users can explore and enjoy OrbitalScan freely!</p>
-    <p>Our goal is to help you discover the most promising opportunities in memecoins, NFTs, airdrops, and Web3 gaming.</p>
-    <p>As we grow, we’ll introduce exclusive features that require subscriptions. But for now, enjoy full access and give us your feedback!</p>
-    <a href="index.html" class="back-btn">Back to Home</a>
+    <div class="title">
+      <span>🛸</span> <strong>Announcements</strong>
+    </div>
+    <div class="content">
+      <p>We’re currently in beta mode. All users can explore and enjoy OrbitalScan freely!</p>
+      <p>Our goal is to help you discover the most promising opportunities in memecoins, NFTs, airdrops, and Web3 gaming.</p>
+      <p>As we grow, we’ll introduce exclusive features that require subscriptions. But for now, enjoy full access and give us your feedback!</p>
+    </div>
+    <a class="button" href="index.html">Back to Home</a>
   </div>
 </body>
 </html>
