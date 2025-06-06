@@ -1,12 +1,13 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OrbitalScan</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OrbitalScan</title>
+<link href="style.css" rel="stylesheet"/>
+<style>
     #loader-screen {
       position: fixed;
       top: 0; left: 0;
@@ -40,34 +41,29 @@
     }
   </style>
 </head>
-<body id="mainBody" class="lighter-overlay" style="background-image: url('images/bg-home.jpg');">
-
-  <div id="loader-screen">
-    <div id="loader-text">Loading Web3 Alpha...</div>
-  </div>
-
-  <div id="main-content" style="display: none;">
-    <div class="container" style="text-align: center; padding-top: 80px;">
-      <h1 class="neon-title" style="text-shadow: 0 0 4px #a67cff, 0 0 12px #a67cff;">OrbitalScan</h1>
-      <p class="tagline">Your gateway to smarter Web3 investing, daily.</p>
-      <p class="age-warning" style="margin-top: 30px;">
+<body class="lighter-overlay" id="mainBody" style="background-image: url('images/bg-home.jpg');">
+<div id="loader-screen">
+<div id="loader-text">Loading Web3 Alpha...</div>
+</div>
+<div id="main-content" style="display: none;">
+<div class="container" style="text-align: center; padding-top: 80px;">
+<h1 class="neon-title" style="margin-top: 40px; margin-bottom: 8px;">OrbitalScan</h1>
+<p class="tagline" style="margin-bottom: 20px; margin-top: 0;">Your gateway to smarter Web3 investing, daily.</p>
+<p class="age-warning" style="margin-top: 30px;">
         This MiniApp is intended for users aged <span style="color:#ff4444;font-weight:bold;">21+</span> due to its financial nature.
       </p>
-    </div>
-
-    <div class="footer-nav">
-      <a href="features.html" class="footer-button"><img src="images/icon-services.png" alt="Services" /><br />Services</a>
-      <a href="whoarewe.html" class="footer-button"><img src="images/icon-team.png" alt="Team" /><br />Who We Are</a>
-      <a href="announcements.html" class="footer-button"><img src="images/icon-contact.png" alt="Announcements" /><br />Announcements</a>
-      <a href="dashboard.html" class="footer-button"><img src="images/icon-dashboard.png" alt="Dashboard" /><br />Dashboard</a>
-    </div>
-  </div>
-
-  <audio id="welcome-audio" preload="auto">
-    <source src="audio/welcome.mp3" type="audio/mpeg" />
-  </audio>
-
-  <script>
+</div>
+<div class="footer-nav">
+<a class="footer-button" href="features.html"><img alt="Services" src="images/icon-services.png"/><br/>Services</a>
+<a class="footer-button" href="whoarewe.html"><img alt="Team" src="images/icon-team.png"/><br/>Who We Are</a>
+<a class="footer-button" href="announcements.html"><img alt="Announcements" src="images/icon-contact.png"/><br/>Announcements</a>
+<a class="footer-button" href="dashboard.html"><img alt="Dashboard" src="images/icon-dashboard.png"/><br/>Dashboard</a>
+</div>
+</div>
+<audio id="welcome-audio" preload="auto">
+<source src="audio/welcome.mp3" type="audio/mpeg"/>
+</audio>
+<script>
     const loader = document.getElementById("loader-screen");
     const main = document.getElementById("main-content");
     const audio = document.getElementById("welcome-audio");
@@ -90,12 +86,5 @@
       }
     });
   </script>
-
-
-    <div style="text-align: center; margin-top: 30px;">
-      <a href="#" class="neon-button" style="padding: 12px 25px; font-size: 1.1rem;">
-        🔗 Connect Diamante Wallet
-      </a>
-    </div>
 </body>
 </html>
